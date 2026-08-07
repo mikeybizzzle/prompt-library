@@ -240,7 +240,7 @@ function SearchDialog({ docs, onClose }: { docs: SearchDoc[]; onClose: () => voi
                     <span className="flex min-w-0 flex-1 items-baseline gap-2">
                       <span
                         className={cn(
-                          "truncate text-pl-body",
+                          "truncate text-[16px] leading-6",
                           i === cursor ? "text-pl-menu-hover" : "text-pl-menu-item group-hover:text-pl-menu-hover",
                         )}
                       >

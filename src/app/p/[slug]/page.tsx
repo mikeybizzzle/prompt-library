@@ -239,7 +239,7 @@ export default async function PromptPage({ params }: Params) {
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((p) => (
-                <PromptCard key={p.slug} prompt={p} tall={false} />
+                <PromptCard key={p.slug} prompt={p} />
               ))}
             </div>
           </section>

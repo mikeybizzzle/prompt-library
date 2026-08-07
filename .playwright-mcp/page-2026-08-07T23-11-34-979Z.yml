@@ -1,0 +1,423 @@
+- generic [active] [ref=f16e1]:
+  - navigation "Primary" [ref=f16e2]:
+    - generic [ref=f16e3]:
+      - link "Prompt Atlas home" [ref=f16e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f16e10]:
+        - list [ref=f16e11]:
+          - listitem [ref=f16e12]:
+            - link "Prompts" [ref=f16e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f16e14]:
+            - link "Categories" [ref=f16e15] [cursor=pointer]:
+              - /url: /category/marketing
+          - listitem [ref=f16e18]:
+            - link "Models" [ref=f16e19] [cursor=pointer]:
+              - /url: /tool/chatgpt
+          - listitem [ref=f16e22]:
+            - link "Roles" [ref=f16e23] [cursor=pointer]:
+              - /url: /for/marketers
+          - listitem [ref=f16e26]:
+            - link "Types" [ref=f16e27] [cursor=pointer]:
+              - /url: /type/text
+        - link "Add a prompt" [ref=f16e30] [cursor=pointer]:
+          - /url: https://github.com/mikeybizzzle/prompt-library
+  - main [ref=f16e33]:
+    - generic [ref=f16e34]:
+      - generic [ref=f16e35]:
+        - generic [ref=f16e36]:
+          - heading [level=1] [ref=f16e37]:
+            - text: Marketing prompts,
+            - emphasis [ref=f16e38]: ready to run
+          - paragraph [ref=f16e39]: 3 free marketing prompts. Copy one, fill in the placeholders, and run it on the model of your choice.
+        - button "Search prompts (Command K)" [ref=f16e41]:
+          - generic [ref=f16e42]: Search
+          - generic [ref=f16e47]: ⌘K
+      - navigation "Browse categories" [ref=f16e49]:
+        - link "Marketing" [ref=f16e50] [cursor=pointer]:
+          - /url: /category/marketing
+        - link "Design" [ref=f16e56] [cursor=pointer]:
+          - /url: /category/art-and-design
+        - link "Education" [ref=f16e65] [cursor=pointer]:
+          - /url: /category/education
+        - link "Finance" [ref=f16e71] [cursor=pointer]:
+          - /url: /category/finance
+        - link "Sales" [ref=f16e77] [cursor=pointer]:
+          - /url: /category/sales
+        - link "Coding" [ref=f16e83] [cursor=pointer]:
+          - /url: /category/coding
+        - link "Writing" [ref=f16e90] [cursor=pointer]:
+          - /url: /category/writing
+        - button "More (14)" [ref=f16e95] [cursor=pointer]
+      - generic [ref=f16e105]:
+        - generic [ref=f16e106]:
+          - generic [ref=f16e108]:
+            - button [ref=f16e109]
+            - button [ref=f16e115]
+            - button [ref=f16e122]
+          - generic [ref=f16e129]:
+            - 'button "Sort by: Shuffled" [ref=f16e131]':
+              - text: "Sort by:"
+              - generic [ref=f16e132]: Shuffled
+            - group "Output format" [ref=f16e135]:
+              - link "All" [ref=f16e136] [cursor=pointer]:
+                - /url: /
+              - link "Text" [ref=f16e141] [cursor=pointer]:
+                - /url: /type/text
+              - link "Image" [ref=f16e145] [cursor=pointer]:
+                - /url: /type/image
+              - link "Code" [ref=f16e150] [cursor=pointer]:
+                - /url: /type/code
+        - link [ref=f16e156] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f16e161]:
+          - article [ref=f16e162]:
+            - link "Thirty Day Social Content Calendar From One Offer" [ref=f16e163] [cursor=pointer]:
+              - /url: /p/thirty-day-social-content-calendar
+            - generic [ref=f16e164]: "## Role You are a social content planner who builds calendars that a one person team can actually execute. You plan around a single offer and a single audience, not around trends. ## Context **Offer:** {{offer}} **Audience:** {{audience}} **Channels:** {{channel-one}} and {{channel-two}} **Brand voice:** {{voice-notes}} **Posting days per week:** {{posts-per-week}} **Proof assets available:** {{proof-assets}} **Start date:** {{start-date}} ## Task Build a 30 day calendar starting on the start date. 1. Assign each of the four weeks one theme. Themes must move in sequence: problem awareness, mechanism, proof, offer. 2. For each posting day, produce one post entry. 3. Rotate through five"
+            - generic [ref=f16e167]:
+              - heading "Thirty Day Social Content Calendar From One Offer" [level=3] [ref=f16e168]:
+                - generic [ref=f16e169]: 🗓️
+              - generic [ref=f16e172]:
+                - link "ChatGPT" [ref=f16e173] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Marketing" [ref=f16e178] [cursor=pointer]:
+                  - /url: /category/marketing
+                - link "Social Media Posts" [ref=f16e179] [cursor=pointer]:
+                  - /url: /category/social-media-posts
+              - paragraph [ref=f16e180]: Produces a dated 30 day posting calendar for two channels, with hooks, formats, captions, and a weekly theme for a single offer and audience.
+              - generic [ref=f16e182]:
+                - generic [ref=f16e183]:
+                  - button "Like" [ref=f16e184]
+                  - button "Save" [ref=f16e187]
+                  - button "Copy prompt" [ref=f16e190]: 268 words
+                - button "Share prompt" [ref=f16e194]
+          - article [ref=f16e201]:
+            - link "Turn One Webinar Into Twelve Channel Ready Assets" [ref=f16e202] [cursor=pointer]:
+              - /url: /p/webinar-into-twelve-assets
+            - generic [ref=f16e203]: "## Role You are a content editor who turns one long recording into a month of distribution without diluting the original argument. ## Context **Transcript:** {{transcript}} **Original title:** {{recording-title}} **Audience:** {{audience}} **Primary call to action:** {{cta}} **Channels in use:** {{channels}} ## Task Read the transcript and work in this order. 1. Extract the spine: the single claim the recording argues, plus the three to five supporting points that carry it. 2. Mark the five highest value moments. A high value moment is a specific story, a number, a reframe, a mistake admitted, or a step by step method. Give each a timestamp and a one line label. 3. Build twelve assets"
+            - generic [ref=f16e206]:
+              - heading "Turn One Webinar Into Twelve Channel Ready Assets" [level=3] [ref=f16e207]:
+                - generic [ref=f16e208]: ♻️
+              - generic [ref=f16e211]:
+                - link "Claude" [ref=f16e212] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Marketing" [ref=f16e217] [cursor=pointer]:
+                  - /url: /category/marketing
+                - link "Content Repurposing" [ref=f16e218] [cursor=pointer]:
+                  - /url: /category/content-repurposing
+              - paragraph [ref=f16e219]: Takes a webinar or long video transcript and returns twelve finished assets across email, social, blog, and short video, each with its source timestamp.
+              - generic [ref=f16e221]:
+                - generic [ref=f16e222]:
+                  - button "Like" [ref=f16e223]
+                  - button "Save" [ref=f16e226]
+                  - button "Copy prompt" [ref=f16e229]: 264 words
+                - button "Share prompt" [ref=f16e233]
+          - article [ref=f16e240]:
+            - link "Meta Ad Copy Variants With an Angle and Hook Matrix" [ref=f16e241] [cursor=pointer]:
+              - /url: /p/meta-ad-copy-angle-matrix
+            - generic [ref=f16e242]:
+              - heading "Meta Ad Copy Variants With an Angle and Hook Matrix" [level=3] [ref=f16e243]:
+                - generic [ref=f16e244]: 📣
+              - generic [ref=f16e247]:
+                - link "ChatGPT" [ref=f16e248] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Marketing" [ref=f16e253] [cursor=pointer]:
+                  - /url: /category/marketing
+                - link "Ad Copy" [ref=f16e254] [cursor=pointer]:
+                  - /url: /category/ad-copy
+              - paragraph [ref=f16e255]: Writes nine paid social ad variants across three buying angles, each with a hook, primary text, headline, and the audience signal it targets.
+              - generic [ref=f16e257]:
+                - generic [ref=f16e258]:
+                  - button "Like" [ref=f16e259]
+                  - button "Save" [ref=f16e262]
+                  - button "Copy prompt" [ref=f16e265]: 277 words
+                - button "Share prompt" [ref=f16e269]
+      - generic [ref=f16e279]:
+        - region "Featured prompts" [ref=f16e280]:
+          - generic [ref=f16e281]:
+            - heading [level=2] [ref=f16e282]:
+              - text: "Start here:"
+              - strong [ref=f16e283]: hand-picked prompts
+            - link "All prompts" [ref=f16e284] [cursor=pointer]:
+              - /url: /
+          - generic [ref=f16e287]:
+            - 'link "## Role You are an SEO strategist who builds site architecture from search intent rather than from keyword volume alone. ## Context **Site and what it sells:** {{site-description}} **Raw keyword list with volume and difficulty:** {{keyword-data}} **Existing pages and their target terms:** {{existing-pages}} **Domain authority band:** {{authority-band}} **Conversion path:** {{conversion-path}} **Geography targeted:** {{geography}} ## Task 1. Group every keyword into a topical cluster. A cluster is a set of terms that one page could rank for because the searcher wants the same thing. Name each cluster in plain language. 2. Label each cluster with one intent: informational, comparative, tr 🔑 Keyword Cluster Map With Intent and Priority Scores Open prompt" [ref=f16e288] [cursor=pointer]':
+              - /url: /p/keyword-cluster-map-with-intent
+              - generic [ref=f16e289]: "## Role You are an SEO strategist who builds site architecture from search intent rather than from keyword volume alone. ## Context **Site and what it sells:** {{site-description}} **Raw keyword list with volume and difficulty:** {{keyword-data}} **Existing pages and their target terms:** {{existing-pages}} **Domain authority band:** {{authority-band}} **Conversion path:** {{conversion-path}} **Geography targeted:** {{geography}} ## Task 1. Group every keyword into a topical cluster. A cluster is a set of terms that one page could rank for because the searcher wants the same thing. Name each cluster in plain language. 2. Label each cluster with one intent: informational, comparative, tr"
+              - generic [ref=f16e291]:
+                - heading "🔑 Keyword Cluster Map With Intent and Priority Scores" [level=3] [ref=f16e292]
+                - generic [ref=f16e293]: Open prompt
+            - 'link "## Role You are a social content planner who builds calendars that a one person team can actually execute. You plan around a single offer and a single audience, not around trends. ## Context **Offer:** {{offer}} **Audience:** {{audience}} **Channels:** {{channel-one}} and {{channel-two}} **Brand voice:** {{voice-notes}} **Posting days per week:** {{posts-per-week}} **Proof assets available:** {{proof-assets}} **Start date:** {{start-date}} ## Task Build a 30 day calendar starting on the start date. 1. Assign each of the four weeks one theme. Themes must move in sequence: problem awareness, mechanism, proof, offer. 2. For each posting day, produce one post entry. 3. Rotate through five 🗓️ Thirty Day Social Content Calendar From One Offer Open prompt" [ref=f16e296] [cursor=pointer]':
+              - /url: /p/thirty-day-social-content-calendar
+              - generic [ref=f16e297]: "## Role You are a social content planner who builds calendars that a one person team can actually execute. You plan around a single offer and a single audience, not around trends. ## Context **Offer:** {{offer}} **Audience:** {{audience}} **Channels:** {{channel-one}} and {{channel-two}} **Brand voice:** {{voice-notes}} **Posting days per week:** {{posts-per-week}} **Proof assets available:** {{proof-assets}} **Start date:** {{start-date}} ## Task Build a 30 day calendar starting on the start date. 1. Assign each of the four weeks one theme. Themes must move in sequence: problem awareness, mechanism, proof, offer. 2. For each posting day, produce one post entry. 3. Rotate through five"
+              - generic [ref=f16e299]:
+                - heading "🗓️ Thirty Day Social Content Calendar From One Offer" [level=3] [ref=f16e300]
+                - generic [ref=f16e301]: Open prompt
+            - 'link "## Role You are an agent designer. You write system prompts that define scope tightly, because an agent that can do anything will do the wrong thing. ## Context **What this agent is for:** {{agent-purpose}} **Who talks to it:** {{end-users}} **Data and tools it can access:** {{tools-and-data}} **What it must never do:** {{prohibitions}} **When a human must take over:** {{escalation-conditions}} **Brand voice:** {{voice-notes}} **Known failure modes from testing:** {{observed-failures}} **Model it runs on:** {{target-model}} ## Task Write the system prompt with these components, in this order. 1. **Identity and scope.** One paragraph stating what the agent is, who it serves, and the bou 🤖 System Prompt for a Narrow Scope Support Agent Open prompt" [ref=f16e304] [cursor=pointer]':
+              - /url: /p/narrow-scope-support-agent-system-prompt
+              - generic [ref=f16e305]: "## Role You are an agent designer. You write system prompts that define scope tightly, because an agent that can do anything will do the wrong thing. ## Context **What this agent is for:** {{agent-purpose}} **Who talks to it:** {{end-users}} **Data and tools it can access:** {{tools-and-data}} **What it must never do:** {{prohibitions}} **When a human must take over:** {{escalation-conditions}} **Brand voice:** {{voice-notes}} **Known failure modes from testing:** {{observed-failures}} **Model it runs on:** {{target-model}} ## Task Write the system prompt with these components, in this order. 1. **Identity and scope.** One paragraph stating what the agent is, who it serves, and the bou"
+              - generic [ref=f16e307]:
+                - heading "🤖 System Prompt for a Narrow Scope Support Agent" [level=3] [ref=f16e308]
+                - generic [ref=f16e309]: Open prompt
+        - region "Frequently asked questions" [ref=f16e312]:
+          - group [ref=f16e313]:
+            - generic "What is Prompt Atlas?" [ref=f16e314] [cursor=pointer]
+          - group [ref=f16e317]:
+            - generic "How is the library organised?" [ref=f16e318] [cursor=pointer]
+          - group [ref=f16e321]:
+            - generic "How do I use a prompt?" [ref=f16e322] [cursor=pointer]
+          - group [ref=f16e325]:
+            - generic "Where do the prompts live?" [ref=f16e326] [cursor=pointer]
+          - group [ref=f16e329]:
+            - generic "Is it free?" [ref=f16e330] [cursor=pointer]
+          - group [ref=f16e333]:
+            - generic "Can I add my own prompts?" [ref=f16e334] [cursor=pointer]
+        - generic [ref=f16e337]:
+          - generic [ref=f16e338]:
+            - heading "Browse by category" [level=2] [ref=f16e339]
+            - list [ref=f16e340]:
+              - listitem [ref=f16e341]:
+                - link "Marketing" [ref=f16e342] [cursor=pointer]:
+                  - /url: /category/marketing
+              - listitem [ref=f16e343]:
+                - link "Design" [ref=f16e344] [cursor=pointer]:
+                  - /url: /category/art-and-design
+              - listitem [ref=f16e345]:
+                - link "Education" [ref=f16e346] [cursor=pointer]:
+                  - /url: /category/education
+              - listitem [ref=f16e347]:
+                - link "Finance" [ref=f16e348] [cursor=pointer]:
+                  - /url: /category/finance
+              - listitem [ref=f16e349]:
+                - link "Sales" [ref=f16e350] [cursor=pointer]:
+                  - /url: /category/sales
+              - listitem [ref=f16e351]:
+                - link "Coding" [ref=f16e352] [cursor=pointer]:
+                  - /url: /category/coding
+              - listitem [ref=f16e353]:
+                - link "Writing" [ref=f16e354] [cursor=pointer]:
+                  - /url: /category/writing
+              - listitem [ref=f16e355]:
+                - link "SEO" [ref=f16e356] [cursor=pointer]:
+                  - /url: /category/seo
+              - listitem [ref=f16e357]:
+                - link "Strategy" [ref=f16e358] [cursor=pointer]:
+                  - /url: /category/strategy
+              - listitem [ref=f16e359]:
+                - link "Productivity" [ref=f16e360] [cursor=pointer]:
+                  - /url: /category/productivity
+              - listitem [ref=f16e361]:
+                - link "Operations" [ref=f16e362] [cursor=pointer]:
+                  - /url: /category/operations
+              - listitem [ref=f16e363]:
+                - link "Human Resources" [ref=f16e364] [cursor=pointer]:
+                  - /url: /category/human-resources
+              - listitem [ref=f16e365]:
+                - link "Research" [ref=f16e366] [cursor=pointer]:
+                  - /url: /category/research
+              - listitem [ref=f16e367]:
+                - link "Legal" [ref=f16e368] [cursor=pointer]:
+                  - /url: /category/legal
+              - listitem [ref=f16e369]:
+                - link "Data Analysis" [ref=f16e370] [cursor=pointer]:
+                  - /url: /category/data-analysis
+              - listitem [ref=f16e371]:
+                - link "Real Estate" [ref=f16e372] [cursor=pointer]:
+                  - /url: /category/real-estate
+              - listitem [ref=f16e373]:
+                - link "Customer Service" [ref=f16e374] [cursor=pointer]:
+                  - /url: /category/customer-service
+              - listitem [ref=f16e375]:
+                - link "Careers" [ref=f16e376] [cursor=pointer]:
+                  - /url: /category/careers
+              - listitem [ref=f16e377]:
+                - link "Audio" [ref=f16e378] [cursor=pointer]:
+                  - /url: /category/audio
+              - listitem [ref=f16e379]:
+                - link "AI Agents" [ref=f16e380] [cursor=pointer]:
+                  - /url: /category/ai-agents
+              - listitem [ref=f16e381]:
+                - link "Video" [ref=f16e382] [cursor=pointer]:
+                  - /url: /category/video
+          - generic [ref=f16e383]:
+            - heading "Browse by AI model" [level=2] [ref=f16e384]
+            - list [ref=f16e385]:
+              - listitem [ref=f16e386]:
+                - link "ChatGPT" [ref=f16e387] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+              - listitem [ref=f16e388]:
+                - link "Claude" [ref=f16e389] [cursor=pointer]:
+                  - /url: /tool/claude
+              - listitem [ref=f16e390]:
+                - link "Gemini" [ref=f16e391] [cursor=pointer]:
+                  - /url: /tool/gemini
+              - listitem [ref=f16e392]:
+                - link "Grok" [ref=f16e393] [cursor=pointer]:
+                  - /url: /tool/grok
+              - listitem [ref=f16e394]:
+                - link "DeepSeek" [ref=f16e395] [cursor=pointer]:
+                  - /url: /tool/deepseek
+              - listitem [ref=f16e396]:
+                - link "Mistral" [ref=f16e397] [cursor=pointer]:
+                  - /url: /tool/mistral
+              - listitem [ref=f16e398]:
+                - link "Llama" [ref=f16e399] [cursor=pointer]:
+                  - /url: /tool/llama
+              - listitem [ref=f16e400]:
+                - link "Midjourney" [ref=f16e401] [cursor=pointer]:
+                  - /url: /tool/midjourney
+              - listitem [ref=f16e402]:
+                - link "Nano Banana" [ref=f16e403] [cursor=pointer]:
+                  - /url: /tool/nano-banana
+              - listitem [ref=f16e404]:
+                - link "Flux" [ref=f16e405] [cursor=pointer]:
+                  - /url: /tool/flux
+              - listitem [ref=f16e406]:
+                - link "DALL-E" [ref=f16e407] [cursor=pointer]:
+                  - /url: /tool/dall-e
+              - listitem [ref=f16e408]:
+                - link "Ideogram" [ref=f16e409] [cursor=pointer]:
+                  - /url: /tool/ideogram
+              - listitem [ref=f16e410]:
+                - link "Sora" [ref=f16e411] [cursor=pointer]:
+                  - /url: /tool/sora
+              - listitem [ref=f16e412]:
+                - link "Veo" [ref=f16e413] [cursor=pointer]:
+                  - /url: /tool/veo
+              - listitem [ref=f16e414]:
+                - link "Runway" [ref=f16e415] [cursor=pointer]:
+                  - /url: /tool/runway
+              - listitem [ref=f16e416]:
+                - link "Kling" [ref=f16e417] [cursor=pointer]:
+                  - /url: /tool/kling
+          - generic [ref=f16e418]:
+            - heading "Browse by role" [level=2] [ref=f16e419]
+            - list [ref=f16e420]:
+              - listitem [ref=f16e421]:
+                - link "Solopreneurs" [ref=f16e422] [cursor=pointer]:
+                  - /url: /for/solopreneurs
+              - listitem [ref=f16e423]:
+                - link "Entrepreneurs" [ref=f16e424] [cursor=pointer]:
+                  - /url: /for/entrepreneurs
+              - listitem [ref=f16e425]:
+                - link "Business Owners" [ref=f16e426] [cursor=pointer]:
+                  - /url: /for/business-owners
+              - listitem [ref=f16e427]:
+                - link "Freelancers" [ref=f16e428] [cursor=pointer]:
+                  - /url: /for/freelancers
+              - listitem [ref=f16e429]:
+                - link "Agencies" [ref=f16e430] [cursor=pointer]:
+                  - /url: /for/agencies
+              - listitem [ref=f16e431]:
+                - link "Ecommerce Sellers" [ref=f16e432] [cursor=pointer]:
+                  - /url: /for/ecommerce-sellers
+              - listitem [ref=f16e433]:
+                - link "Marketers" [ref=f16e434] [cursor=pointer]:
+                  - /url: /for/marketers
+              - listitem [ref=f16e435]:
+                - link "Sales Teams" [ref=f16e436] [cursor=pointer]:
+                  - /url: /for/sales-teams
+              - listitem [ref=f16e437]:
+                - link "Copywriters" [ref=f16e438] [cursor=pointer]:
+                  - /url: /for/copywriters
+              - listitem [ref=f16e439]:
+                - link "Content Creators" [ref=f16e440] [cursor=pointer]:
+                  - /url: /for/content-creators
+              - listitem [ref=f16e441]:
+                - link "Designers" [ref=f16e442] [cursor=pointer]:
+                  - /url: /for/designers
+              - listitem [ref=f16e443]:
+                - link "Photographers" [ref=f16e444] [cursor=pointer]:
+                  - /url: /for/photographers
+              - listitem [ref=f16e445]:
+                - link "Developers" [ref=f16e446] [cursor=pointer]:
+                  - /url: /for/developers
+              - listitem [ref=f16e447]:
+                - link "AI Engineers" [ref=f16e448] [cursor=pointer]:
+                  - /url: /for/ai-engineers
+              - listitem [ref=f16e449]:
+                - link "Lawyers" [ref=f16e450] [cursor=pointer]:
+                  - /url: /for/lawyers
+              - listitem [ref=f16e451]:
+                - link "Accountants" [ref=f16e452] [cursor=pointer]:
+                  - /url: /for/accountants
+          - generic [ref=f16e453]:
+            - heading "Browse by prompt type" [level=2] [ref=f16e454]
+            - list [ref=f16e455]:
+              - listitem [ref=f16e456]:
+                - link "Text prompts" [ref=f16e457] [cursor=pointer]:
+                  - /url: /type/text
+              - listitem [ref=f16e458]:
+                - link "Image prompts" [ref=f16e459] [cursor=pointer]:
+                  - /url: /type/image
+              - listitem [ref=f16e460]:
+                - link "Code prompts" [ref=f16e461] [cursor=pointer]:
+                  - /url: /type/code
+              - listitem [ref=f16e462]:
+                - link "All 63 prompts" [ref=f16e463] [cursor=pointer]:
+                  - /url: /
+  - contentinfo [ref=f16e464]:
+    - generic:
+      - img:
+        - generic: Prompt Atlas
+    - generic [ref=f16e466]:
+      - generic [ref=f16e467]:
+        - generic [ref=f16e468]:
+          - heading "About Prompt Atlas" [level=3] [ref=f16e474]
+          - paragraph [ref=f16e475]: A personal, open prompt library. Every prompt lives as a markdown file in a public GitHub repo, so anyone can read it, fork it, or send a better one.
+          - generic "Social media" [ref=f16e476]:
+            - link "GitHub" [ref=f16e477] [cursor=pointer]:
+              - /url: https://github.com/mikeybizzzle
+            - link "X" [ref=f16e480] [cursor=pointer]:
+              - /url: https://x.com/
+            - link "LinkedIn" [ref=f16e483] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+            - link "RSS" [ref=f16e486] [cursor=pointer]:
+              - /url: /feed.xml
+        - navigation "Footer" [ref=f16e491]:
+          - generic [ref=f16e492]:
+            - heading "Browse" [level=3] [ref=f16e493]
+            - list [ref=f16e494]:
+              - listitem [ref=f16e495]:
+                - link "All prompts" [ref=f16e496] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f16e497]:
+                - link "Text prompts" [ref=f16e498] [cursor=pointer]:
+                  - /url: /type/text
+              - listitem [ref=f16e499]:
+                - link "Image prompts" [ref=f16e500] [cursor=pointer]:
+                  - /url: /type/image
+              - listitem [ref=f16e501]:
+                - link "Code prompts" [ref=f16e502] [cursor=pointer]:
+                  - /url: /type/code
+          - generic [ref=f16e503]:
+            - heading "Popular" [level=3] [ref=f16e504]
+            - list [ref=f16e505]:
+              - listitem [ref=f16e506]:
+                - link "Marketing" [ref=f16e507] [cursor=pointer]:
+                  - /url: /category/marketing
+              - listitem [ref=f16e508]:
+                - link "Coding" [ref=f16e509] [cursor=pointer]:
+                  - /url: /category/coding
+              - listitem [ref=f16e510]:
+                - link "ChatGPT" [ref=f16e511] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+              - listitem [ref=f16e512]:
+                - link "Claude" [ref=f16e513] [cursor=pointer]:
+                  - /url: /tool/claude
+      - generic [ref=f16e514]:
+        - paragraph [ref=f16e515]: © 2026 Prompt Atlas. Built by Mike Bernard.
+        - navigation "Secondary" [ref=f16e516]:
+          - link "Source on GitHub" [ref=f16e517] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library
+          - link "Add a prompt" [ref=f16e518] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library/blob/main/CONTRIBUTING.md
+          - link "Report an issue" [ref=f16e519] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library/issues/new
+  - generic:
+    - button "Open a random prompt" [ref=f16e520]:
+      - generic: Surprise me
+    - button "Search prompts (Command K)" [ref=f16e528]:
+      - generic: Search prompts…
+  - alert [ref=f16e533]

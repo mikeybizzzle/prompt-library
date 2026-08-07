@@ -14,13 +14,15 @@ const iconButton =
 
 export function PromptCard({
   prompt,
-  tall,
+  size = "short",
   animateIn = false,
 }: {
   prompt: PromptCardData;
-  tall: boolean;
+  /** "tall" spans two rows, "wide" also spans two columns at lg. */
+  size?: "short" | "tall" | "wide";
   animateIn?: boolean;
 }) {
+  const tall = size !== "short";
   const likes = useLocalSet("pl:likes");
   const saves = useLocalSet("pl:saves");
   const [copied, setCopied] = useState(false);
@@ -46,7 +48,9 @@ export function PromptCard({
     <article
       className={cn(
         "group relative flex flex-col gap-4 overflow-hidden rounded-[20px] border border-white/[0.08] bg-pl-card p-4 text-white transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-white/20 hover:shadow-[0_16px_34px_-14px_rgba(0,0,0,0.6)] focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-pl-accent-yellow",
-        tall ? "sm:row-span-2 sm:h-full" : "sm:h-full",
+        size === "wide" && "sm:row-span-2 sm:h-full lg:col-span-2",
+        size === "tall" && "sm:row-span-2 sm:h-full",
+        size === "short" && "sm:h-full",
         animateIn && "motion-safe:animate-card-in",
       )}
     >
@@ -67,7 +71,7 @@ export function PromptCard({
               className="pointer-events-none absolute inset-x-0 bottom-0 h-14 rounded-b-[16px]"
               style={{
                 background:
-                  "linear-gradient(to bottom, rgba(40,38,39,0) 0%, rgba(40,38,39,0.85) 70%, rgba(40,38,39,1) 100%)",
+                  "linear-gradient(rgba(45,42,43,0) 0%, rgb(42,40,41) 92%)",
               }}
             />
           </div>
@@ -121,18 +125,18 @@ export function PromptCard({
                 aria-label="Like"
                 onClick={() => likes.toggle(prompt.slug)}
                 className={cn(
-                  "group/like -mx-1 inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-pl-caption tabular-nums transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow",
+                  "group/like -mx-1 inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-[12px] leading-4 tracking-[0.2px] tabular-nums transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow",
                   liked ? "text-pl-accent-yellow" : "text-white/45 hover:text-white/80",
                 )}
               >
                 <Heart
                   className={cn(
-                    "size-4 transition-transform duration-200 ease-out group-hover/like:scale-110 motion-reduce:transition-none",
+                    "size-[13px] transition-transform duration-200 ease-out group-hover/like:scale-110 motion-reduce:transition-none",
                     liked ? "fill-current" : "fill-transparent",
                   )}
                   strokeWidth={1.8}
                 />
-                {liked && <span>1</span>}
+                <span>{liked ? 1 : 0}</span>
               </button>
 
               <button
@@ -141,13 +145,13 @@ export function PromptCard({
                 aria-label="Save"
                 onClick={() => saves.toggle(prompt.slug)}
                 className={cn(
-                  "group/bm -m-1 inline-flex items-center gap-1 rounded-full p-1 text-pl-caption tabular-nums transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow",
+                  "group/bm -m-1 inline-flex items-center gap-1 rounded-full p-1 text-[12px] leading-4 tracking-[0.2px] tabular-nums transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow",
                   saved ? "text-pl-accent-yellow" : "text-white/45 hover:text-white/80",
                 )}
               >
                 <Bookmark
                   className={cn(
-                    "size-4 transition-transform duration-200 ease-out group-hover/bm:scale-110 motion-reduce:transition-none",
+                    "size-[13px] transition-transform duration-200 ease-out group-hover/bm:scale-110 motion-reduce:transition-none",
                     saved ? "fill-current" : "fill-transparent",
                   )}
                   strokeWidth={1.8}
@@ -178,7 +182,7 @@ export function PromptCard({
               {shared ? (
                 <Check className="size-4" strokeWidth={2} />
               ) : (
-                <Share2 className="size-4" strokeWidth={1.8} />
+                <Share2 className="size-[13px]" strokeWidth={1.8} />
               )}
             </button>
           </div>

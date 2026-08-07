@@ -7,10 +7,11 @@ import {
   ChevronDown,
   Code2,
   FileText,
-  Grid2x2,
+  LayoutGrid,
   ALargeSmall,
   ImageIcon,
   Sparkles,
+  Users,
   UserRound,
 } from "lucide-react";
 
@@ -102,9 +103,9 @@ export function FilterBar({
         <div className="no-scrollbar flex items-center gap-0.5 overflow-x-auto rounded-full bg-pl-capsule p-0.5">
           {(
             [
-              { id: "category", label: "Category", Icon: Grid2x2 },
+              { id: "category", label: "Category", Icon: LayoutGrid },
               { id: "models", label: "Models", Icon: Sparkles },
-              { id: "roles", label: "Roles", Icon: UserRound },
+              { id: "roles", label: "Roles", Icon: Users },
             ] as const
           ).map(({ id, label, Icon }) => (
             <button
@@ -115,7 +116,7 @@ export function FilterBar({
               onClick={() => setOpenPanel((v) => (v === id ? null : id))}
               className={trigger}
             >
-              <Icon className="size-4 text-[#4F4E4F]" strokeWidth={1.8} aria-hidden="true" />
+              <Icon className="size-4 text-pl-ink-muted" strokeWidth={1.8} aria-hidden="true" />
               {label}
               <span className={triggerChevron}>
                 <ChevronDown
@@ -321,7 +322,7 @@ export function FilterBar({
                     : "text-pl-ink-muted hover:text-pl-ink",
                 )}
               >
-                <Icon className="size-4" strokeWidth={1.8} aria-hidden="true" />
+                <Icon className="size-[14px]" strokeWidth={1.9} aria-hidden="true" />
                 <span
                   className={cn(
                     "overflow-hidden whitespace-nowrap transition-[max-width,opacity,margin-left] duration-200 ease-out",

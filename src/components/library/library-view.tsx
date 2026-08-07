@@ -10,11 +10,20 @@ import type { Facets, PromptCardData } from "@/lib/types";
 
 const PAGE_SIZE = 24;
 
-/** Tall cards repeat on a 9-card cycle, matching the dense grid rhythm. */
-function isTall(index: number) {
-  const i = index % 9;
-  return i === 0 || i === 1 || i === 5 || i === 6;
-}
+type CardSize = "short" | "tall" | "wide";
+
+/** The reference repeats tall, tall, short, short, short, wide, wide, short, short. */
+const SIZE_CYCLE: CardSize[] = [
+  "tall",
+  "tall",
+  "short",
+  "short",
+  "short",
+  "wide",
+  "wide",
+  "short",
+  "short",
+];
 
 /** Deterministic shuffle so server and client render the same order. */
 function seededShuffle<T>(items: T[], seed = 20260207): T[] {
@@ -73,16 +82,19 @@ export function LibraryView({
   const shown = sorted.slice(0, visible);
 
   return (
-    <div className="flex flex-col gap-5" data-dock-boundary>
-      <FilterBar
-        facets={facets}
-        activeType={activeType}
-        sort={sort}
-        onSortChange={(next) => {
-          setSort(next);
-          setVisible(PAGE_SIZE);
-        }}
-      />
+    <div className="flex flex-col gap-5">
+      {/* The dock appears once the filter row leaves the viewport. */}
+      <div data-dock-boundary>
+          <FilterBar
+          facets={facets}
+          activeType={activeType}
+          sort={sort}
+          onSortChange={(next) => {
+            setSort(next);
+            setVisible(PAGE_SIZE);
+          }}
+        />
+      </div>
 
       {/* Scope chips. Empty on the unfiltered library, which is what sets the gap above the grid. */}
       <div className="-mt-1">
@@ -112,7 +124,7 @@ export function LibraryView({
             <PromptCard
               key={p.slug}
               prompt={p}
-              tall={isTall(i)}
+              size={SIZE_CYCLE[i % SIZE_CYCLE.length]}
               /* Only cards appended by infinite scroll animate in. */
               animateIn={i >= PAGE_SIZE}
             />
@@ -120,7 +132,7 @@ export function LibraryView({
         </div>
       )}
 
-      <div className="h-px" />
+      <div aria-hidden="true" className="h-px" />
       <div ref={sentinel} className="flex min-h-10 items-center justify-center">
         {visible < sorted.length && (
           <span className="text-pl-body-sm text-pl-ink-soft">Loading more prompts…</span>

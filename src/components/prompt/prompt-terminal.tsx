@@ -19,9 +19,15 @@ const OPEN_IN: Record<string, string> = {
 
 const VAR_RE = /\{\{([a-z0-9-]+)\}\}/gi;
 
+const ACRONYMS = new Set(["icp", "seo", "kpi", "roi", "url", "api", "sql", "cta", "faq", "ai", "ux", "ui"]);
+
 function humanise(key: string) {
-  const s = key.replace(/-/g, " ");
-  return s[0].toUpperCase() + s.slice(1);
+  return key
+    .split("-")
+    .map((w, i) =>
+      ACRONYMS.has(w) ? w.toUpperCase() : i === 0 ? w[0].toUpperCase() + w.slice(1) : w,
+    )
+    .join(" ");
 }
 
 export function PromptTerminal({

@@ -141,7 +141,7 @@ export function Navbar() {
                     />
                   </Link>
                   <div className="invisible absolute left-1/2 top-full min-w-60 -translate-x-1/2 translate-y-1 pt-2 opacity-0 transition-[opacity,transform,visibility] duration-[180ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/menu:visible group-hover/menu:translate-y-0 group-hover/menu:opacity-100 group-focus-within/menu:visible group-focus-within/menu:translate-y-0 group-focus-within/menu:opacity-100 motion-reduce:transition-none">
-                    <div className="flex flex-col gap-1 rounded-b-3xl rounded-t-2xl bg-pl-dark p-2 shadow-[0_20px_40px_-16px_rgba(0,0,0,0.45)]">
+                    <div className="flex flex-col gap-1 rounded-b-3xl bg-pl-dark p-2">
                       {item.menu.map((row) => (
                         <Link
                           key={row.href}
