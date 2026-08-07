@@ -347,13 +347,6 @@ export const ROLES: Role[] = [
   { slug: "founders", name: "Founders" },
 ];
 
-export const TYPES: { slug: PromptType | "all"; name: string }[] = [
-  { slug: "all", name: "All" },
-  { slug: "text", name: "Text" },
-  { slug: "image", name: "Image" },
-  { slug: "code", name: "Code" },
-];
-
 export const CATEGORY_BY_SLUG = new Map(CATEGORIES.map((c) => [c.slug, c]));
 export const MODEL_BY_SLUG = new Map(MODELS.map((m) => [m.slug, m]));
 export const ROLE_BY_SLUG = new Map(ROLES.map((r) => [r.slug, r]));

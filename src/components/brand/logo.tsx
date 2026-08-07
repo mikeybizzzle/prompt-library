@@ -30,11 +30,3 @@ export function LogoMark({ className }: { className?: string }) {
     </svg>
   );
 }
-
-export function LogoWordmark({ className }: { className?: string }) {
-  return (
-    <span className={cn("text-[15px] font-medium tracking-[-0.01em]", className)}>
-      Prompt Atlas
-    </span>
-  );
-}

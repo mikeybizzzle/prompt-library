@@ -6,8 +6,7 @@ import { X } from "lucide-react";
 
 import { FilterBar, type SortKey } from "@/components/library/filter-bar";
 import { PromptCard } from "@/components/library/prompt-card";
-import type { Facets } from "@/lib/types-facets";
-import type { PromptCardData } from "@/lib/types";
+import type { Facets, PromptCardData } from "@/lib/types";
 
 const PAGE_SIZE = 24;
 

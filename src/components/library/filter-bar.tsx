@@ -17,7 +17,7 @@ import {
 import { CategoryIcon } from "@/components/library/icon";
 import { ModelIcon } from "@/components/library/model-icon";
 import { CATEGORIES, MODELS, ROLES } from "@/data/taxonomy";
-import type { Facets } from "@/lib/types-facets";
+import type { Facets } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export type SortKey = "shuffled" | "newest" | "a-z" | "shortest";
