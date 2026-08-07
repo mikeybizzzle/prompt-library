@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   BarChart3,
   Bot,
@@ -88,10 +88,10 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
 
-  useEffect(() => {
+  function closeDrawer() {
     setOpen(false);
     setExpanded(null);
-  }, [pathname]);
+  }
 
   return (
     <nav
@@ -220,6 +220,7 @@ export function Navbar() {
                       <li key={row.href}>
                         <Link
                           href={row.href}
+                          onClick={closeDrawer}
                           className="flex items-center gap-2.5 rounded-full px-3 py-2 text-[13.5px] text-[#A8A7A8] no-underline transition-colors duration-150 hover:bg-white/[0.08] hover:text-white"
                         >
                           <row.icon aria-hidden="true" className="size-4" strokeWidth={2} />
@@ -234,6 +235,7 @@ export function Navbar() {
               <li key={item.label}>
                 <Link
                   href={item.href}
+                  onClick={closeDrawer}
                   className="flex items-center justify-between rounded-full px-3 py-2.5 text-[13.5px] text-[#F7F7F7] no-underline transition-colors duration-150 hover:bg-white/[0.08] hover:text-white"
                 >
                   <span className="inline-flex items-center gap-2">{item.label}</span>

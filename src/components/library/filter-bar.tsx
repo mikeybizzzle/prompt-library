@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import {
   Check,
   ChevronDown,
-  ChevronRight,
   Code2,
   FileText,
   Grid2x2,
@@ -50,6 +49,10 @@ function Count({ n }: { n?: number }) {
   return <span className="shrink-0 tabular-nums text-white/50">{n ?? 0}</span>;
 }
 
+function Divider() {
+  return <span aria-hidden="true" className="mx-1 my-0.5 h-px bg-white/[0.06]" />;
+}
+
 export function FilterBar({
   facets,
   activeType,
@@ -64,6 +67,7 @@ export function FilterBar({
   const [openPanel, setOpenPanel] = useState<string | null>(null);
   const [openSort, setOpenSort] = useState(false);
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+  const [showAllCategories, setShowAllCategories] = useState(false);
   const wrap = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -135,11 +139,12 @@ export function FilterBar({
         >
           <nav className={panel}>
             <ul className="m-0 flex list-none flex-col p-0">
-              {CATEGORIES.map((c) => (
+              {(showAllCategories ? CATEGORIES : CATEGORIES.slice(0, 6)).map((c, i) => (
                 <li key={c.slug} className="flex flex-col">
+                  {i > 0 && <Divider />}
                   <span className="flex items-center gap-1">
-                    <Link href={`/category/${c.slug}`} className={cn(row, "min-w-0 flex-1 text-[15px]")}>
-                      <span className="flex min-w-0 items-center gap-2.5">
+                    <Link href={`/category/${c.slug}`} className={cn(row, "min-w-0 flex-1")}>
+                      <span className="flex min-w-0 items-center gap-2.5 text-[15px]">
                         <CategoryIcon name={c.icon} size={16} className="shrink-0" />
                         <span className="truncate">{c.name}</span>
                       </span>
@@ -152,10 +157,10 @@ export function FilterBar({
                       onClick={() => setExpandedCategory((v) => (v === c.slug ? null : c.slug))}
                       className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[#8F8E8F] transition-colors hover:bg-white/[0.08] hover:text-white"
                     >
-                      <ChevronRight
+                      <ChevronDown
                         className={cn(
                           "size-4 transition-transform duration-200",
-                          expandedCategory === c.slug && "rotate-90",
+                          expandedCategory === c.slug && "rotate-180",
                         )}
                         strokeWidth={2}
                         aria-hidden="true"
@@ -182,6 +187,25 @@ export function FilterBar({
                   </ul>
                 </li>
               ))}
+              <li className="flex flex-col">
+                <Divider />
+                <button
+                  type="button"
+                  aria-expanded={showAllCategories}
+                  onClick={() => setShowAllCategories((v) => !v)}
+                  className={cn(row, "justify-center gap-1 text-white/80 hover:text-white")}
+                >
+                  {showAllCategories ? "Less" : "More"}
+                  <ChevronDown
+                    className={cn(
+                      "size-4 transition-transform duration-200",
+                      showAllCategories && "rotate-180",
+                    )}
+                    strokeWidth={2}
+                    aria-hidden="true"
+                  />
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -194,8 +218,9 @@ export function FilterBar({
         >
           <nav className={panel}>
             <ul className="m-0 flex list-none flex-col p-0">
-              {MODELS.filter((m) => facets.models[m.slug]).map((m) => (
+              {MODELS.filter((m) => facets.models[m.slug]).map((m, i) => (
                 <li key={m.slug} className="flex flex-col">
+                  {i > 0 && <Divider />}
                   <Link href={`/tool/${m.slug}`} className={row}>
                     <span className="flex min-w-0 items-center gap-2.5">
                       <span className="shrink-0">
@@ -219,8 +244,9 @@ export function FilterBar({
         >
           <nav className={panel}>
             <ul className="m-0 flex list-none flex-col p-0">
-              {ROLES.filter((r) => facets.roles[r.slug]).map((r) => (
+              {ROLES.filter((r) => facets.roles[r.slug]).map((r, i) => (
                 <li key={r.slug} className="flex flex-col">
+                  {i > 0 && <Divider />}
                   <Link href={`/for/${r.slug}`} className={row}>
                     <span className="flex min-w-0 items-center gap-2.5">
                       <UserRound className="size-4 shrink-0" strokeWidth={1.8} aria-hidden="true" />

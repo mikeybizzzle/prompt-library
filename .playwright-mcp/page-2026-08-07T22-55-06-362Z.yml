@@ -1,0 +1,909 @@
+- generic [active] [ref=f8e1]:
+  - navigation "Primary" [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - link "God of Prompt home" [ref=f8e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f8e5]:
+        - list [ref=f8e6]:
+          - listitem [ref=f8e7]:
+            - link "Prompts" [ref=f8e8] [cursor=pointer]:
+              - /url: /prompt-library
+          - listitem [ref=f8e9]:
+            - link "Tools" [ref=f8e10] [cursor=pointer]:
+              - /url: /tools
+          - listitem [ref=f8e11]:
+            - link "Free Guides" [ref=f8e12] [cursor=pointer]:
+              - /url: /guides
+          - listitem [ref=f8e13]:
+            - link "Products" [ref=f8e14] [cursor=pointer]:
+              - /url: /products
+          - listitem [ref=f8e15]:
+            - link "Contact us" [ref=f8e16] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=f8e17]:
+            - link "Blog" [ref=f8e18] [cursor=pointer]:
+              - /url: /blog/
+        - button "Sign In" [ref=f8e19] [cursor=pointer]
+  - main [ref=f8e20]:
+    - generic [ref=f8e21]:
+      - generic [ref=f8e22]:
+        - generic [ref=f8e23]:
+          - heading [level=1] [ref=f8e24]:
+            - text: "The #1 Most Powerful"
+            - emphasis [ref=f8e25]: Open Prompt Library
+          - paragraph [ref=f8e26]: Free, curated AI prompts for ChatGPT, Claude, Gemini, Midjourney & every major model — browse by category, tool, or use case.
+        - button "Search prompts (Command K)" [ref=f8e28]:
+          - generic [ref=f8e29]: Search
+          - generic [ref=f8e34]: ⌘K
+      - navigation "Browse categories" [ref=f8e36]:
+        - link "Marketing" [ref=f8e37] [cursor=pointer]:
+          - /url: /prompt-library/category/marketing
+        - link "Design" [ref=f8e43] [cursor=pointer]:
+          - /url: /prompt-library/category/art-and-design
+        - link "Education" [ref=f8e52] [cursor=pointer]:
+          - /url: /prompt-library/category/education
+        - link "Finance" [ref=f8e58] [cursor=pointer]:
+          - /url: /prompt-library/category/finance
+        - link "Sales" [ref=f8e66] [cursor=pointer]:
+          - /url: /prompt-library/category/sales
+        - link "Coding" [ref=f8e72] [cursor=pointer]:
+          - /url: /prompt-library/category/coding
+        - link "Writing" [ref=f8e79] [cursor=pointer]:
+          - /url: /prompt-library/category/writing
+        - button "More (14)" [ref=f8e84] [cursor=pointer]
+      - generic [ref=f8e94]:
+        - generic [ref=f8e95]:
+          - generic [ref=f8e97]:
+            - button [ref=f8e98]
+            - button [ref=f8e107]
+            - button [ref=f8e114]
+          - generic [ref=f8e123]:
+            - 'button "Sort by: Shuffled" [ref=f8e125]':
+              - text: "Sort by:"
+              - generic [ref=f8e126]: Shuffled
+            - group "Output format" [ref=f8e129]:
+              - link "All" [ref=f8e130] [cursor=pointer]:
+                - /url: /prompt-library
+              - link "Text" [ref=f8e135] [cursor=pointer]:
+                - /url: /prompt-library/type/text
+              - link "Image" [ref=f8e139] [cursor=pointer]:
+                - /url: /prompt-library/type/image
+              - link "Code" [ref=f8e143] [cursor=pointer]:
+                - /url: /prompt-library/type/code
+        - generic [ref=f8e148]:
+          - article [ref=f8e149]:
+            - link "Customer Support Guidelines Generator for AI" [ref=f8e150] [cursor=pointer]:
+              - /url: /prompt-library/create-customer-support-guidelines
+            - generic [ref=f8e151]: "## Role You write customer support guidelines. Given a product or service description, you produce a complete, structured guide that support representatives can follow day-to-day. ## Context Product or service: {{product-service}} ## Task Produce a customer support guidelines document covering all sections below. Write for support representatives, not customers. Keep language plain and direct. Include step-by-step instructions, escalation procedures, and concrete examples for common scenarios. ## Output ### Product/Service Overview Brief description of the product/service and its key features. ### Communication Channels - Email support - Live chat - Phone support - Social media - Help center / ticketing system ### General Guidelines 1. Respond within established SLA timeframes 2. Use professional, empathetic tone 3. Personalize responses with customer name 4. Document all intera"
+            - generic [ref=f8e154]:
+              - heading "Customer Support Guidelines Generator for AI" [level=3] [ref=f8e155]:
+                - generic [ref=f8e156]: 🎧
+              - generic [ref=f8e159]:
+                - link "OpenAI ChatGPT" [ref=f8e160] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e162]
+                  - generic [ref=f8e164]: ChatGPT
+                - link "Operations" [ref=f8e165] [cursor=pointer]:
+                  - /url: /prompt-library/category/operations
+                - link "SOPs & Processes" [ref=f8e166] [cursor=pointer]:
+                  - /url: /prompt-library/category/sops-and-processes
+              - paragraph [ref=f8e167]: Generates a complete customer support guidelines document from a product or service description, delivered as a structured text guide written for support representatives. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e169]:
+                - generic [ref=f8e170]:
+                  - button "Like" [ref=f8e171]:
+                    - generic [ref=f8e174]: "1"
+                  - button "Bookmark" [ref=f8e175]:
+                    - generic [ref=f8e178]: "1"
+                  - generic [ref=f8e179]: "23"
+                - button "Share prompt" [ref=f8e183]
+          - article [ref=f8e190]:
+            - link "Business Automation Workflow Designer" [ref=f8e191] [cursor=pointer]:
+              - /url: /prompt-library/create-business-automation-workflows
+            - generic [ref=f8e192]: "## Role You analyze business operations, identify automation opportunities, and design detailed workflow solutions that reduce manual effort and improve efficiency. ## Context {{business-operations}} ## Task 1. Write a brief overview of the operations described above. 2. Identify the most repetitive and time-consuming tasks that are strong candidates for automation. 3. For each identified task, build a complete automation workflow covering: - The specific task being automated - The recommended tool (e.g., Zapier, Make.com, n8n, or custom scripts) - Step-by-step process for the automation - Estimated efficiency gains from implementing it 4. Outline a phased implementation strategy that is realistic and achievable. 5. List potential challenges that may arise during rollout. 6. Provide a practical solution for each challenge. Prioritize tools that are user-friendly and cos"
+            - generic [ref=f8e195]:
+              - heading "Business Automation Workflow Designer" [level=3] [ref=f8e196]:
+                - generic [ref=f8e197]: ⚙️
+              - generic [ref=f8e200]:
+                - link "OpenAI ChatGPT" [ref=f8e201] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e203]
+                  - generic [ref=f8e205]: ChatGPT
+                - link "Operations" [ref=f8e206] [cursor=pointer]:
+                  - /url: /prompt-library/category/operations
+                - link "Workflow Design" [ref=f8e207] [cursor=pointer]:
+                  - /url: /prompt-library/category/workflow-design
+              - paragraph [ref=f8e208]: Analyzes your business operations to identify repetitive tasks and designs complete automation workflows with tool recommendations, step-by-step setup instructions, efficiency estimates, and a phased implementation plan. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e210]:
+                - generic [ref=f8e211]:
+                  - button "Like" [ref=f8e212]
+                  - button "Bookmark" [ref=f8e215]:
+                    - generic [ref=f8e218]: "1"
+                  - generic [ref=f8e219]: "47"
+                - button "Share prompt" [ref=f8e223]
+          - article [ref=f8e230]:
+            - link "Process Improvement Proposal Generator" [ref=f8e231] [cursor=pointer]:
+              - /url: /prompt-library/optimize-business-process-efficiency
+            - generic [ref=f8e232]:
+              - heading "Process Improvement Proposal Generator" [level=3] [ref=f8e233]:
+                - generic [ref=f8e234]: ⚙️
+              - generic [ref=f8e237]:
+                - link "OpenAI ChatGPT" [ref=f8e238] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e240]
+                  - generic [ref=f8e242]: ChatGPT
+                - link "Operations" [ref=f8e243] [cursor=pointer]:
+                  - /url: /prompt-library/category/operations
+                - link "SOPs & Processes" [ref=f8e244] [cursor=pointer]:
+                  - /url: /prompt-library/category/sops-and-processes
+              - paragraph [ref=f8e245]: Generates a structured process improvement proposal document using lean practices and Six Sigma methods. Runs on ChatGPT, Claude, Gemini, and Grok to map inefficiencies, propose fixes, and plan implementation and sustainability.
+              - generic [ref=f8e247]:
+                - generic [ref=f8e248]:
+                  - button "Like" [ref=f8e249]
+                  - button "Bookmark" [ref=f8e252]
+                  - generic [ref=f8e255]: "12"
+                - button "Share prompt" [ref=f8e259]
+          - article [ref=f8e266]:
+            - link "AI Business Advisor Prompt for Small Business Tools" [ref=f8e267] [cursor=pointer]:
+              - /url: /prompt-library/optimize-ai-business-integration
+            - generic [ref=f8e268]:
+              - heading "AI Business Advisor Prompt for Small Business Tools" [level=3] [ref=f8e269]:
+                - generic [ref=f8e270]: 🤖
+              - generic [ref=f8e273]:
+                - link "OpenAI ChatGPT" [ref=f8e274] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e276]
+                  - generic [ref=f8e278]: ChatGPT
+                - link "Strategy" [ref=f8e279] [cursor=pointer]:
+                  - /url: /prompt-library/category/strategy
+                - link "Business Plans" [ref=f8e280] [cursor=pointer]:
+                  - /url: /prompt-library/category/business-plans
+              - paragraph [ref=f8e281]: Generates three low-cost AI tool recommendations tailored to your business model, tech stack, and goals, with implementation roadmap and ROI estimates. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e283]:
+                - generic [ref=f8e284]:
+                  - button "Like" [ref=f8e285]:
+                    - generic [ref=f8e288]: "1"
+                  - button "Bookmark" [ref=f8e289]:
+                    - generic [ref=f8e292]: "2"
+                  - generic [ref=f8e293]: "61"
+                - button "Share prompt" [ref=f8e297]
+          - article [ref=f8e304]:
+            - link "First-Year Financial Projections Generator" [ref=f8e305] [cursor=pointer]:
+              - /url: /prompt-library/create-financial-projections
+            - generic [ref=f8e306]:
+              - heading "First-Year Financial Projections Generator" [level=3] [ref=f8e307]:
+                - generic [ref=f8e308]: 📈
+              - generic [ref=f8e311]:
+                - link "OpenAI ChatGPT" [ref=f8e312] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e314]
+                  - generic [ref=f8e316]: ChatGPT
+                - link "Finance" [ref=f8e317] [cursor=pointer]:
+                  - /url: /prompt-library/category/finance
+                - link "Financial Modeling" [ref=f8e318] [cursor=pointer]:
+                  - /url: /prompt-library/category/financial-modeling
+              - paragraph [ref=f8e319]: Generates a complete first-year financial model with monthly revenue, expenses, cash flow, break-even analysis, and funding requirements from a short business description. Runs on ChatGPT, Claude, Gemini, and Grok with structured markdown table output.
+              - generic [ref=f8e321]:
+                - generic [ref=f8e322]:
+                  - button "Like" [ref=f8e323]
+                  - button "Bookmark" [ref=f8e326]
+                  - generic [ref=f8e329]: "64"
+                - button "Share prompt" [ref=f8e333]
+          - article [ref=f8e340]:
+            - link "Viral Topic Generator From Existing Posts" [ref=f8e341] [cursor=pointer]:
+              - /url: /prompt-library/generate-viral-content-ideas
+            - generic [ref=f8e342]: "## Role You are a viral content analyst who identifies psychological triggers in high-performing posts and generates new topic ideas that activate the same mechanisms. ## Context **Niche:** {{niche}} **Viral post to analyze:** {{viral-post}} ## Task ### 1. Viral Post Analysis Dissect the provided post and identify the key factors that made it go viral. For each factor, explain: - Emotional buttons it pushes (fear, aspiration, anger, validation, surprise) - Anticipation or curiosity it sparks - Bold or counterintuitive angles it takes - Specificity of claims or examples - Credibility signals it uses - Curiosity gaps it opens ### 2. Viral Topic Template Extract a reusable structural template that captures the psychological and compositional elements responsible for the post's performance. List each element clearly as a transferable pattern. ### 3. Brainstormed Ideas Generate 10"
+            - generic [ref=f8e345]:
+              - heading "Viral Topic Generator From Existing Posts" [level=3] [ref=f8e346]:
+                - generic [ref=f8e347]: 🔥
+              - generic [ref=f8e350]:
+                - link "OpenAI ChatGPT" [ref=f8e351] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e353]
+                  - generic [ref=f8e355]: ChatGPT
+                - link "Marketing" [ref=f8e356] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Social Media Posts" [ref=f8e357] [cursor=pointer]:
+                  - /url: /prompt-library/category/social-media-posts
+              - paragraph [ref=f8e358]: Reverse-engineers a viral post to identify its psychological triggers, extracts a reusable template, and generates 10 fresh topic ideas with headlines and outlines. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e360]:
+                - generic [ref=f8e361]:
+                  - button "Like" [ref=f8e362]:
+                    - generic [ref=f8e365]: "2"
+                  - button "Bookmark" [ref=f8e366]:
+                    - generic [ref=f8e369]: "4"
+                  - generic [ref=f8e370]: "48"
+                - button "Share prompt" [ref=f8e374]
+          - article [ref=f8e381]:
+            - link "Business Process Automation Analyzer for Solopreneurs" [ref=f8e382] [cursor=pointer]:
+              - /url: /prompt-library/automate-business-processes
+            - generic [ref=f8e383]: "## Role You specialize in business process automation for one-person businesses. Your job is to help the user cut time and effort from a specific process by combining AI tools and automation platforms. ## Context - Process name: {{process-name}} - Current steps: {{current-process-steps}} - Inefficiencies or pain points: {{current-inefficiencies}} ## Task Analyze the process above and provide specific, actionable automation solutions the user can implement without additional research. Where steps can be removed entirely to simplify the process, say so. ## Output ### Automation Solutions For each solution: 1. Name the specific tools, platforms, or integrations to use 2. Provide step-by-step setup instructions 3. Quantify time savings in concrete terms (e.g., \"saves 15 minutes per instance\" or \"eliminates 3 manual handoffs\") ### Process Streamlining List steps that can be: - Elimi"
+            - generic [ref=f8e386]:
+              - heading "Business Process Automation Analyzer for Solopreneurs" [level=3] [ref=f8e387]:
+                - generic [ref=f8e388]: ⚙️
+              - generic [ref=f8e391]:
+                - link "OpenAI ChatGPT" [ref=f8e392] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e394]
+                  - generic [ref=f8e396]: ChatGPT
+                - link "Operations" [ref=f8e397] [cursor=pointer]:
+                  - /url: /prompt-library/category/operations
+                - link "Workflow Design" [ref=f8e398] [cursor=pointer]:
+                  - /url: /prompt-library/category/workflow-design
+              - paragraph [ref=f8e399]: Analyzes a single business process and returns a detailed text action plan with named tools, step-by-step setup instructions, quantified time savings, and steps to eliminate. Runs on ChatGPT, Claude, and Gemini.
+              - generic [ref=f8e401]:
+                - generic [ref=f8e402]:
+                  - button "Like" [ref=f8e403]:
+                    - generic [ref=f8e406]: "2"
+                  - button "Bookmark" [ref=f8e407]:
+                    - generic [ref=f8e410]: "3"
+                  - generic [ref=f8e411]: "61"
+                - button "Share prompt" [ref=f8e415]
+          - article [ref=f8e422]:
+            - link "Content Analysis and Idea Generator Prompt" [ref=f8e423] [cursor=pointer]:
+              - /url: /prompt-library/analyze-content-structure-and-style
+            - generic [ref=f8e424]:
+              - heading "Content Analysis and Idea Generator Prompt" [level=3] [ref=f8e425]:
+                - generic [ref=f8e426]: 💡
+              - generic [ref=f8e429]:
+                - link "OpenAI ChatGPT" [ref=f8e430] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e432]
+                  - generic [ref=f8e434]: ChatGPT
+                - link "Marketing" [ref=f8e435] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Content Repurposing" [ref=f8e436] [cursor=pointer]:
+                  - /url: /prompt-library/category/content-repurposing
+              - paragraph [ref=f8e437]: Analyzes written content for structure, tone, and writing techniques, then generates three distinct derivative content ideas inspired by the original. Returns a structured breakdown and three fully outlined idea briefs for ChatGPT, Claude, or Gemini.
+              - generic [ref=f8e439]:
+                - generic [ref=f8e440]:
+                  - button "Like" [ref=f8e441]:
+                    - generic [ref=f8e444]: "1"
+                  - button "Bookmark" [ref=f8e445]:
+                    - generic [ref=f8e448]: "2"
+                  - generic [ref=f8e449]: "22"
+                - button "Share prompt" [ref=f8e453]
+          - article [ref=f8e460]:
+            - link "Podcast Series Generator With Episode Scripts" [ref=f8e461] [cursor=pointer]:
+              - /url: /prompt-library/generate-podcast-series-outline
+            - generic [ref=f8e462]:
+              - heading "Podcast Series Generator With Episode Scripts" [level=3] [ref=f8e463]:
+                - generic [ref=f8e464]: 🎙️
+              - generic [ref=f8e467]:
+                - link "OpenAI ChatGPT" [ref=f8e468] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e470]
+                  - generic [ref=f8e472]: ChatGPT
+                - link "Audio" [ref=f8e473] [cursor=pointer]:
+                  - /url: /prompt-library/category/audio
+                - link "Podcasts" [ref=f8e474] [cursor=pointer]:
+                  - /url: /prompt-library/category/podcasts
+              - paragraph [ref=f8e475]: Generates a complete podcast series outline with full scripts for the first three episodes, tailored to your target audience, niche, and series goal. Runs on ChatGPT, Claude, and Gemini to produce structured text with titles, descriptions, takeaways, and scripts.
+              - generic [ref=f8e477]:
+                - generic [ref=f8e478]:
+                  - button "Like" [ref=f8e479]:
+                    - generic [ref=f8e482]: "2"
+                  - button "Bookmark" [ref=f8e483]:
+                    - generic [ref=f8e486]: "2"
+                  - generic [ref=f8e487]: "29"
+                - button "Share prompt" [ref=f8e491]
+          - article [ref=f8e498]:
+            - link "Social Media Engagement Strategy Generator" [ref=f8e499] [cursor=pointer]:
+              - /url: /prompt-library/create-social-media-engagement
+            - generic [ref=f8e500]: "## Role You are a social media strategist specializing in audience engagement. You build data-driven strategies grounded in audience behavior, not generic best practices. ## Task Develop a complete social media engagement strategy tailored to {{target-audience}} in the {{niche}} space. Every recommendation must reflect the specific behaviors, pain points, and goals of this audience. Avoid advice that applies to any niche interchangeably. ## Output Structure your response using the sections below. Use markdown headers, bullet points, and numbered lists throughout. ### 1. Target Audience Analysis - **Demographics** -- age range, location, income, role - **Psychographics** -- values, motivations, worldview - **Behaviors** -- how and when they use social media - **Pain Points** -- top frustrations relevant to the niche - **Goals** -- what they are trying to achieve ### 2. Platform Re"
+            - generic [ref=f8e503]:
+              - heading "Social Media Engagement Strategy Generator" [level=3] [ref=f8e504]:
+                - generic [ref=f8e505]: 📣
+              - generic [ref=f8e508]:
+                - link "OpenAI ChatGPT" [ref=f8e509] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e511]
+                  - generic [ref=f8e513]: ChatGPT
+                - link "Marketing" [ref=f8e514] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Social Media Posts" [ref=f8e515] [cursor=pointer]:
+                  - /url: /prompt-library/category/social-media-posts
+              - paragraph [ref=f8e516]: Generates a niche-specific engagement strategy as a structured markdown report covering audience analysis, platform selection, content pillars, engagement tactics, and performance metrics. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e518]:
+                - generic [ref=f8e519]:
+                  - button "Like" [ref=f8e520]:
+                    - generic [ref=f8e523]: "1"
+                  - button "Bookmark" [ref=f8e524]:
+                    - generic [ref=f8e527]: "2"
+                  - generic [ref=f8e528]: "13"
+                - button "Share prompt" [ref=f8e532]
+          - article [ref=f8e539]:
+            - link "Email Campaign Automation Prompt for Lead Nurture" [ref=f8e540] [cursor=pointer]:
+              - /url: /prompt-library/automate-email-marketing-campaigns
+            - generic [ref=f8e541]: "## Role You are an email marketing strategist designing comprehensive lead-nurture and retention campaigns. ## Task Create a complete email marketing campaign including audience analysis, a 5-email nurture sequence with full copy guidance, automation recommendations, and success metrics. ## Context **Business:** {{business-description}} ## Output Deliver all sections in full detail without summarizing: ### Target Audience Analysis - **Customer Personas:** Define 2-3 core personas with demographics, behaviors, and motivations - **Key Pain Points:** List primary challenges and frustrations this audience faces - **Desired Outcomes:** Identify what success looks like for these customers ### Email Campaign Strategy **Campaign Goal:** State the primary objective (lead nurture, conversion, retention, re-engagement) **5-Email Sequence:** **Email 1: Welcome / Awareness** - Subject Li"
+            - generic [ref=f8e544]:
+              - heading "Email Campaign Automation Prompt for Lead Nurture" [level=3] [ref=f8e545]:
+                - generic [ref=f8e546]: 📧
+              - generic [ref=f8e549]:
+                - link "OpenAI ChatGPT" [ref=f8e550] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e552]
+                  - generic [ref=f8e554]: ChatGPT
+                - link "Marketing" [ref=f8e555] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Email Campaigns" [ref=f8e556] [cursor=pointer]:
+                  - /url: /prompt-library/category/email-campaigns
+              - paragraph [ref=f8e557]: Generates a complete email marketing campaign with audience personas, a 5-email nurture sequence, copywriting guidelines, automation workflows, and KPIs. Runs on ChatGPT, Claude, and Gemini to deliver a structured text plan ready for your email platform.
+              - generic [ref=f8e559]:
+                - generic [ref=f8e560]:
+                  - button "Like" [ref=f8e561]
+                  - button "Bookmark" [ref=f8e564]:
+                    - generic [ref=f8e567]: "2"
+                  - generic [ref=f8e568]: "45"
+                - button "Share prompt" [ref=f8e572]
+          - article [ref=f8e579]:
+            - link "Brand Collaboration Strategy Generator for Digital Businesses" [ref=f8e580] [cursor=pointer]:
+              - /url: /prompt-library/generate-brand-collaboration-plans
+            - generic [ref=f8e581]:
+              - heading "Brand Collaboration Strategy Generator for Digital Businesses" [level=3] [ref=f8e582]:
+                - generic [ref=f8e583]: 🤝
+              - generic [ref=f8e586]:
+                - link "OpenAI ChatGPT" [ref=f8e587] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e589]
+                  - generic [ref=f8e591]: ChatGPT
+                - link "Strategy" [ref=f8e592] [cursor=pointer]:
+                  - /url: /prompt-library/category/strategy
+                - link "Go-to-Market" [ref=f8e593] [cursor=pointer]:
+                  - /url: /prompt-library/category/go-to-market
+              - paragraph [ref=f8e594]: Generates a structured brand partnership plan that identifies three compatible partner brands, outreach tactics, projected outcomes, KPIs, and contingency actions. Runs on ChatGPT, Claude, Gemini, and Grok as a text-based strategy document.
+              - generic [ref=f8e596]:
+                - generic [ref=f8e597]:
+                  - button "Like" [ref=f8e598]
+                  - button "Bookmark" [ref=f8e601]:
+                    - generic [ref=f8e604]: "1"
+                  - generic [ref=f8e605]: "44"
+                - button "Share prompt" [ref=f8e609]
+          - article [ref=f8e616]:
+            - link "Survey Invitation Generator" [ref=f8e617] [cursor=pointer]:
+              - /url: /prompt-library/create-custom-survey-invitations
+            - generic [ref=f8e618]:
+              - heading "Survey Invitation Generator" [level=3] [ref=f8e619]:
+                - generic [ref=f8e620]: 📨
+              - generic [ref=f8e623]:
+                - link "OpenAI ChatGPT" [ref=f8e624] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e626]
+                  - generic [ref=f8e628]: ChatGPT
+                - link "Marketing" [ref=f8e629] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Email Campaigns" [ref=f8e630] [cursor=pointer]:
+                  - /url: /prompt-library/category/email-campaigns
+              - paragraph [ref=f8e631]: Generates a complete survey invitation email with subject line, greeting, intro, survey details, call to action, and closing, written to make recipients feel valued rather than mass-marketed. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e633]:
+                - generic [ref=f8e634]:
+                  - button "Like" [ref=f8e635]
+                  - button "Bookmark" [ref=f8e638]
+                  - generic [ref=f8e641]: "21"
+                - button "Share prompt" [ref=f8e645]
+          - article [ref=f8e652]:
+            - link "Contrarian Ideas Generator for Content Writing" [ref=f8e653] [cursor=pointer]:
+              - /url: /prompt-library/generate-contrarian-content-ideas
+            - generic [ref=f8e654]:
+              - heading "Contrarian Ideas Generator for Content Writing" [level=3] [ref=f8e655]:
+                - generic [ref=f8e656]: 💡
+              - generic [ref=f8e659]:
+                - link "OpenAI ChatGPT" [ref=f8e660] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e662]
+                  - generic [ref=f8e664]: ChatGPT
+                - link "Productivity" [ref=f8e665] [cursor=pointer]:
+                  - /url: /prompt-library/category/productivity
+                - link "Brainstorming" [ref=f8e666] [cursor=pointer]:
+                  - /url: /prompt-library/category/brainstorming
+              - paragraph [ref=f8e667]: Generates 20 contrarian content ideas by mapping widely held beliefs in your topic, questioning why they persist, and surfacing alternative viewpoints that challenge conventional thinking. Returns structured text output for ChatGPT, Claude, or Gemini.
+              - generic [ref=f8e669]:
+                - generic [ref=f8e670]:
+                  - button "Like" [ref=f8e671]:
+                    - generic [ref=f8e674]: "1"
+                  - button "Bookmark" [ref=f8e675]:
+                    - generic [ref=f8e678]: "2"
+                  - generic [ref=f8e679]: "30"
+                - button "Share prompt" [ref=f8e683]
+          - article [ref=f8e690]:
+            - link "Reddit Market Research Report Generator" [ref=f8e691] [cursor=pointer]:
+              - /url: /prompt-library/conduct-reddit-market-research
+            - generic [ref=f8e692]: "## Role You conduct Reddit-based market research to validate product launch ideas and surface strategic insights. You analyze community discussions, compile findings, and deliver actionable recommendations. ## Context Product launch idea: {{product-launch-idea}} ## Task Using Reddit as your primary research source, produce a structured market research report covering the sections below. Base every finding directly on what Reddit communities discuss. Do not include information that cannot be grounded in Reddit data. 1. Identify the 3 most relevant subreddits for this product idea. 2. Analyze user discussions across those subreddits to extract insights on the target audience, competitors, consumer sentiment, potential barriers, and opportunities. 3. Summarize the 3 most critical findings. 4. Provide 3 actionable recommendations that directly inform the product strategy. ## Output *"
+            - generic [ref=f8e695]:
+              - heading "Reddit Market Research Report Generator" [level=3] [ref=f8e696]:
+                - generic [ref=f8e697]: 🔎
+              - generic [ref=f8e700]:
+                - link "OpenAI ChatGPT" [ref=f8e701] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e703]
+                  - generic [ref=f8e705]: ChatGPT
+                - link "Research" [ref=f8e706] [cursor=pointer]:
+                  - /url: /prompt-library/category/research
+                - link "Market Research" [ref=f8e707] [cursor=pointer]:
+                  - /url: /prompt-library/category/market-research
+              - paragraph [ref=f8e708]: Analyzes Reddit community discussions to produce a structured market research report that validates product launch ideas. Runs on ChatGPT, Claude, Gemini, and Grok to deliver subreddit recommendations, audience insights, competitor analysis, sentiment tracking, and strategic recommendations grounded in real community data.
+              - generic [ref=f8e710]:
+                - generic [ref=f8e711]:
+                  - button "Like" [ref=f8e712]:
+                    - generic [ref=f8e715]: "1"
+                  - button "Bookmark" [ref=f8e716]:
+                    - generic [ref=f8e719]: "2"
+                  - generic [ref=f8e720]: "32"
+                - button "Share prompt" [ref=f8e724]
+          - article [ref=f8e731]:
+            - link "Industry Trends Research Report Generator" [ref=f8e732] [cursor=pointer]:
+              - /url: /prompt-library/conduct-industry-trends-research
+            - generic [ref=f8e733]: "## Role You are an industry analyst identifying market trends and opportunities relevant to a specific business venture. Ground every claim in credible sources. ## Context Business venture: {{business-venture}} ## Task Research industry trends and opportunities directly relevant to the business venture above. Prioritize opportunities with the highest potential impact. Do not speculate beyond what credible sources support. Cite all sources used. ## Output **Industry Overview** Provide a high-level summary of the current state of the industry. **Key Trends** 1. First major trend shaping the industry 2. Second major trend shaping the industry 3. Third major trend shaping the industry **Opportunities** | Opportunity | Description | Potential Impact | |-------------|-------------|------------------| | First high-impact opportunity | Detailed description of the opportunity and how it"
+            - generic [ref=f8e736]:
+              - heading "Industry Trends Research Report Generator" [level=3] [ref=f8e737]:
+                - generic [ref=f8e738]: 📈
+              - generic [ref=f8e741]:
+                - link "OpenAI ChatGPT" [ref=f8e742] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e744]
+                  - generic [ref=f8e746]: ChatGPT
+                - link "Research" [ref=f8e747] [cursor=pointer]:
+                  - /url: /prompt-library/category/research
+                - link "Trend Analysis" [ref=f8e748] [cursor=pointer]:
+                  - /url: /prompt-library/category/trend-analysis
+              - paragraph [ref=f8e749]: Generates a sourced industry trends report for any business venture, delivering a text analysis with an industry overview, key trends, an opportunities table ranked by impact, and cited sources. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e751]:
+                - generic [ref=f8e752]:
+                  - button "Like" [ref=f8e753]:
+                    - generic [ref=f8e756]: "2"
+                  - button "Bookmark" [ref=f8e757]:
+                    - generic [ref=f8e760]: "2"
+                  - generic [ref=f8e761]: "26"
+                - button "Share prompt" [ref=f8e765]
+          - article [ref=f8e772]:
+            - link "Welcome Email Series Generator" [ref=f8e773] [cursor=pointer]:
+              - /url: /prompt-library/create-welcome-email-series
+            - generic [ref=f8e774]:
+              - heading "Welcome Email Series Generator" [level=3] [ref=f8e775]:
+                - generic [ref=f8e776]: 📧
+              - generic [ref=f8e779]:
+                - link "OpenAI ChatGPT" [ref=f8e780] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e782]
+                  - generic [ref=f8e784]: ChatGPT
+                - link "Marketing" [ref=f8e785] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Funnels & Sequences" [ref=f8e786] [cursor=pointer]:
+                  - /url: /prompt-library/category/funnels-and-sequences
+              - paragraph [ref=f8e787]: Generates a complete three-email welcome sequence with subject lines, preview text, and full body copy tailored to your niche and target audience. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e789]:
+                - generic [ref=f8e790]:
+                  - button "Like" [ref=f8e791]
+                  - button "Bookmark" [ref=f8e794]
+                  - generic [ref=f8e797]: "20"
+                - button "Share prompt" [ref=f8e801]
+          - article [ref=f8e808]:
+            - link "Brand Voice Generator for Marketing Teams" [ref=f8e809] [cursor=pointer]:
+              - /url: /prompt-library/create-brand-voice-guidelines
+            - generic [ref=f8e810]:
+              - heading "Brand Voice Generator for Marketing Teams" [level=3] [ref=f8e811]:
+                - generic [ref=f8e812]: 📣
+              - generic [ref=f8e815]:
+                - link "OpenAI ChatGPT" [ref=f8e816] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e818]
+                  - generic [ref=f8e820]: ChatGPT
+                - link "Strategy" [ref=f8e821] [cursor=pointer]:
+                  - /url: /prompt-library/category/strategy
+                - link "Positioning & Messaging" [ref=f8e822] [cursor=pointer]:
+                  - /url: /prompt-library/category/positioning-and-messaging
+              - paragraph [ref=f8e823]: Generates a complete brand voice guide defining personality traits, values, tone, vocabulary, messaging principles, and four in-voice copy examples. Runs on ChatGPT, Claude, Gemini, and Grok to deliver a structured text document with consistency guidelines.
+              - generic [ref=f8e825]:
+                - generic [ref=f8e826]:
+                  - button "Like" [ref=f8e827]
+                  - button "Bookmark" [ref=f8e830]:
+                    - generic [ref=f8e833]: "1"
+                  - generic [ref=f8e834]: "94"
+                - button "Share prompt" [ref=f8e838]
+          - article [ref=f8e845]:
+            - link "Trademark Registration Advisor" [ref=f8e846] [cursor=pointer]:
+              - /url: /prompt-library/trademark-registration-guide
+            - generic [ref=f8e847]: "## Role You are an expert intellectual property lawyer specializing in trademark registration. Provide a complete guide on the trademark registration process, tailored to the specific location and needs of the business owner. Avoid overly technical legal jargon and explain complex concepts in plain language. ## Context The business owner needs to register trademarks for their business name and logo in {{business-location}}. All information must be accurate, up-to-date, and compliant with relevant laws and regulations in that jurisdiction. Business name: {{business-name}} Business logo description: {{logo-description}} ## Task 1. Begin with an overview of the applicable trademark laws and government agencies involved in the registration process in {{business-location}}. 2. List the required documents for the trademark application. 3. Outline the step-by-step application process, inc"
+            - generic [ref=f8e850]:
+              - heading "Trademark Registration Advisor" [level=3] [ref=f8e851]:
+                - generic [ref=f8e852]: ™️
+              - generic [ref=f8e855]:
+                - link "OpenAI ChatGPT" [ref=f8e856] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e858]
+                  - generic [ref=f8e860]: ChatGPT
+                - link "Legal" [ref=f8e861] [cursor=pointer]:
+                  - /url: /prompt-library/category/legal
+                - link "IP & Trademarks" [ref=f8e862] [cursor=pointer]:
+                  - /url: /prompt-library/category/ip-and-trademarks
+              - paragraph [ref=f8e863]: Generates a jurisdiction-specific trademark registration guide covering laws, required documents, step-by-step process, timeline, costs, and application tips. Runs on ChatGPT, Claude, and Gemini.
+              - generic [ref=f8e865]:
+                - generic [ref=f8e866]:
+                  - button "Like" [ref=f8e867]
+                  - button "Bookmark" [ref=f8e870]:
+                    - generic [ref=f8e873]: "1"
+                  - generic [ref=f8e874]: "19"
+                - button "Share prompt" [ref=f8e878]
+          - article [ref=f8e885]:
+            - link "Follow-Up Email After Support Resolution" [ref=f8e886] [cursor=pointer]:
+              - /url: /prompt-library/generate-follow-up-emails
+            - generic [ref=f8e887]: "## Role You are an experienced customer support representative skilled in crafting personalized, empathetic follow-up emails. ## Task Write a follow-up email to check in with a customer after their support issue has been resolved. The email must feel personalized and genuinely caring, not generic or templated. Keep the tone warm, professional, and human. ## Context The goal is to ensure customer satisfaction, build rapport, and encourage them to reach out with any further concerns or feedback. ## Guidelines 1. **Subject line**: Clear and concise, reflecting the purpose of the follow-up 2. **Opening**: Warm greeting that addresses the customer by name 3. **Issue resolution check**: Reference the resolved issue and ask whether the customer is satisfied with the outcome 4. **Additional support offer**: Let the customer know they can reach out anytime with questions or concerns 5. **Feedb"
+            - generic [ref=f8e890]:
+              - heading "Follow-Up Email After Support Resolution" [level=3] [ref=f8e891]:
+                - generic [ref=f8e892]: 📧
+              - generic [ref=f8e895]:
+                - link "OpenAI ChatGPT" [ref=f8e896] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e898]
+                  - generic [ref=f8e900]: ChatGPT
+                - link "Customer Service" [ref=f8e901] [cursor=pointer]:
+                  - /url: /prompt-library/category/customer-service
+                - link "Support Replies" [ref=f8e902] [cursor=pointer]:
+                  - /url: /prompt-library/category/support-replies
+              - paragraph [ref=f8e903]: Generates a warm, personalized follow-up email that checks in with a customer after their support issue is resolved, complete with subject line, satisfaction check, feedback request, and professional signature. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e905]:
+                - generic [ref=f8e906]:
+                  - button "Like" [ref=f8e907]
+                  - button "Bookmark" [ref=f8e910]:
+                    - generic [ref=f8e913]: "1"
+                  - generic [ref=f8e914]: "28"
+                - button "Share prompt" [ref=f8e918]
+          - article [ref=f8e925]:
+            - link "Sales Funnel Generator Prompt for ChatGPT" [ref=f8e926] [cursor=pointer]:
+              - /url: /prompt-library/generate-a-sales-funnel-strategy
+            - generic [ref=f8e927]:
+              - heading "Sales Funnel Generator Prompt for ChatGPT" [level=3] [ref=f8e928]:
+                - generic [ref=f8e929]: 🔻
+              - generic [ref=f8e932]:
+                - link "OpenAI ChatGPT" [ref=f8e933] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e935]
+                  - generic [ref=f8e937]: ChatGPT
+                - link "Marketing" [ref=f8e938] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Funnels & Sequences" [ref=f8e939] [cursor=pointer]:
+                  - /url: /prompt-library/category/funnels-and-sequences
+              - paragraph [ref=f8e940]: Generates a five-stage sales funnel (Awareness, Interest, Decision, Action, Retention) with tactics, messaging, CTAs, metrics, and optimization levers for any product or service. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e942]:
+                - generic [ref=f8e943]:
+                  - button "Like" [ref=f8e944]:
+                    - generic [ref=f8e947]: "1"
+                  - button "Bookmark" [ref=f8e948]:
+                    - generic [ref=f8e951]: "1"
+                  - generic [ref=f8e952]: "24"
+                - button "Share prompt" [ref=f8e956]
+          - article [ref=f8e963]:
+            - link "Video Topic Brainstorming Prompt for Content Creators" [ref=f8e964] [cursor=pointer]:
+              - /url: /prompt-library/generate-engaging-video-topics
+            - generic [ref=f8e965]:
+              - heading "Video Topic Brainstorming Prompt for Content Creators" [level=3] [ref=f8e966]:
+                - generic [ref=f8e967]: 🎬
+              - generic [ref=f8e970]:
+                - link "OpenAI ChatGPT" [ref=f8e971] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e973]
+                  - generic [ref=f8e975]: ChatGPT
+                - link "Productivity" [ref=f8e976] [cursor=pointer]:
+                  - /url: /prompt-library/category/productivity
+                - link "Brainstorming" [ref=f8e977] [cursor=pointer]:
+                  - /url: /prompt-library/category/brainstorming
+              - paragraph [ref=f8e978]: Generates 10 trend-aware, specific video topic ideas for any niche, each with a title, description, target audience, and engagement potential score. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e980]:
+                - generic [ref=f8e981]:
+                  - button "Like" [ref=f8e982]
+                  - button "Bookmark" [ref=f8e985]:
+                    - generic [ref=f8e988]: "2"
+                  - generic [ref=f8e989]: "70"
+                - button "Share prompt" [ref=f8e993]
+          - article [ref=f8e1000]:
+            - link "SEO Strategy Generator for Websites" [ref=f8e1001] [cursor=pointer]:
+              - /url: /prompt-library/generate-seo-strategy-plan
+            - generic [ref=f8e1002]:
+              - heading "SEO Strategy Generator for Websites" [level=3] [ref=f8e1003]:
+                - generic [ref=f8e1004]: 📈
+              - generic [ref=f8e1007]:
+                - link "OpenAI ChatGPT" [ref=f8e1008] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e1010]
+                  - generic [ref=f8e1012]: ChatGPT
+                - link "SEO" [ref=f8e1013] [cursor=pointer]:
+                  - /url: /prompt-library/category/seo
+                - link "Keyword Research" [ref=f8e1014] [cursor=pointer]:
+                  - /url: /prompt-library/category/keyword-research
+              - paragraph [ref=f8e1015]: Generates a complete, actionable SEO strategy covering keyword research, on-page optimization, technical SEO, off-page tactics, and measurement. Runs on ChatGPT, Claude, and Gemini to deliver a structured text plan.
+              - generic [ref=f8e1017]:
+                - generic [ref=f8e1018]:
+                  - button "Like" [ref=f8e1019]
+                  - button "Bookmark" [ref=f8e1022]
+                  - generic [ref=f8e1025]: "22"
+                - button "Share prompt" [ref=f8e1029]
+          - article [ref=f8e1036]:
+            - link "Viral Video Advisor for YouTube Content Strategy" [ref=f8e1037] [cursor=pointer]:
+              - /url: /prompt-library/generate-viral-video-ideas
+            - generic [ref=f8e1038]: "## Role You analyze viral YouTube videos and generate new content ideas based on proven patterns from a specific channel. ## Context - Channel theme: {{channel-theme}} - Target audience: {{target-audience}} - Viral videos to analyze: {{viral-videos}} ## Task ### Part 1: Analyze each viral video For every video in the list above, output exactly this block: **TITLE** = (title here) **THUMBNAIL** = (visual description: what appears in the thumbnail and how to recreate it exactly; no virality analysis in this field) **WHY IT WAS VIRAL** = (what made it succeed, and one way it could be sharpened) Cover every video. Do not skip any. ### Part 2: Brainstorm 10 new video ideas Generate 10 original ideas that fit the channel theme but push into new formats, angles, or territory the channel has not covered. For each idea, output: **TITLE** = (title here) **THUMBNAIL** = (visual des"
+            - generic [ref=f8e1041]:
+              - heading "Viral Video Advisor for YouTube Content Strategy" [level=3] [ref=f8e1042]:
+                - generic [ref=f8e1043]: 🎬
+              - generic [ref=f8e1046]:
+                - link "OpenAI ChatGPT" [ref=f8e1047] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+                  - img "OpenAI" [ref=f8e1049]
+                  - generic [ref=f8e1051]: ChatGPT
+                - link "Marketing" [ref=f8e1052] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+                - link "Content Repurposing" [ref=f8e1053] [cursor=pointer]:
+                  - /url: /prompt-library/category/content-repurposing
+              - paragraph [ref=f8e1054]: Analyzes a channel's viral YouTube videos to decode title and thumbnail patterns, then generates 10 original video ideas with structured text blocks containing titles, thumbnail recreation notes, and virality reasoning. Runs on ChatGPT, Claude, Gemini, and Grok.
+              - generic [ref=f8e1056]:
+                - generic [ref=f8e1057]:
+                  - button "Like" [ref=f8e1058]
+                  - button "Bookmark" [ref=f8e1061]
+                  - generic [ref=f8e1064]: "98"
+                - button "Share prompt" [ref=f8e1068]
+      - generic [ref=f8e1078]:
+        - region "Articles about Prompt Engineering" [ref=f8e1079]:
+          - generic [ref=f8e1080]:
+            - heading [level=2] [ref=f8e1081]:
+              - text: "Read more on the topic:"
+              - strong [ref=f8e1082]: Prompt Engineering
+            - link "All Articles" [ref=f8e1083] [cursor=pointer]:
+              - /url: /blog/
+          - generic [ref=f8e1086]:
+            - link "Best DALL-E and Midjourney Prompt Resources Combined Read Article" [ref=f8e1087] [cursor=pointer]:
+              - /url: /blog/dall-e-midjourney-prompt-resources-combined/
+              - generic [ref=f8e1089]:
+                - heading "Best DALL-E and Midjourney Prompt Resources Combined" [level=3] [ref=f8e1090]
+                - generic [ref=f8e1091]: Read Article
+            - link "How to Eliminate Prompt Trial and Error with Tested Collections Read Article" [ref=f8e1094] [cursor=pointer]:
+              - /url: /blog/eliminate-prompt-trial-error-tested-collections/
+              - generic [ref=f8e1096]:
+                - heading "How to Eliminate Prompt Trial and Error with Tested Collections" [level=3] [ref=f8e1097]
+                - generic [ref=f8e1098]: Read Article
+            - link "The Easy Way to Master AI Tools Without Prompt Engineering Skills Read Article" [ref=f8e1101] [cursor=pointer]:
+              - /url: /blog/easy-way-master-ai-tools-without-prompt-engineering-skills/
+              - generic [ref=f8e1103]:
+                - heading "The Easy Way to Master AI Tools Without Prompt Engineering Skills" [level=3] [ref=f8e1104]
+                - generic [ref=f8e1105]: Read Article
+        - region "Frequently asked questions" [ref=f8e1108]:
+          - group [ref=f8e1109]:
+            - generic "What is the God of Prompt AI prompt library?" [ref=f8e1110] [cursor=pointer]
+          - group [ref=f8e1113]:
+            - generic "How is the library organised?" [ref=f8e1114] [cursor=pointer]
+          - group [ref=f8e1117]:
+            - generic "Is the library free?" [ref=f8e1118] [cursor=pointer]
+          - group [ref=f8e1121]:
+            - generic "Which AI tool should I use these prompts with?" [ref=f8e1122] [cursor=pointer]
+          - group [ref=f8e1125]:
+            - generic "How fast can I get useful output?" [ref=f8e1126] [cursor=pointer]
+          - group [ref=f8e1129]:
+            - generic "Can I use these prompts for commercial work and client projects?" [ref=f8e1130] [cursor=pointer]
+          - group [ref=f8e1133]:
+            - generic "Are the prompts kept up to date?" [ref=f8e1134] [cursor=pointer]
+        - generic [ref=f8e1137]:
+          - heading "What's inside the library" [level=2] [ref=f8e1138]
+          - paragraph [ref=f8e1139]: "6,000+ prompts grouped three ways for fast retrieval:"
+          - list [ref=f8e1140]:
+            - listitem [ref=f8e1141]:
+              - strong [ref=f8e1142]: By category (19 root + 180 subcategories)
+              - text: — marketing, sales, SEO, coding, writing, design, photography, business, finance, HR, legal, customer service, education, e-commerce, productivity, real estate, art, architecture, solopreneurs.
+            - listitem [ref=f8e1143]:
+              - strong [ref=f8e1144]: By tool (7 leading AI models)
+              - text: — ChatGPT, Claude, Gemini, Grok, DeepSeek, Midjourney, Nano Banana. Each tool page lists prompts engineered specifically for that model's strengths.
+            - listitem [ref=f8e1145]:
+              - strong [ref=f8e1146]: By type
+              - text: — text prompts (for ChatGPT/Claude/Gemini) or image prompts (for Midjourney/Nano Banana). Search and Code prompt types coming soon.
+          - heading "How to use any prompt in the library" [level=2] [ref=f8e1147]
+          - list [ref=f8e1148]:
+            - listitem [ref=f8e1149]: Click into a prompt that matches your task.
+            - listitem [ref=f8e1150]: Copy the structured prompt — every prompt is hand-crafted to encode role, context, task, constraints, and output format.
+            - listitem [ref=f8e1151]: Replace the bracketed placeholders with your context (your audience, your brand, your inputs).
+            - listitem [ref=f8e1152]: Paste into ChatGPT, Claude, Gemini, Midjourney, Nano Banana, or any wrapper (Cursor, Zapier, Make, n8n).
+            - listitem [ref=f8e1153]: Run, review, refine. Most prompts in this library produce keeper output on the first generation.
+          - heading "Why God of Prompt is different from a free prompt list" [level=2] [ref=f8e1154]
+          - paragraph [ref=f8e1155]:
+            - text: Free prompt lists online are mostly copy-paste between dozens of similar pages, written by people who never actually ran a business with them. God of Prompt's prompts are
+            - strong [ref=f8e1156]: engineered, tested, and updated
+            - text: ":"
+          - list [ref=f8e1157]:
+            - listitem [ref=f8e1158]:
+              - strong [ref=f8e1159]: Engineered
+              - text: — each prompt encodes role, context, task, constraints, and a strict output format. The pattern OpenAI and Anthropic recommend in their own documentation.
+            - listitem [ref=f8e1160]:
+              - strong [ref=f8e1161]: Tested
+              - text: — every prompt is run against real workflows in our own business before it ships. We're not selling theory; we're selling the playbook a working AI business runs on.
+            - listitem [ref=f8e1162]:
+              - strong [ref=f8e1163]: Updated
+              - text: — when GPT-5, Claude Opus 4.6, Gemini 3, or Midjourney v7 ship, the affected prompt packs are reviewed within days. No stale 2023 prompt lists.
+          - heading "Who the library is for" [level=2] [ref=f8e1164]
+          - paragraph [ref=f8e1165]: "6,000+ prompts means something for every workflow that touches AI. The categories cover:"
+          - list [ref=f8e1166]:
+            - listitem [ref=f8e1167]:
+              - strong [ref=f8e1168]: Marketers and growth teams
+              - text: — content marketing, SEO, sales, email, social, ads, branding
+            - listitem [ref=f8e1169]:
+              - strong [ref=f8e1170]: Engineers
+              - text: — coding, debugging, refactoring, code review, agentic IDE workflows
+            - listitem [ref=f8e1171]:
+              - strong [ref=f8e1172]: Solopreneurs and founders
+              - text: — full-stack business operation, automation, content, customer service
+            - listitem [ref=f8e1173]:
+              - strong [ref=f8e1174]: Designers and creators
+              - text: — image generation, design briefs, UI/UX, photography, illustration
+            - listitem [ref=f8e1175]:
+              - strong [ref=f8e1176]: Writers and editors
+              - text: — copywriting, long-form, technical writing, journalism, creative
+            - listitem [ref=f8e1177]:
+              - strong [ref=f8e1178]: Operators in regulated fields
+              - text: — legal, finance, HR, real estate — with prompts that respect the constraints of those domains
+          - heading "Free to copy. Premium for everything." [level=2] [ref=f8e1179]
+          - paragraph [ref=f8e1180]: The full library is browsable for free. Every prompt is copyable. 26 free mastery guides and mega-prompts (Claude, Gemini, Grok, Midjourney, Veo, AI Agents, Prompt Engineering, ChatGPT Images, and more) are downloadable with email.
+          - paragraph [ref=f8e1181]:
+            - text: The
+            - link "Complete AI Bundle" [ref=f8e1182] [cursor=pointer]:
+              - /url: /products/premium-complete-ai-bundle
+            - text: is the one-time purchase that unlocks every premium asset — Custom GPTs Toolkit, No-Code Automations Bundle, 200+ AI Tools Directory, AI Cheatsheets Collection, ChatGPT Custom Instructions, plus every prompt pack we ship from now on. Lifetime updates, no subscription.
+        - generic [ref=f8e1183]:
+          - generic [ref=f8e1184]:
+            - heading "Browse by category" [level=2] [ref=f8e1185]
+            - list [ref=f8e1186]:
+              - listitem [ref=f8e1187]:
+                - link "Art and Design" [ref=f8e1188] [cursor=pointer]:
+                  - /url: /prompt-library/category/art-and-design
+              - listitem [ref=f8e1189]:
+                - link "Marketing" [ref=f8e1190] [cursor=pointer]:
+                  - /url: /prompt-library/category/marketing
+              - listitem [ref=f8e1191]:
+                - link "SEO" [ref=f8e1192] [cursor=pointer]:
+                  - /url: /prompt-library/category/seo
+              - listitem [ref=f8e1193]:
+                - link "Education" [ref=f8e1194] [cursor=pointer]:
+                  - /url: /prompt-library/category/education
+              - listitem [ref=f8e1195]:
+                - link "Coding" [ref=f8e1196] [cursor=pointer]:
+                  - /url: /prompt-library/category/coding
+              - listitem [ref=f8e1197]:
+                - link "Strategy" [ref=f8e1198] [cursor=pointer]:
+                  - /url: /prompt-library/category/strategy
+              - listitem [ref=f8e1199]:
+                - link "Productivity" [ref=f8e1200] [cursor=pointer]:
+                  - /url: /prompt-library/category/productivity
+              - listitem [ref=f8e1201]:
+                - link "Writing" [ref=f8e1202] [cursor=pointer]:
+                  - /url: /prompt-library/category/writing
+              - listitem [ref=f8e1203]:
+                - link "Operations" [ref=f8e1204] [cursor=pointer]:
+                  - /url: /prompt-library/category/operations
+              - listitem [ref=f8e1205]:
+                - link "Human Resources" [ref=f8e1206] [cursor=pointer]:
+                  - /url: /prompt-library/category/human-resources
+              - listitem [ref=f8e1207]:
+                - link "Finance" [ref=f8e1208] [cursor=pointer]:
+                  - /url: /prompt-library/category/finance
+              - listitem [ref=f8e1209]:
+                - link "Research" [ref=f8e1210] [cursor=pointer]:
+                  - /url: /prompt-library/category/research
+              - listitem [ref=f8e1211]:
+                - link "Legal" [ref=f8e1212] [cursor=pointer]:
+                  - /url: /prompt-library/category/legal
+              - listitem [ref=f8e1213]:
+                - link "Data Analysis" [ref=f8e1214] [cursor=pointer]:
+                  - /url: /prompt-library/category/data-analysis
+              - listitem [ref=f8e1215]:
+                - link "Real Estate" [ref=f8e1216] [cursor=pointer]:
+                  - /url: /prompt-library/category/real-estate
+              - listitem [ref=f8e1217]:
+                - link "Sales" [ref=f8e1218] [cursor=pointer]:
+                  - /url: /prompt-library/category/sales
+              - listitem [ref=f8e1219]:
+                - link "Customer Service" [ref=f8e1220] [cursor=pointer]:
+                  - /url: /prompt-library/category/customer-service
+              - listitem [ref=f8e1221]:
+                - link "Careers" [ref=f8e1222] [cursor=pointer]:
+                  - /url: /prompt-library/category/careers
+              - listitem [ref=f8e1223]:
+                - link "Audio" [ref=f8e1224] [cursor=pointer]:
+                  - /url: /prompt-library/category/audio
+              - listitem [ref=f8e1225]:
+                - link "AI Agents" [ref=f8e1226] [cursor=pointer]:
+                  - /url: /prompt-library/category/ai-agents
+              - listitem [ref=f8e1227]:
+                - link "Video" [ref=f8e1228] [cursor=pointer]:
+                  - /url: /prompt-library/category/video
+          - generic [ref=f8e1229]:
+            - heading "Browse by AI tool" [level=2] [ref=f8e1230]
+            - list [ref=f8e1231]:
+              - listitem [ref=f8e1232]:
+                - link "ChatGPT" [ref=f8e1233] [cursor=pointer]:
+                  - /url: /prompt-library/tool/chatgpt
+              - listitem [ref=f8e1234]:
+                - link "Claude" [ref=f8e1235] [cursor=pointer]:
+                  - /url: /prompt-library/tool/claude
+              - listitem [ref=f8e1236]:
+                - link "Gemini" [ref=f8e1237] [cursor=pointer]:
+                  - /url: /prompt-library/tool/gemini
+              - listitem [ref=f8e1238]:
+                - link "Grok" [ref=f8e1239] [cursor=pointer]:
+                  - /url: /prompt-library/tool/grok
+              - listitem [ref=f8e1240]:
+                - link "DeepSeek" [ref=f8e1241] [cursor=pointer]:
+                  - /url: /prompt-library/tool/deepseek
+              - listitem [ref=f8e1242]:
+                - link "Midjourney" [ref=f8e1243] [cursor=pointer]:
+                  - /url: /prompt-library/tool/midjourney
+              - listitem [ref=f8e1244]:
+                - link "Nano Banana" [ref=f8e1245] [cursor=pointer]:
+                  - /url: /prompt-library/tool/nano-banana
+          - generic [ref=f8e1246]:
+            - heading "Browse by prompt type" [level=2] [ref=f8e1247]
+            - list [ref=f8e1248]:
+              - listitem [ref=f8e1249]:
+                - link "Text Prompts" [ref=f8e1250] [cursor=pointer]:
+                  - /url: /prompt-library/type/text
+              - listitem [ref=f8e1251]:
+                - link "Image Prompts" [ref=f8e1252] [cursor=pointer]:
+                  - /url: /prompt-library/type/image
+              - listitem [ref=f8e1253]: Code Prompts soon
+              - listitem [ref=f8e1254]: Search Prompts soon
+    - generic:
+      - link "Build a custom prompt" [ref=f8e1255] [cursor=pointer]:
+        - /url: /prompt-generator
+        - generic: Custom Prompts
+      - button "Search prompts (Command K)" [ref=f8e1260]:
+        - generic: Search prompts…
+  - contentinfo [ref=f8e1265]:
+    - generic [ref=f8e1267]:
+      - generic [ref=f8e1268]:
+        - generic [ref=f8e1269]:
+          - img "God of Prompt" [ref=f8e1270]
+          - heading "About God of Prompt" [level=3] [ref=f8e1271]
+          - paragraph [ref=f8e1272]: Cutting-edge AI products for streamliningyour workflow.
+          - generic "Social media" [ref=f8e1273]:
+            - link "X" [ref=f8e1274] [cursor=pointer]:
+              - /url: https://x.com/godofprompt
+              - img "X" [ref=f8e1275]
+            - link "LinkedIn" [ref=f8e1277] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/god-of-prompt/
+              - img "LinkedIn" [ref=f8e1278]
+            - link "YouTube" [ref=f8e1280] [cursor=pointer]:
+              - /url: https://www.youtube.com/@god-of-prompt
+              - img "YouTube" [ref=f8e1281]
+            - link "Instagram" [ref=f8e1283] [cursor=pointer]:
+              - /url: https://www.instagram.com/godofprompt/
+              - img "Instagram" [ref=f8e1284]
+        - navigation "Footer" [ref=f8e1286]:
+          - generic [ref=f8e1287]:
+            - heading "Platform" [level=3] [ref=f8e1288]
+            - list [ref=f8e1289]:
+              - listitem [ref=f8e1290]:
+                - link "Prompt Library" [ref=f8e1291] [cursor=pointer]:
+                  - /url: /prompt-library
+              - listitem [ref=f8e1292]:
+                - link "Free Guides" [ref=f8e1293] [cursor=pointer]:
+                  - /url: /guides
+              - listitem [ref=f8e1294]:
+                - link "Prompt Generator" [ref=f8e1295] [cursor=pointer]:
+                  - /url: /prompt-generator
+              - listitem [ref=f8e1296]:
+                - link "AI Tools" [ref=f8e1297] [cursor=pointer]:
+                  - /url: /tools
+              - listitem [ref=f8e1298]:
+                - link "Products" [ref=f8e1299] [cursor=pointer]:
+                  - /url: /products
+          - generic [ref=f8e1300]:
+            - heading "Team" [level=3] [ref=f8e1301]
+            - list [ref=f8e1302]:
+              - listitem [ref=f8e1303]:
+                - link "Support" [ref=f8e1304] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=f8e1305]:
+                - link "Partnerships" [ref=f8e1306] [cursor=pointer]:
+                  - /url: mailto:Partner@godofprompt.ai
+      - generic [ref=f8e1307]:
+        - paragraph [ref=f8e1308]: © 2026 God of Prompt. All rights reserved.
+        - navigation "Legal" [ref=f8e1309]:
+          - 'link "Partnerships: Partner@godofprompt.ai" [ref=f8e1310] [cursor=pointer]':
+            - /url: mailto:Partner@godofprompt.ai
+          - link "Privacy Policy" [ref=f8e1311] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms & Conditions" [ref=f8e1312] [cursor=pointer]:
+            - /url: /terms
+  - alert [ref=f8e1313]

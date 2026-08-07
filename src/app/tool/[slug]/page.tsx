@@ -36,6 +36,7 @@ export default async function ToolPage({ params }: Params) {
       subtitle={`${prompts.length} free prompts tuned to ${model.name}${
         model.vendor ? ` from ${model.vendor}` : ""
       }. Most of them port to other models with small edits.`}
+      scope={model.name}
       prompts={prompts}
     />
   );

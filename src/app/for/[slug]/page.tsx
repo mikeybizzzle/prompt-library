@@ -34,6 +34,7 @@ export default async function RolePage({ params }: Params) {
       title="Prompts for"
       emphasis={role.name}
       subtitle={`${prompts.length} free prompts picked for ${role.name.toLowerCase()}. Copy one, fill in the placeholders, and run it.`}
+      scope={role.name}
       prompts={prompts}
     />
   );

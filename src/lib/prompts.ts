@@ -75,7 +75,11 @@ function parseFile(file: string): Prompt {
     roles: (data.roles ?? []).filter((r: string) => ROLE_BY_SLUG.has(r)),
     type: (data.type ?? "text") as PromptType,
     featured: Boolean(data.featured),
-    publishedAt: String(data.publishedAt ?? "").slice(0, 10),
+    // YAML parses an unquoted date into a Date, so normalise both shapes to ISO.
+    publishedAt:
+      data.publishedAt instanceof Date
+        ? data.publishedAt.toISOString().slice(0, 10)
+        : String(data.publishedAt ?? "").slice(0, 10),
     body,
     words: body.split(/\s+/).length,
     does: Array.isArray(data.does) ? data.does.filter((d: unknown) => typeof d === "string") : [],

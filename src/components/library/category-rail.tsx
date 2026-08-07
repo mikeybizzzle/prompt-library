@@ -33,7 +33,7 @@ export function CategoryRail({ activeSlug }: { activeSlug?: string }) {
     <div className="mb-9 max-[640px]:mb-6">
       <nav
         aria-label="Browse categories"
-        className="flex flex-wrap items-start justify-center gap-2 pb-1 max-[900px]:justify-start max-[900px]:overflow-x-auto max-[900px]:flex-nowrap max-[900px]:no-scrollbar"
+        className="flex flex-wrap items-start justify-center gap-2 pb-1 max-[900px]:justify-start"
       >
         {shown.map((c) => (
           <Link key={c.slug} href={`/category/${c.slug}`} className={tileWrap}>

@@ -41,16 +41,17 @@ function Wordmark() {
     >
       <text
         x="720"
-        y="215"
+        y="228"
         textAnchor="middle"
+        textLength="1390"
+        lengthAdjust="spacingAndGlyphs"
         fill="none"
         stroke="#161415"
-        strokeOpacity="0.14"
-        strokeWidth="2"
+        strokeOpacity="0.16"
+        strokeWidth="2.4"
         fontFamily="var(--font-roboto), sans-serif"
-        fontSize="200"
-        fontWeight="300"
-        letterSpacing="-6"
+        fontSize="248"
+        fontWeight="400"
       >
         {SITE.name}
       </text>

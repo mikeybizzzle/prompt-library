@@ -165,7 +165,12 @@ export default async function PromptPage({ params }: Params) {
                   <div className="grid grid-cols-1 gap-6 border-t border-pl-ink-hairline pt-5 sm:grid-cols-3">
                     {prompt.does.map((d) => (
                       <div key={d} className="flex flex-col gap-3">
-                        <SquareDashed className="size-5 text-pl-ink-soft" strokeWidth={1.6} aria-hidden="true" />
+                        <span
+                          aria-hidden="true"
+                          className="font-mono text-[18px] leading-5 text-pl-ink-soft"
+                        >
+                          {"{ }"}
+                        </span>
                         <p className="m-0 text-[14px] leading-5 text-pl-ink-muted">{d}</p>
                       </div>
                     ))}

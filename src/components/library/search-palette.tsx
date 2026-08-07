@@ -69,12 +69,29 @@ export function SearchPalette({
   onClose: () => void;
   onOpen: () => void;
 }) {
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        if (isOpen) onClose();
+        else onOpen();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isOpen, onOpen, onClose]);
+
+  // Mounting only while open keeps the query and cursor reset for free.
+  return isOpen ? <SearchDialog docs={docs} onClose={onClose} /> : null;
+}
+
+function SearchDialog({ docs, onClose }: { docs: SearchDoc[]; onClose: () => void }) {
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [cursor, setCursor] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
-  const placeholder = useTypewriter(isOpen && query === "");
+  const placeholder = useTypewriter(query === "");
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -87,37 +104,18 @@ export function SearchPalette({
       .map((r) => r.d);
   }, [docs, query]);
 
-  useEffect(() => setCursor(0), [query]);
-
   useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        isOpen ? onClose() : onOpen();
-      }
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [isOpen, onOpen, onClose]);
-
-  useEffect(() => {
-    if (!isOpen) {
-      setQuery("");
-      return;
-    }
     const t = setTimeout(() => inputRef.current?.focus(), 20);
     document.body.style.overflow = "hidden";
     return () => {
       clearTimeout(t);
       document.body.style.overflow = "";
     };
-  }, [isOpen]);
+  }, []);
 
   useEffect(() => {
     listRef.current?.querySelector(`[data-row="${cursor}"]`)?.scrollIntoView({ block: "nearest" });
   }, [cursor]);
-
-  if (!isOpen) return null;
 
   function onKeyDown(e: React.KeyboardEvent) {
     if (e.key === "Escape") return onClose();
@@ -167,7 +165,10 @@ export function SearchPalette({
               aria-controls="palette-listbox"
               type="text"
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setCursor(0);
+              }}
               className={cn(
                 "w-full bg-transparent text-[16px] leading-6 tracking-[-0.01em] text-pl-menu-item focus:outline-none",
                 query === "" && "caret-transparent",

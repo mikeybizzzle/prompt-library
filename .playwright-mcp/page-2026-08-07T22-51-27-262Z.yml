@@ -1,0 +1,294 @@
+- generic [active] [ref=f2e1]:
+  - navigation "Primary" [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "Prompt Atlas home" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f2e10]:
+        - list [ref=f2e11]:
+          - listitem [ref=f2e12]:
+            - link "Prompts" [ref=f2e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f2e14]:
+            - link "Categories" [ref=f2e15] [cursor=pointer]:
+              - /url: /category/marketing
+          - listitem [ref=f2e18]:
+            - link "Models" [ref=f2e19] [cursor=pointer]:
+              - /url: /tool/chatgpt
+          - listitem [ref=f2e22]:
+            - link "Roles" [ref=f2e23] [cursor=pointer]:
+              - /url: /for/marketers
+          - listitem [ref=f2e26]:
+            - link "Types" [ref=f2e27] [cursor=pointer]:
+              - /url: /type/text
+        - link "Add a prompt" [ref=f2e30] [cursor=pointer]:
+          - /url: https://github.com/mikeybizzzle/prompt-library
+  - main [ref=f2e33]:
+    - article [ref=f2e34]:
+      - navigation "Breadcrumb" [ref=f2e35]:
+        - link "Prompts" [ref=f2e37] [cursor=pointer]:
+          - /url: /
+        - link "SEO" [ref=f2e41] [cursor=pointer]:
+          - /url: /category/seo
+        - link "Keyword Research" [ref=f2e45] [cursor=pointer]:
+          - /url: /category/keyword-research
+        - generic [ref=f2e46]: Keyword Cluster Map With Intent and Priority Scores
+      - generic [ref=f2e50]:
+        - generic [ref=f2e51]:
+          - generic [ref=f2e52]:
+            - generic [ref=f2e53]:
+              - heading "🔑 Keyword Cluster Map With Intent and Priority Scores" [level=1] [ref=f2e54]
+              - generic [ref=f2e55]:
+                - button "0 Like" [ref=f2e56]:
+                  - generic [ref=f2e60]: "0"
+                  - generic [ref=f2e61]: Like
+                - button "0 Save" [ref=f2e62]:
+                  - generic [ref=f2e66]: "0"
+                  - generic [ref=f2e67]: Save
+                - generic "336 words" [ref=f2e68]:
+                  - generic [ref=f2e73]: "336"
+                  - generic [ref=f2e74]: words
+                - button "Copy link to this prompt" [ref=f2e75]
+            - generic [ref=f2e82]: "Updated on: Invalid Date"
+            - paragraph [ref=f2e85]: Groups a raw keyword list into topical clusters, labels search intent, assigns a priority score, and maps each cluster to one page type and target URL.
+          - generic [ref=f2e86]:
+            - generic [ref=f2e88]:
+              - generic [ref=f2e89]:
+                - paragraph [ref=f2e96]: Keyword Cluster Map With Intent and Priority Scores
+                - generic [ref=f2e97]:
+                  - button "Open in ChatGPT (opens in a new tab; the prompt is copied for you)" [ref=f2e98] [cursor=pointer]:
+                    - generic: Open in ChatGPT
+                  - button "Open in Claude (opens in a new tab; the prompt is copied for you)" [ref=f2e102] [cursor=pointer]:
+                    - generic: Open in Claude
+                  - button "Open in Gemini (opens in a new tab; the prompt is copied for you)" [ref=f2e106] [cursor=pointer]:
+                    - generic: Open in Gemini
+                  - button "Copy prompt" [ref=f2e110] [cursor=pointer]:
+                    - generic: Copy
+                  - button "Share prompt" [ref=f2e115] [cursor=pointer]:
+                    - generic: Share
+              - generic [ref=f2e123]:
+                - code [ref=f2e128]:
+                  - text: "## Role You are an SEO strategist who builds site architecture from search intent rather than from keyword volume alone. ## Context **Site and what it sells:**"
+                  - generic [ref=f2e129]: "{{site-description}}"
+                  - text: "**Raw keyword list with volume and difficulty:**"
+                  - generic [ref=f2e130]: "{{keyword-data}}"
+                  - text: "**Existing pages and their target terms:**"
+                  - generic [ref=f2e131]: "{{existing-pages}}"
+                  - text: "**Domain authority band:**"
+                  - generic [ref=f2e132]: "{{authority-band}}"
+                  - text: "**Conversion path:**"
+                  - generic [ref=f2e133]: "{{conversion-path}}"
+                  - text: "**Geography targeted:**"
+                  - generic [ref=f2e134]: "{{geography}}"
+                  - text: "## Task 1. Group every keyword into a topical cluster. A cluster is a set of terms that one page could rank for because the searcher wants the same thing. Name each cluster in plain language. 2. Label each cluster with one intent: informational, comparative, transactional, or navigational. Note when a single cluster contains mixed intent and must be split. 3. Assign each cluster a priority score from 1 to 10 using: business value of the traffic, achievability against the authority band, total cluster volume, and distance from the conversion path. Show the four inputs, not just the score. 4. Map each cluster to a page type: pillar guide, comparison page, product or service page, tool, or blog post. State whether an existing page already targets it, and whether that page should be expanded, split, or left alone. 5. Identify cannibalisation: any two existing pages competing for the same cluster. 6. Choose the primary keyword per cluster and up to eight secondary terms. ## Constraints - Every keyword in the input must land in exactly one cluster. List any you cannot place. - Do not recommend a new page where an existing page can be expanded. - Do not assign transactional intent to a term that is clearly research phase. ## Output **Cluster table** — Cluster name, Intent, Primary keyword, Secondary terms, Total volume, Priority score, Page type, Existing URL or New. **Scoring detail** — the four input values behind each priority score. **Cannibalisation report** — competing URL pairs with the recommended resolution. **Build order** — the top ten clusters in the sequence they should be published, with one line of reasoning each. **Unplaced keywords** — anything that did not fit, with why."
+                - generic [ref=f2e135]:
+                  - generic [ref=f2e136]:
+                    - generic [ref=f2e137]: Fill in the variables
+                    - generic [ref=f2e139]:
+                      - text: 0/6
+                      - button "Reset variables" [ref=f2e140]
+                  - generic [ref=f2e144]:
+                    - generic [ref=f2e145]: Site description
+                    - textbox "Site description" [ref=f2e146]
+                  - generic [ref=f2e147]:
+                    - generic [ref=f2e148]: Keyword data
+                    - textbox "Keyword data" [ref=f2e149]
+                  - generic [ref=f2e150]:
+                    - generic [ref=f2e151]: Existing pages
+                    - textbox "Existing pages" [ref=f2e152]
+                  - generic [ref=f2e153]:
+                    - generic [ref=f2e154]: Authority band
+                    - textbox "Authority band" [ref=f2e155]
+                  - generic [ref=f2e156]:
+                    - generic [ref=f2e157]: Conversion path
+                    - textbox "Conversion path" [ref=f2e158]
+                  - generic [ref=f2e159]:
+                    - generic [ref=f2e160]: Geography
+                    - textbox "Geography" [ref=f2e161]
+                  - button "Copy filled prompt" [ref=f2e162]
+            - generic [ref=f2e167]:
+              - generic [ref=f2e168]:
+                - link "Category SEO" [ref=f2e169] [cursor=pointer]:
+                  - /url: /category/seo
+                  - generic [ref=f2e170]: Category
+                  - generic [ref=f2e171]: SEO
+                - link "Subcategory Keyword Research" [ref=f2e172] [cursor=pointer]:
+                  - /url: /category/keyword-research
+                  - generic [ref=f2e173]: Subcategory
+                  - generic [ref=f2e174]: Keyword Research
+                - link "Perfect for Marketers" [ref=f2e175] [cursor=pointer]:
+                  - /url: /for/marketers
+                  - generic [ref=f2e176]: Perfect for
+                  - generic [ref=f2e177]: Marketers
+              - generic [ref=f2e178]:
+                - generic [ref=f2e179]: Works with
+                - generic [ref=f2e180]:
+                  - link "ChatGPT" [ref=f2e181] [cursor=pointer]:
+                    - /url: /tool/chatgpt
+                  - link "Claude" [ref=f2e186] [cursor=pointer]:
+                    - /url: /tool/claude
+                  - link "Gemini" [ref=f2e191] [cursor=pointer]:
+                    - /url: /tool/gemini
+        - generic [ref=f2e196]:
+          - heading "Prompt Guide" [level=2] [ref=f2e197]
+          - generic [ref=f2e198]:
+            - generic [ref=f2e199]:
+              - generic [ref=f2e206]:
+                - generic [ref=f2e207]: What this prompt does
+                - generic [ref=f2e208]: Exactly what you get when you run it.
+              - generic [ref=f2e209]:
+                - paragraph [ref=f2e216]: Groups every supplied keyword into a named topical cluster and labels each with informational, comparative, transactional, or navigational intent.
+                - paragraph [ref=f2e223]: "Scores each cluster 1 to 10 and shows the four inputs behind it: business value, achievability, volume, and conversion distance."
+                - paragraph [ref=f2e230]: Flags cannibalisation between existing URLs and returns a build order for the top ten clusters with reasoning.
+            - generic [ref=f2e231]:
+              - generic [ref=f2e232]: Tips for this prompt
+              - list [ref=f2e237]:
+                - listitem [ref=f2e238]:
+                  - generic [ref=f2e244]: Export keywords with volume and difficulty from your research tool, because the priority score depends on both columns being present.
+                - listitem [ref=f2e245]:
+                  - generic [ref=f2e251]: State the authority band honestly as low, medium, or high, since achievability is what stops it recommending unwinnable clusters.
+                - listitem [ref=f2e252]:
+                  - generic [ref=f2e258]: Run it in batches of about two hundred keywords when your list is long, then ask it to merge the cluster tables.
+          - generic [ref=f2e259]:
+            - generic [ref=f2e260]:
+              - generic [ref=f2e265]: How to use the prompt
+              - generic [ref=f2e266]: A short workflow to get the best result.
+            - list [ref=f2e267]:
+              - listitem [ref=f2e268]:
+                - generic [ref=f2e269]: "1"
+                - paragraph [ref=f2e270]: Paste the prompt into a new chat
+                - paragraph [ref=f2e271]: and keep the output section intact so the cluster table columns come back in full.
+              - listitem [ref=f2e272]:
+                - generic [ref=f2e273]: "2"
+                - paragraph [ref=f2e274]: Replace the context placeholders
+                - paragraph [ref=f2e275]: "with {{site-description}}, {{keyword-data}}, {{existing-pages}}, and {{authority-band}}."
+              - listitem [ref=f2e276]:
+                - generic [ref=f2e277]: "3"
+                - paragraph [ref=f2e278]: Run it in ChatGPT
+                - paragraph [ref=f2e279]: and check the unplaced keywords list first, since it shows where your input data was thin.
+        - generic [ref=f2e280]:
+          - heading "Related prompts" [level=2] [ref=f2e281]
+          - generic [ref=f2e282]:
+            - article [ref=f2e283]:
+              - link "SEO Content Brief With Outline and Entity Checklist" [ref=f2e284] [cursor=pointer]:
+                - /url: /p/seo-content-brief-with-entities
+              - generic [ref=f2e285]:
+                - heading "SEO Content Brief With Outline and Entity Checklist" [level=3] [ref=f2e286]:
+                  - generic [ref=f2e287]: 📝
+                - generic [ref=f2e290]:
+                  - link "ChatGPT" [ref=f2e291] [cursor=pointer]:
+                    - /url: /tool/chatgpt
+                  - link "SEO" [ref=f2e296] [cursor=pointer]:
+                    - /url: /category/seo
+                  - link "Content Briefs" [ref=f2e297] [cursor=pointer]:
+                    - /url: /category/content-briefs
+                - paragraph [ref=f2e298]: Produces a writer ready content brief covering search intent, a heading outline, entities to cover, internal links, and the questions the page must answer.
+                - generic [ref=f2e300]:
+                  - generic [ref=f2e301]:
+                    - button "Like" [ref=f2e302]
+                    - button "Save" [ref=f2e305]
+                    - button "Copy prompt" [ref=f2e308]: 326 words
+                  - button "Share prompt" [ref=f2e312]
+            - article [ref=f2e319]:
+              - link "Technical SEO Audit Checklist From a Crawl Export" [ref=f2e320] [cursor=pointer]:
+                - /url: /p/technical-seo-audit-from-crawl
+              - generic [ref=f2e321]:
+                - heading "Technical SEO Audit Checklist From a Crawl Export" [level=3] [ref=f2e322]:
+                  - generic [ref=f2e323]: ⚙️
+                - generic [ref=f2e326]:
+                  - link "Claude" [ref=f2e327] [cursor=pointer]:
+                    - /url: /tool/claude
+                  - link "SEO" [ref=f2e332] [cursor=pointer]:
+                    - /url: /category/seo
+                  - link "Technical SEO" [ref=f2e333] [cursor=pointer]:
+                    - /url: /category/technical-seo
+                - paragraph [ref=f2e334]: Turns a crawl export into a ranked technical issue list with the affected URLs, the crawl or indexing impact, the fix, and who should own each item.
+                - generic [ref=f2e336]:
+                  - generic [ref=f2e337]:
+                    - button "Like" [ref=f2e338]
+                    - button "Save" [ref=f2e341]
+                    - button "Copy prompt" [ref=f2e344]: 305 words
+                  - button "Share prompt" [ref=f2e348]
+            - article [ref=f2e355]:
+              - link "Cold Email Sequence Builder for B2B Outreach" [ref=f2e356] [cursor=pointer]:
+                - /url: /p/cold-email-sequence-builder
+              - generic [ref=f2e357]:
+                - heading "Cold Email Sequence Builder for B2B Outreach" [level=3] [ref=f2e358]:
+                  - generic [ref=f2e359]: 📧
+                - generic [ref=f2e362]:
+                  - link "ChatGPT" [ref=f2e363] [cursor=pointer]:
+                    - /url: /tool/chatgpt
+                  - link "Sales" [ref=f2e368] [cursor=pointer]:
+                    - /url: /category/sales
+                  - link "Cold Outreach" [ref=f2e369] [cursor=pointer]:
+                    - /url: /category/cold-outreach
+                - paragraph [ref=f2e370]: Builds a five email cold outreach sequence with subject lines, personalization hooks, and a follow up cadence, tuned to one ideal customer profile and one offer.
+                - generic [ref=f2e372]:
+                  - generic [ref=f2e373]:
+                    - button "Like" [ref=f2e374]
+                    - button "Save" [ref=f2e377]
+                    - button "Copy prompt" [ref=f2e380]: 310 words
+                  - button "Share prompt" [ref=f2e384]
+  - contentinfo [ref=f2e391]:
+    - generic:
+      - img:
+        - generic: Prompt Atlas
+    - generic [ref=f2e393]:
+      - generic [ref=f2e394]:
+        - generic [ref=f2e395]:
+          - heading "About Prompt Atlas" [level=3] [ref=f2e401]
+          - paragraph [ref=f2e402]: A personal, open prompt library. Every prompt lives as a markdown file in a public GitHub repo, so anyone can read it, fork it, or send a better one.
+          - generic "Social media" [ref=f2e403]:
+            - link "GitHub" [ref=f2e404] [cursor=pointer]:
+              - /url: https://github.com/mikeybizzzle
+            - link "X" [ref=f2e407] [cursor=pointer]:
+              - /url: https://x.com/
+            - link "LinkedIn" [ref=f2e410] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+            - link "RSS" [ref=f2e413] [cursor=pointer]:
+              - /url: /feed.xml
+        - navigation "Footer" [ref=f2e418]:
+          - generic [ref=f2e419]:
+            - heading "Browse" [level=3] [ref=f2e420]
+            - list [ref=f2e421]:
+              - listitem [ref=f2e422]:
+                - link "All prompts" [ref=f2e423] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f2e424]:
+                - link "Text prompts" [ref=f2e425] [cursor=pointer]:
+                  - /url: /type/text
+              - listitem [ref=f2e426]:
+                - link "Image prompts" [ref=f2e427] [cursor=pointer]:
+                  - /url: /type/image
+              - listitem [ref=f2e428]:
+                - link "Code prompts" [ref=f2e429] [cursor=pointer]:
+                  - /url: /type/code
+          - generic [ref=f2e430]:
+            - heading "Popular" [level=3] [ref=f2e431]
+            - list [ref=f2e432]:
+              - listitem [ref=f2e433]:
+                - link "Marketing" [ref=f2e434] [cursor=pointer]:
+                  - /url: /category/marketing
+              - listitem [ref=f2e435]:
+                - link "Coding" [ref=f2e436] [cursor=pointer]:
+                  - /url: /category/coding
+              - listitem [ref=f2e437]:
+                - link "ChatGPT" [ref=f2e438] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+              - listitem [ref=f2e439]:
+                - link "Claude" [ref=f2e440] [cursor=pointer]:
+                  - /url: /tool/claude
+      - generic [ref=f2e441]:
+        - paragraph [ref=f2e442]: © 2026 Prompt Atlas. Built by Mike Bernard.
+        - navigation "Secondary" [ref=f2e443]:
+          - link "Source on GitHub" [ref=f2e444] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library
+          - link "Add a prompt" [ref=f2e445] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library/blob/main/CONTRIBUTING.md
+          - link "Report an issue" [ref=f2e446] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library/issues/new
+  - generic:
+    - button "Open a random prompt" [ref=f2e447]:
+      - generic: Surprise me
+    - button "Search prompts (Command K)" [ref=f2e455]:
+      - generic: Search prompts…
+  - alert [ref=f2e460]

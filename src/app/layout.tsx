@@ -60,8 +60,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           className="pointer-events-none fixed left-0 top-0 -z-10 h-screen w-screen bg-pl-page"
           style={{
             backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='2' height='1' fill='%23d7d7d7'/%3E%3C/svg%3E\")",
-            backgroundPosition: "15px 2px",
+              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='2' height='2' fill='%23e6e6e6'/%3E%3C/svg%3E\")",
+            backgroundPosition: "15px 15px",
           }}
         />
         <SearchProvider docs={docs}>

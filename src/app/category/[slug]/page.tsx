@@ -54,6 +54,7 @@ export default async function CategoryPage({ params }: Params) {
       title={`${found.name} prompts,`}
       emphasis="ready to run"
       subtitle={`${found.prompts.length} free ${found.name.toLowerCase()} prompts. Copy one, fill in the placeholders, and run it on the model of your choice.`}
+      scope={found.name}
       prompts={found.prompts}
       activeCategory={found.parent}
     />

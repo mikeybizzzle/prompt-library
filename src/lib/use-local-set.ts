@@ -1,44 +1,54 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useSyncExternalStore } from "react";
 
-const listeners = new Map<string, Set<(v: string[]) => void>>();
+const EMPTY: string[] = [];
 
-function read(key: string): string[] {
-  if (typeof window === "undefined") return [];
+const caches = new Map<string, string[]>();
+const listeners = new Map<string, Set<() => void>>();
+
+function subscribe(key: string, onChange: () => void) {
+  const set = listeners.get(key) ?? new Set();
+  set.add(onChange);
+  listeners.set(key, set);
+  return () => set.delete(onChange);
+}
+
+/** Cached so getSnapshot returns a stable reference between notifications. */
+function getSnapshot(key: string): string[] {
+  const cached = caches.get(key);
+  if (cached) return cached;
+  let parsed: string[] = EMPTY;
   try {
     const raw = window.localStorage.getItem(key);
-    return raw ? (JSON.parse(raw) as string[]) : [];
+    if (raw) parsed = JSON.parse(raw) as string[];
   } catch {
-    return [];
+    parsed = EMPTY;
   }
+  caches.set(key, parsed);
+  return parsed;
 }
 
 /**
  * A set of slugs persisted to localStorage and shared across every component
- * that reads the same key, so a like on a card updates the detail page too.
+ * reading the same key, so a like on a card updates the prompt page too.
  */
 export function useLocalSet(key: string) {
-  const [items, setItems] = useState<string[]>([]);
-
-  useEffect(() => {
-    setItems(read(key));
-    const set = listeners.get(key) ?? new Set();
-    set.add(setItems);
-    listeners.set(key, set);
-    return () => {
-      set.delete(setItems);
-    };
-  }, [key]);
+  const items = useSyncExternalStore(
+    (onChange) => subscribe(key, onChange),
+    () => getSnapshot(key),
+    () => EMPTY,
+  );
 
   const toggle = useCallback(
     (slug: string) => {
-      const next = read(key);
-      const i = next.indexOf(slug);
-      if (i === -1) next.push(slug);
-      else next.splice(i, 1);
+      const current = getSnapshot(key);
+      const next = current.includes(slug)
+        ? current.filter((s) => s !== slug)
+        : [...current, slug];
       window.localStorage.setItem(key, JSON.stringify(next));
-      listeners.get(key)?.forEach((fn) => fn(next));
+      caches.set(key, next);
+      listeners.get(key)?.forEach((fn) => fn());
     },
     [key],
   );

@@ -16,6 +16,7 @@ export function LibraryPage({
   prompts,
   activeType = "all",
   activeCategory,
+  scope,
   faq = DEFAULT_FAQ,
   children,
 }: {
@@ -25,6 +26,7 @@ export function LibraryPage({
   prompts: Prompt[];
   activeType?: string;
   activeCategory?: string;
+  scope?: string;
   faq?: FaqItem[];
   children?: React.ReactNode;
 }) {
@@ -39,7 +41,7 @@ export function LibraryPage({
     <div className="mx-auto w-full max-w-[1232px] px-4 py-10 sm:px-6 max-[640px]:py-6">
       <Hero title={title} emphasis={emphasis} subtitle={subtitle} />
       <CategoryRail activeSlug={activeCategory} />
-      <LibraryView prompts={cards} facets={facets} activeType={activeType} />
+      <LibraryView prompts={cards} facets={facets} activeType={activeType} scope={scope} />
       <HubSections featured={featured} total={facets.total} faq={faq}>
         {children}
       </HubSections>

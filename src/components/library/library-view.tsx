@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { X } from "lucide-react";
 
 import { FilterBar, type SortKey } from "@/components/library/filter-bar";
 import { PromptCard } from "@/components/library/prompt-card";
@@ -31,10 +33,13 @@ export function LibraryView({
   prompts,
   facets,
   activeType = "all",
+  scope,
 }: {
   prompts: PromptCardData[];
   facets: Facets;
   activeType?: string;
+  /** Label of the facet this page is narrowed to, shown as a removable chip. */
+  scope?: string;
 }) {
   const [sort, setSort] = useState<SortKey>("shuffled");
   const [visible, setVisible] = useState(PAGE_SIZE);
@@ -53,8 +58,6 @@ export function LibraryView({
     }
   }, [prompts, sort]);
 
-  useEffect(() => setVisible(PAGE_SIZE), [sort, prompts]);
-
   useEffect(() => {
     const el = sentinel.current;
     if (!el) return;
@@ -72,7 +75,30 @@ export function LibraryView({
 
   return (
     <div className="flex flex-col gap-5" data-dock-boundary>
-      <FilterBar facets={facets} activeType={activeType} sort={sort} onSortChange={setSort} />
+      <FilterBar
+        facets={facets}
+        activeType={activeType}
+        sort={sort}
+        onSortChange={(next) => {
+          setSort(next);
+          setVisible(PAGE_SIZE);
+        }}
+      />
+
+      {/* Scope chips. Empty on the unfiltered library, which is what sets the gap above the grid. */}
+      <div className="-mt-1">
+        {scope && (
+          <Link
+            href="/"
+            className="inline-flex h-8 items-center gap-2 rounded-full bg-white pl-3 pr-2 text-[14px] leading-5 text-pl-ink shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink"
+          >
+            {scope}
+            <span className="inline-flex size-5 items-center justify-center rounded-full bg-pl-capsule text-pl-ink-muted">
+              <X className="size-3" strokeWidth={2.2} aria-hidden="true" />
+            </span>
+          </Link>
+        )}
+      </div>
 
       {shown.length === 0 ? (
         <div className="flex min-h-40 flex-col items-center justify-center gap-2 rounded-[20px] border border-pl-ink-hairline bg-white/60 py-14 text-center">
