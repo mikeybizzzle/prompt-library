@@ -35,11 +35,11 @@ Generate three separate clips of five seconds each, sharing one lighting setup a
 
 ## Variables
 
-- {{location}} — a workshop, a kitchen counter, a city rooftop
-- {{time-of-day}} — early morning, late afternoon, overcast midday
-- {{subject}} — the person or object carrying the story
-- {{action}} — the single physical movement in shot two
-- {{detail-object}} — the close up subject in shot three
+- {{location}}: a workshop, a kitchen counter, a city rooftop
+- {{time-of-day}}: early morning, late afternoon, overcast midday
+- {{subject}}: the person or object carrying the story
+- {{action}}: the single physical movement in shot two
+- {{detail-object}}: the close up subject in shot three
 
 ## Tips
 

@@ -63,16 +63,16 @@ You are a music supervisor writing prompts for a generative music model. You des
 
 ## Output
 
-**Parameters** — tempo, key, mode, time signature, dynamic range, with reasoning.
+**Parameters**: tempo, key, mode, time signature, dynamic range, with reasoning.
 
-**Instrumentation** — a table of Instrument, Timbre, Role.
+**Instrumentation**: a table of Instrument, Timbre, Role.
 
-**Arrangement** — a table of Section, Timing, What enters, What leaves, Energy.
+**Arrangement**: a table of Section, Timing, What enters, What leaves, Energy.
 
-**Mix character** — four lines.
+**Mix character**: four lines.
 
-**Generation prompt** — one paragraph, ready to paste.
+**Generation prompt**: one paragraph, ready to paste.
 
-**Variations** — three, each with the single changed variable.
+**Variations**: three, each with the single changed variable.
 
-**First listen checklist** — four things to check.
+**First listen checklist**: four things to check.

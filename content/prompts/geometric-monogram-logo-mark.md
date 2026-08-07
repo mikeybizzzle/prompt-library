@@ -35,11 +35,11 @@ A flat vector logo mark for {{brand-name}}, built from the letters {{initials}} 
 
 ## Variables
 
-- {{brand-name}} — the company name
-- {{initials}} — one or two letters to interlock
-- {{stroke-weight}} — thin, medium, or heavy
-- {{primary-colour}} — a single brand colour
-- {{background-colour}} — usually bone, off white, or near black
+- {{brand-name}}: the company name
+- {{initials}}: one or two letters to interlock
+- {{stroke-weight}}: thin, medium, or heavy
+- {{primary-colour}}: a single brand colour
+- {{background-colour}}: usually bone, off white, or near black
 
 ## Tips
 

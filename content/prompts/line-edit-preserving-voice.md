@@ -61,12 +61,12 @@ Work through the draft in order and apply five passes.
 
 ## Output
 
-**Change log** — a table with columns: Original sentence, Edited sentence, Pass, Reason. One row per change.
+**Change log**: a table with columns: Original sentence, Edited sentence, Pass, Reason. One row per change.
 
-**Questions for the author** — every specificity gap, phrased as a direct question.
+**Questions for the author**: every specificity gap, phrased as a direct question.
 
-**Clean draft** — the edited piece with all accepted changes applied.
+**Clean draft**: the edited piece with all accepted changes applied.
 
-**Word count** — before, after, and percentage cut.
+**Word count**: before, after, and percentage cut.
 
-**Voice check** — three sentences from the clean draft that best demonstrate the author voice survived the edit.
+**Voice check**: three sentences from the clean draft that best demonstrate the author voice survived the edit.

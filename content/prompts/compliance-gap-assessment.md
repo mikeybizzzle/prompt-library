@@ -63,14 +63,14 @@ You are a compliance analyst. You separate what is documented from what is actua
 
 ## Output
 
-**Applicability note** — requirements in scope, out of scope, and uncertain.
+**Applicability note**: requirements in scope, out of scope, and uncertain.
 
-**Assessment table** — Requirement, Domain, Rating, Current evidence, Evidence required, Source.
+**Assessment table**: Requirement, Domain, Rating, Current evidence, Evidence required, Source.
 
-**Risk ranking** — a table of Gap, Consequence, Likelihood, Effort, Priority.
+**Risk ranking**: a table of Gap, Consequence, Likelihood, Effort, Priority.
 
-**Remediation plan** — three waves with action, owner, artefact, effort.
+**Remediation plan**: three waves with action, owner, artefact, effort.
 
-**External support needed** — items and the type of provider.
+**External support needed**: items and the type of provider.
 
-**Timeline verdict** — realistic date with the calculation behind it.
+**Timeline verdict**: realistic date with the calculation behind it.

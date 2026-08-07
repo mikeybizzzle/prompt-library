@@ -67,14 +67,14 @@ Then:
 
 ## Output
 
-**Rounds** — four numbered lists of ten.
+**Rounds**: four numbered lists of ten.
 
-**Themes** — clusters with names and the idea numbers in each.
+**Themes**: clusters with names and the idea numbers in each.
 
-**Eliminated** — ideas cut, with the limit each violated.
+**Eliminated**: ideas cut, with the limit each violated.
 
-**Stress tests** — eight entries with must be true, cost, and two week signal.
+**Stress tests**: eight entries with must be true, cost, and two week signal.
 
-**Top five ranking** — with one line of reasoning each.
+**Top five ranking**: with one line of reasoning each.
 
-**First step** — the specific next action for the top idea.
+**First step**: the specific next action for the top idea.

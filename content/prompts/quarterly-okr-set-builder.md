@@ -61,10 +61,10 @@ You are an operator who writes OKRs that force choices. You reject key results t
 
 ## Output
 
-**Objectives and key results** — nested list with metric, baseline and date, target, source, owner, leading indicator.
+**Objectives and key results**: nested list with metric, baseline and date, target, source, owner, leading indicator.
 
-**Initiative map** — a table of Initiative, Key result served, Status, Keep or stop.
+**Initiative map**: a table of Initiative, Key result served, Status, Keep or stop.
 
-**Stop list** — work to end this quarter with the reason.
+**Stop list**: work to end this quarter with the reason.
 
-**Weekly check in format** — the four questions each owner answers, and the escalation trigger.
+**Weekly check in format**: the four questions each owner answers, and the escalation trigger.

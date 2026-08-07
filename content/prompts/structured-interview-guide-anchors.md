@@ -60,14 +60,14 @@ You are an interviewer trained in structured hiring. You ask every candidate the
 
 ## Output
 
-**Panel allocation** — a table of Interviewer, Competencies, Minutes.
+**Panel allocation**: a table of Interviewer, Competencies, Minutes.
 
-**Question set** — per competency: primary question, three probes, and why this question tests this competency.
+**Question set**: per competency: primary question, three probes, and why this question tests this competency.
 
-**Work sample** — scenario, task, time, and evaluation criteria.
+**Work sample**: scenario, task, time, and evaluation criteria.
 
-**Rating anchors** — a table per competency with descriptions at 1, 2, 3, and 4.
+**Rating anchors**: a table per competency with descriptions at 1, 2, 3, and 4.
 
-**Timing plan** — minute by minute.
+**Timing plan**: minute by minute.
 
-**Debrief protocol** — the steps and the tie break rule.
+**Debrief protocol**: the steps and the tie break rule.

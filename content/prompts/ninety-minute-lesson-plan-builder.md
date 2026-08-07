@@ -61,14 +61,14 @@ You are an instructional designer who plans lessons around evidence of learning 
 
 Return:
 
-**Objective and evidence** — two short paragraphs.
+**Objective and evidence**: two short paragraphs.
 
-**Plan table** — columns: Minutes, Block, Teacher does, Learners do, Materials.
+**Plan table**: columns: Minutes, Block, Teacher does, Learners do, Materials.
 
-**Formative checks** — three entries with question, success criteria, and reteach move.
+**Formative checks**: three entries with question, success criteria, and reteach move.
 
-**Misconception watchlist** — two entries with the preempting language.
+**Misconception watchlist**: two entries with the preempting language.
 
-**Differentiation** — scaffold and extension, one paragraph each.
+**Differentiation**: scaffold and extension, one paragraph each.
 
-**Exit ticket** — three questions with an answer key.
+**Exit ticket**: three questions with an answer key.

@@ -63,12 +63,12 @@ You are the listing agent. You deliver news the seller does not want to hear, ea
 
 ## Output
 
-**Email** — subject line and body under 350 words, ready to send.
+**Email**: subject line and body under 350 words, ready to send.
 
-**Activity summary** — a table of Metric, This week, Last week, Listing average.
+**Activity summary**: a table of Metric, This week, Last week, Listing average.
 
-**Feedback themes** — a table of Theme, Count, What it means, Fixable.
+**Feedback themes**: a table of Theme, Count, What it means, Fixable.
 
-**Options** — three with action, expected effect, cost, and risk.
+**Options**: three with action, expected effect, cost, and risk.
 
-**Recommendation** — one paragraph with the decision date.
+**Recommendation**: one paragraph with the decision date.

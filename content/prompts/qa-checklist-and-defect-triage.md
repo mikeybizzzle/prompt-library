@@ -61,14 +61,14 @@ You are a quality lead. You define pass criteria precisely enough that two inspe
 
 ## Output
 
-**Quality attributes** — a table of Complaint, Attribute, Observable definition.
+**Quality attributes**: a table of Complaint, Attribute, Observable definition.
 
-**Checklist** — a table of Order, Stage, Check, Pass criterion, Evidence recorded, Time.
+**Checklist**: a table of Order, Stage, Check, Pass criterion, Evidence recorded, Time.
 
-**Severity model** — four levels with impact, response time, notification, and release block.
+**Severity model**: four levels with impact, response time, notification, and release block.
 
-**Triage routing** — a table of Defect type, First responder, Escalation, Time limit.
+**Triage routing**: a table of Defect type, First responder, Escalation, Time limit.
 
-**Root cause questions** — five questions.
+**Root cause questions**: five questions.
 
-**Weekly report** — metrics with formulas and review triggers.
+**Weekly report**: metrics with formulas and review triggers.

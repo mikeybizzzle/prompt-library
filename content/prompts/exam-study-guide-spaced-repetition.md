@@ -59,10 +59,10 @@ You are a study coach who builds revision plans around retrieval practice and sp
 
 ## Output
 
-**Topic ranking table** — Topic, Weight, Confidence, Priority score.
+**Topic ranking table**: Topic, Weight, Confidence, Priority score.
 
-**Topic pages** — one per topic with summary, three key facts, and six recall questions with answers.
+**Topic pages**: one per topic with summary, three key facts, and six recall questions with answers.
 
-**Revision calendar** — a dated table of Date, Session length, Topics, Activity type.
+**Revision calendar**: a dated table of Date, Session length, Topics, Activity type.
 
-**Day before checklist** — five lines.
+**Day before checklist**: five lines.

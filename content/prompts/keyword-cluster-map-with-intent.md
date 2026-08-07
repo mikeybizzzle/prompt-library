@@ -59,12 +59,12 @@ You are an SEO strategist who builds site architecture from search intent rather
 
 ## Output
 
-**Cluster table** — Cluster name, Intent, Primary keyword, Secondary terms, Total volume, Priority score, Page type, Existing URL or New.
+**Cluster table**: Cluster name, Intent, Primary keyword, Secondary terms, Total volume, Priority score, Page type, Existing URL or New.
 
-**Scoring detail** — the four input values behind each priority score.
+**Scoring detail**: the four input values behind each priority score.
 
-**Cannibalisation report** — competing URL pairs with the recommended resolution.
+**Cannibalisation report**: competing URL pairs with the recommended resolution.
 
-**Build order** — the top ten clusters in the sequence they should be published, with one line of reasoning each.
+**Build order**: the top ten clusters in the sequence they should be published, with one line of reasoning each.
 
-**Unplaced keywords** — anything that did not fit, with why.
+**Unplaced keywords**: anything that did not fit, with why.

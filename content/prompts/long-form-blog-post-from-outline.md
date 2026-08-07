@@ -62,10 +62,10 @@ You are a writer drafting for an audience that already knows the basics. You wri
 
 ## Output
 
-**Draft** — the full article with H2 and H3 headings matching the outline.
+**Draft**: the full article with H2 and H3 headings matching the outline.
 
-**Research flags** — a numbered list of every bracketed gap with what would fill it.
+**Research flags**: a numbered list of every bracketed gap with what would fill it.
 
-**Cut list** — three sentences you considered including and rejected, with the reason, so the writer can restore them if they disagree.
+**Cut list**: three sentences you considered including and rejected, with the reason, so the writer can restore them if they disagree.
 
-**Title options** — five alternatives under 65 characters.
+**Title options**: five alternatives under 65 characters.

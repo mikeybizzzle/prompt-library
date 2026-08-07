@@ -63,12 +63,12 @@ You are a survey methodologist. You know a badly worded question produces confid
 
 ## Output
 
-**Variables and analysis** — a table of Variable, Question number, Analysis planned.
+**Variables and analysis**: a table of Variable, Question number, Analysis planned.
 
-**Questionnaire** — full text with question types, scales, and skip logic.
+**Questionnaire**: full text with question types, scales, and skip logic.
 
-**Bias review** — a table of Original question, Problem, Rewrite.
+**Bias review**: a table of Original question, Problem, Rewrite.
 
-**Time estimate** — by block and total.
+**Time estimate**: by block and total.
 
-**Analysis plan** — cross tabs, minimum cell size, open text coding scheme.
+**Analysis plan**: cross tabs, minimum cell size, open text coding scheme.

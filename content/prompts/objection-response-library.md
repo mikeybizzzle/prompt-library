@@ -67,6 +67,6 @@ A table with columns: Objection, Type, Real concern, Response, Proof, Redirect q
 
 Then two sections:
 
-**Proof gaps** — the assets that should be created, ranked by how many objections each would resolve.
+**Proof gaps**: the assets that should be created, ranked by how many objections each would resolve.
 
-**Prevention** — three things to say earlier in the sales process that would stop the top three objections from arising at all.
+**Prevention**: three things to say earlier in the sales process that would stop the top three objections from arising at all.

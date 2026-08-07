@@ -62,16 +62,16 @@ You are a real estate analyst producing a report a seller or buyer will use to s
 
 ## Output
 
-**Comp set** — a table of the included sales with the key fields, plus an exclusion list with reasons.
+**Comp set**: a table of the included sales with the key fields, plus an exclusion list with reasons.
 
-**Headline metrics** — the five calculations with the sample size.
+**Headline metrics**: the five calculations with the sample size.
 
-**Trend** — interval comparison table and a two sentence read.
+**Trend**: interval comparison table and a two sentence read.
 
-**Absorption** — months of inventory with the calculation and the negotiating implication.
+**Absorption**: months of inventory with the calculation and the negotiating implication.
 
-**Segment notes** — where a segment diverges and by how much.
+**Segment notes**: where a segment diverges and by how much.
 
-**Pricing recommendation** — a range, the reasoning, and the level at which the property would stall.
+**Pricing recommendation**: a range, the reasoning, and the level at which the property would stall.
 
-**Limitations** — three to five bullets.
+**Limitations**: three to five bullets.

@@ -58,12 +58,12 @@ You are a sales trainer who builds discovery guides that produce a decision, not
 
 ## Output
 
-**Opening script** — verbatim.
+**Opening script**: verbatim.
 
-**Question map** — four blocks, each with the required takeaway, then a table of Primary question, If vague, If specific.
+**Question map**: four blocks, each with the required takeaway, then a table of Primary question, If vague, If specific.
 
-**Scoring rubric** — five factors with anchor descriptions for 1 and 5, plus a total score interpretation in three bands.
+**Scoring rubric**: five factors with anchor descriptions for 1 and 5, plus a total score interpretation in three bands.
 
-**Next step language** — three verbatim scripts.
+**Next step language**: three verbatim scripts.
 
-**Post call note template** — seven fields to fill in immediately after the call.
+**Post call note template**: seven fields to fill in immediately after the call.

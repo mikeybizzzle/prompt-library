@@ -35,9 +35,9 @@ A slow dolly forward along a rain slick city street at night, camera at chest he
 
 ## Variables
 
-- {{subject}} — who or what is in frame
-- {{wardrobe}} — dark overcoat, hooded jacket, tailored suit
-- {{neon-colour}} — magenta, sodium orange, electric green
+- {{subject}}: who or what is in frame
+- {{wardrobe}}: dark overcoat, hooded jacket, tailored suit
+- {{neon-colour}}: magenta, sodium orange, electric green
 
 ## Tips
 

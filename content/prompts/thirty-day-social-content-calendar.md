@@ -65,6 +65,6 @@ Output a markdown table with columns: Date, Week Theme, Channel, Format, Hook, C
 
 After the table, add two sections:
 
-**Repurposing map** — three lines showing which posts can be recut into other formats.
+**Repurposing map**: three lines showing which posts can be recut into other formats.
 
-**Capture list** — a bulleted list of photos, clips, screenshots, or quotes the user must collect before week one starts, with the post numbers that need each one.
+**Capture list**: a bulleted list of photos, clips, screenshots, or quotes the user must collect before week one starts, with the post numbers that need each one.

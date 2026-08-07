@@ -62,16 +62,16 @@ You are a manager writing a review that the employee will find fair, specific, a
 
 ## Output
 
-**Goal assessment** — a table of Goal, Status, Evidence, Context.
+**Goal assessment**: a table of Goal, Status, Evidence, Context.
 
-**Strengths** — three with two examples each and impact.
+**Strengths**: three with two examples each and impact.
 
-**Development areas** — two with example, effect, and what better looks like.
+**Development areas**: two with example, effect, and what better looks like.
 
-**Bias check** — what you corrected and how.
+**Bias check**: what you corrected and how.
 
-**Next period goals** — three with measures and manager support.
+**Next period goals**: three with measures and manager support.
 
-**Talking track** — the conversation plan with two questions.
+**Talking track**: the conversation plan with two questions.
 
-**Surprise flags** — items that should have been raised earlier.
+**Surprise flags**: items that should have been raised earlier.

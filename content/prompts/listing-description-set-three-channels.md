@@ -63,14 +63,14 @@ You are a listing agent who writes descriptions that describe the property hones
 
 ## Output
 
-**Lead point** — one line with reasoning.
+**Lead point**: one line with reasoning.
 
-**MLS description** — the text with a character count.
+**MLS description**: the text with a character count.
 
-**Social caption** — with a suggested first line for video overlay.
+**Social caption**: with a suggested first line for video overlay.
 
-**Buyer email** — subject line and body.
+**Buyer email**: subject line and body.
 
-**Photo captions** — five.
+**Photo captions**: five.
 
-**Drawback framing** — a table of Drawback, Honest framing, Buyer who would not mind.
+**Drawback framing**: a table of Drawback, Honest framing, Buyer who would not mind.

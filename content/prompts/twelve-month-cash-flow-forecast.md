@@ -60,12 +60,12 @@ You are a fractional finance lead who builds forecasts that a non finance owner 
 
 ## Output
 
-**Driver table** — Driver, Current value, Assumption, Rationale.
+**Driver table**: Driver, Current value, Assumption, Rationale.
 
-**Base case forecast** — a markdown table with months as columns.
+**Base case forecast**: a markdown table with months as columns.
 
-**Scenario summary** — closing cash by month for all three cases, plus lowest point and month.
+**Scenario summary**: closing cash by month for all three cases, plus lowest point and month.
 
-**Risk list** — the four assumptions most likely to be wrong, ranked by cash impact.
+**Risk list**: the four assumptions most likely to be wrong, ranked by cash impact.
 
-**Actions** — three specific moves that would extend the cash runway, each with an estimated effect.
+**Actions**: three specific moves that would extend the cash runway, each with an estimated effect.

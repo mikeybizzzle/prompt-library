@@ -4,7 +4,8 @@ export const SITE = {
   tagline: "The Open Prompt Library",
   description:
     "A free, curated library of AI prompts for ChatGPT, Claude, Gemini, Midjourney and every major model. Browse by category, model, or role.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://prompt-atlas.vercel.app",
+  // Set NEXT_PUBLIC_SITE_URL once deployed; canonicals, sitemap, and RSS use it.
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   repo: "https://github.com/mikeybizzzle/prompt-library",
   author: "Mike Bernard",
   social: {

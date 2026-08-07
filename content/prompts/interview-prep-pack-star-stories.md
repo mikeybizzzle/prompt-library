@@ -63,14 +63,14 @@ You are an interview coach. You build a small set of strong stories that can be 
 
 ## Output
 
-**Competency ranking** — six with reasoning.
+**Competency ranking**: six with reasoning.
 
-**Story bank** — six STAR stories with the competency, the questions each answers, and the spoken length.
+**Story bank**: six STAR stories with the competency, the questions each answers, and the spoken length.
 
-**Weak spot responses** — two sentences each.
+**Weak spot responses**: two sentences each.
 
-**Questions to ask** — eight grouped by audience.
+**Questions to ask**: eight grouped by audience.
 
-**Compensation script** — two versions.
+**Compensation script**: two versions.
 
-**Seven day practice plan** — a day by day table.
+**Seven day practice plan**: a day by day table.

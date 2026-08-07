@@ -35,10 +35,10 @@ A commercial studio product photograph of {{product}} centred on a seamless {{ba
 
 ## Variables
 
-- {{product}} — the object, described with shape and size
-- {{backdrop-colour}} — for example warm bone, cool slate, soft sand
-- {{material-finish}} — matte ceramic, brushed aluminium, coated glass
-- {{palette}} — two or three colours to hold the frame together
+- {{product}}: the object, described with shape and size
+- {{backdrop-colour}}: for example warm bone, cool slate, soft sand
+- {{material-finish}}: matte ceramic, brushed aluminium, coated glass
+- {{palette}}: two or three colours to hold the frame together
 
 ## Tips
 

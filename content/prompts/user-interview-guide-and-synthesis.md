@@ -62,14 +62,14 @@ You are a user researcher. You ask about what people did, not what they would do
 
 ## Output
 
-**Learning goals** — three to five.
+**Learning goals**: three to five.
 
-**Interview guide** — five parts with timings, questions, and probes.
+**Interview guide**: five parts with timings, questions, and probes.
 
-**Critical incident walkthrough** — verbatim wording.
+**Critical incident walkthrough**: verbatim wording.
 
-**Do not ask list** — leading questions with neutral replacements.
+**Do not ask list**: leading questions with neutral replacements.
 
-**Note template** — the fields with an example row filled in.
+**Note template**: the fields with an example row filled in.
 
-**Synthesis structure** — tagging scheme, pattern threshold, and the finding format with an example.
+**Synthesis structure**: tagging scheme, pattern threshold, and the finding format with an example.

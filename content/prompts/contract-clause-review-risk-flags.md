@@ -62,14 +62,14 @@ You are a commercial contracts reviewer. You explain risk in plain language and 
 
 ## Output
 
-**Deal summary** — five bullets and any divergence noted.
+**Deal summary**: five bullets and any divergence noted.
 
-**Clause findings** — a table of Clause reference, Plain meaning, Favours, Risk, Rating.
+**Clause findings**: a table of Clause reference, Plain meaning, Favours, Risk, Rating.
 
-**Missing clauses** — what is absent and why it matters.
+**Missing clauses**: what is absent and why it matters.
 
-**Redlines** — for each high and medium finding: current text, proposed text, rationale.
+**Redlines**: for each high and medium finding: current text, proposed text, rationale.
 
-**Negotiation ranking** — push, trade, accept, with reasoning.
+**Negotiation ranking**: push, trade, accept, with reasoning.
 
-**Deal breaker check** — whether any stated deal breaker appears in this draft.
+**Deal breaker check**: whether any stated deal breaker appears in this draft.

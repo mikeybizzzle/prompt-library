@@ -62,14 +62,14 @@ You are a backend engineer who designs schemas around the queries the applicatio
 
 ## Output
 
-**Entity model** — a table of Entity, Attributes, Relationships.
+**Entity model**: a table of Entity, Attributes, Relationships.
 
-**DDL** — a single SQL block.
+**DDL**: a single SQL block.
 
-**Indexes** — a table of Index, Columns, Query served.
+**Indexes**: a table of Index, Columns, Query served.
 
-**Migration** — up and down SQL in separate blocks.
+**Migration**: up and down SQL in separate blocks.
 
-**Core queries** — five annotated SQL statements.
+**Core queries**: five annotated SQL statements.
 
-**Open questions** — the requirements that need clarification before this ships.
+**Open questions**: the requirements that need clarification before this ships.

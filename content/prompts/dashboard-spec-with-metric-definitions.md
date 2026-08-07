@@ -63,14 +63,14 @@ You are an analytics lead who builds dashboards around decisions. If a chart doe
 
 ## Output
 
-**Decision map** — a table of Decision, Cadence, Question, Action if yes, Action if no.
+**Decision map**: a table of Decision, Cadence, Question, Action if yes, Action if no.
 
-**Metric dictionary** — a table of Metric, Formula, Source, Grain, Window, Null handling, Owner.
+**Metric dictionary**: a table of Metric, Formula, Source, Grain, Window, Null handling, Owner.
 
-**Definition rulings** — the disputed metrics with the chosen definition and the rejected one.
+**Definition rulings**: the disputed metrics with the chosen definition and the rejected one.
 
-**Breakdowns** — per metric, the cuts required and the decision each serves.
+**Breakdowns**: per metric, the cuts required and the decision each serves.
 
-**Layout** — three tiers with the components in each and the chart form chosen.
+**Layout**: three tiers with the components in each and the chart form chosen.
 
-**Alerts** — a table of Metric, Threshold, Recipient, Response.
+**Alerts**: a table of Metric, Threshold, Recipient, Response.

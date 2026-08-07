@@ -35,9 +35,9 @@ An extreme macro shot of {{product-surface}}, frame filled edge to edge with tex
 
 ## Variables
 
-- {{product-surface}} — brushed metal watch case, knitted fabric weave, coffee beans, glass bottle shoulder
-- {{material-texture}} — grain, weave, machining marks, condensation
-- {{palette}} — two dominant colours plus the black surround
+- {{product-surface}}: brushed metal watch case, knitted fabric weave, coffee beans, glass bottle shoulder
+- {{material-texture}}: grain, weave, machining marks, condensation
+- {{palette}}: two dominant colours plus the black surround
 
 ## Tips
 

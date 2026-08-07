@@ -59,10 +59,10 @@ You are a technical SEO consultant. You rank findings by their effect on crawlin
 
 ## Output
 
-**Priority table** — Rank, Issue, Bucket, URLs affected, Impact mechanism, Fix, Owner, Verification.
+**Priority table**: Rank, Issue, Bucket, URLs affected, Impact mechanism, Fix, Owner, Verification.
 
-**Sample URLs** — up to five per issue.
+**Sample URLs**: up to five per issue.
 
-**Ignore list** — findings from the export that are not worth acting on, with the reason.
+**Ignore list**: findings from the export that are not worth acting on, with the reason.
 
-**Sequenced plan** — three waves: this week, this month, this quarter, with the issues assigned to each and the reason for the ordering.
+**Sequenced plan**: three waves: this week, this month, this quarter, with the issues assigned to each and the reason for the ordering.

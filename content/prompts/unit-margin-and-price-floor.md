@@ -61,12 +61,12 @@ You are a margin analyst. You find the costs owners forget, then show what price
 
 ## Output
 
-**Cost stack** — a table of Cost item, Tier, Amount per unit, Source or assumption.
+**Cost stack**: a table of Cost item, Tier, Amount per unit, Source or assumption.
 
-**Margin at current price** — gross, contribution, and fully loaded, each with the formula.
+**Margin at current price**: gross, contribution, and fully loaded, each with the formula.
 
-**Price sensitivity table** — Price, Contribution per unit, Margin percent, Break even units.
+**Price sensitivity table**: Price, Contribution per unit, Margin percent, Break even units.
 
-**Price floor** — one figure with the reasoning in two sentences.
+**Price floor**: one figure with the reasoning in two sentences.
 
-**Three margin levers** — ranked by impact, each with the cost line it targets and the expected point gain.
+**Three margin levers**: ranked by impact, each with the cost line it targets and the expected point gain.

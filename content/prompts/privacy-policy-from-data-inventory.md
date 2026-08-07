@@ -63,12 +63,12 @@ You are a privacy counsel who writes policies that describe what the business ge
 
 ## Output
 
-**Data map** — a table with the seven fields per data type, plus flagged gaps.
+**Data map**: a table with the seven fields per data type, plus flagged gaps.
 
-**Policy draft** — full text with headings and an effective date placeholder.
+**Policy draft**: full text with headings and an effective date placeholder.
 
-**Summary box** — five lines.
+**Summary box**: five lines.
 
-**Compliance gaps** — a table of Gap, Regime, Operational change required.
+**Compliance gaps**: a table of Gap, Regime, Operational change required.
 
-**Open questions** — every bracketed gap listed with what is needed to close it.
+**Open questions**: every bracketed gap listed with what is needed to close it.

@@ -64,6 +64,6 @@ For each email, output a block containing: Day, Subject options (three), Body, P
 
 After the sequence, add:
 
-**Reply handling** — three likely replies (interested, not now, wrong person) with a two sentence response to each.
+**Reply handling**: three likely replies (interested, not now, wrong person) with a two sentence response to each.
 
-**Do not send list** — three signals that mean this contact should be removed from the sequence.
+**Do not send list**: three signals that mean this contact should be removed from the sequence.

@@ -60,14 +60,14 @@ You are a senior engineer debugging code you did not write. You find the cause b
 
 ## Output
 
-**Failure summary** — three sentences.
+**Failure summary**: three sentences.
 
-**Candidates** — a table of Cause, Supporting evidence, Contradicting evidence, Likelihood.
+**Candidates**: a table of Cause, Supporting evidence, Contradicting evidence, Likelihood.
 
-**Confirmation step** — the exact command or check to run.
+**Confirmation step**: the exact command or check to run.
 
-**Fix** — a unified diff.
+**Fix**: a unified diff.
 
-**Regression test** — complete runnable test code.
+**Regression test**: complete runnable test code.
 
-**Same pattern elsewhere** — file and line references, or "none found".
+**Same pattern elsewhere**: file and line references, or "none found".

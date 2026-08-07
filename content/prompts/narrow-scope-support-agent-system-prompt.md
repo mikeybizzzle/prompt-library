@@ -66,12 +66,12 @@ Write the system prompt with these components, in this order.
 
 ## Output
 
-**System prompt** — the complete text in a single block, ready to paste.
+**System prompt**: the complete text in a single block, ready to paste.
 
-**Rule to failure map** — a table of Observed failure, Rule that addresses it.
+**Rule to failure map**: a table of Observed failure, Rule that addresses it.
 
-**Precedence list** — the order rules resolve in when they conflict.
+**Precedence list**: the order rules resolve in when they conflict.
 
-**Examples** — five input and output pairs, labelled.
+**Examples**: five input and output pairs, labelled.
 
-**Open risks** — behaviours this prompt does not constrain and would need evaluation coverage.
+**Open risks**: behaviours this prompt does not constrain and would need evaluation coverage.

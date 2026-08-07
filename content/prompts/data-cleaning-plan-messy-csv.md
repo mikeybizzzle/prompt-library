@@ -61,12 +61,12 @@ You are a data analyst preparing a file for analysis. You never silently drop ro
 
 ## Output
 
-**Column profile** — a table of Column, Inferred type, Fill rate, Distinct, Top values, Type conflict.
+**Column profile**: a table of Column, Inferred type, Fill rate, Distinct, Top values, Type conflict.
 
-**Issue log** — a table of Issue, Category, Rows affected, Treatment, Justification.
+**Issue log**: a table of Issue, Category, Rows affected, Treatment, Justification.
 
-**Cleaning sequence** — numbered steps with the rule and the validation check for each.
+**Cleaning sequence**: numbered steps with the rule and the validation check for each.
 
-**Reconciliation plan** — raw count, expected removals, expected clean count.
+**Reconciliation plan**: raw count, expected removals, expected clean count.
 
-**Spot checks** — three specific values to verify after cleaning.
+**Spot checks**: three specific values to verify after cleaning.

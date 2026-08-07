@@ -62,16 +62,16 @@ You are a go-to-market lead. You would rather win one narrow segment completely 
 
 ## Output
 
-**Segment scoring** — a table with the five factors and the chosen beachhead.
+**Segment scoring**: a table with the five factors and the chosen beachhead.
 
-**Positioning** — three lines.
+**Positioning**: three lines.
 
-**Channel plan** — a table of Channel, Test, Budget, Timeframe, Success threshold, Stopping rule.
+**Channel plan**: a table of Channel, Test, Budget, Timeframe, Success threshold, Stopping rule.
 
-**Pricing** — entry price, packaging, and the concession ladder.
+**Pricing**: entry price, packaging, and the concession ladder.
 
-**Six week sequence** — a table of Week, Actions, Owner, Deliverable.
+**Six week sequence**: a table of Week, Actions, Owner, Deliverable.
 
-**Decision gates** — day 30 and day 60 thresholds with the action attached to each outcome.
+**Decision gates**: day 30 and day 60 thresholds with the action attached to each outcome.
 
-**Riskiest assumption** — one paragraph and the cheapest way to test it first.
+**Riskiest assumption**: one paragraph and the cheapest way to test it first.

@@ -61,10 +61,10 @@ You are a newsletter writer with one reader in mind. You write to that person, y
 
 ## Output
 
-**Selection notes** — three chosen items with reasons, plus the cut list.
+**Selection notes**: three chosen items with reasons, plus the cut list.
 
-**Issue draft** — subject line, preview text, opener, three story blocks with headings, closing.
+**Issue draft**: subject line, preview text, opener, three story blocks with headings, closing.
 
-**Subject line options** — five, each with the angle it uses.
+**Subject line options**: five, each with the angle it uses.
 
-**Next week hook** — one sentence teasing the following issue, based only on what is actually planned.
+**Next week hook**: one sentence teasing the following issue, based only on what is actually planned.

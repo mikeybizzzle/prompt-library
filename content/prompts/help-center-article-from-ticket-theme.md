@@ -63,18 +63,18 @@ You are a support content writer. You write for someone who is stuck right now a
 
 ## Output
 
-**Title** — plus two alternates.
+**Title**: plus two alternates.
 
-**Opening** — under 40 words with requirements.
+**Opening**: under 40 words with requirements.
 
-**Steps** — numbered with screenshot markers and descriptions.
+**Steps**: numbered with screenshot markers and descriptions.
 
-**Result confirmation** — one or two lines.
+**Result confirmation**: one or two lines.
 
-**Troubleshooting** — three branches with symptom and fix.
+**Troubleshooting**: three branches with symptom and fix.
 
-**Limitations** — bulleted.
+**Limitations**: bulleted.
 
-**Related articles** — with reasons.
+**Related articles**: with reasons.
 
-**Search terms** — the customer phrasings this should match.
+**Search terms**: the customer phrasings this should match.

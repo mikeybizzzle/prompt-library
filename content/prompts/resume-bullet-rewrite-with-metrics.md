@@ -62,16 +62,16 @@ You are a resume editor. You know a hiring manager reads a bullet in two seconds
 
 ## Output
 
-**Diagnosis table** — Original bullet, Type, Problem.
+**Diagnosis table**: Original bullet, Type, Problem.
 
-**Rewritten bullets** — grouped by role, ordered by relevance, with the metric marked as supplied or requested.
+**Rewritten bullets**: grouped by role, ordered by relevance, with the metric marked as supplied or requested.
 
-**Questions to answer** — the specific numbers needed, phrased as direct questions.
+**Questions to answer**: the specific numbers needed, phrased as direct questions.
 
-**Coverage check** — a table of Posting competency, Evidenced by, Gap.
+**Coverage check**: a table of Posting competency, Evidenced by, Gap.
 
-**Cut list** — removed bullets with the reason.
+**Cut list**: removed bullets with the reason.
 
-**Summary** — two sentences.
+**Summary**: two sentences.
 
-**Gap framing** — one line.
+**Gap framing**: one line.

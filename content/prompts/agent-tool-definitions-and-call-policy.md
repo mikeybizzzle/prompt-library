@@ -62,14 +62,14 @@ You are an agent engineer. You know most tool calling failures come from vague t
 
 ## Output
 
-**Tool inventory** — a table of Tool, Purpose, Read or write, Approval required, Cost.
+**Tool inventory**: a table of Tool, Purpose, Read or write, Approval required, Cost.
 
-**Overlap resolution** — merges, splits, and disambiguating sentences.
+**Overlap resolution**: merges, splits, and disambiguating sentences.
 
-**Definitions** — for each tool: the model facing description and the JSON schema.
+**Definitions**: for each tool: the model facing description and the JSON schema.
 
-**Error contract** — a table of Failure, Error shape, Agent instruction.
+**Error contract**: a table of Failure, Error shape, Agent instruction.
 
-**Call policy** — limits, parallelism, approval flow.
+**Call policy**: limits, parallelism, approval flow.
 
-**Test cases** — three per tool with the expected behaviour.
+**Test cases**: three per tool with the expected behaviour.

@@ -65,14 +65,14 @@ You are a voiceover writer. You write for the ear, you count words against the c
 
 ## Output
 
-**Word budget** — the calculation and the total.
+**Word budget**: the calculation and the total.
 
-**Beat map** — a table of Beat, Seconds, Words, Purpose.
+**Beat map**: a table of Beat, Seconds, Words, Purpose.
 
-**Script** — the full text with inline delivery marks.
+**Script**: the full text with inline delivery marks.
 
-**Pronunciation guide** — a table of Word, How to say it.
+**Pronunciation guide**: a table of Word, How to say it.
 
-**Audio bed cues** — timecoded.
+**Audio bed cues**: timecoded.
 
-**Alternates** — two hooks and one call to action.
+**Alternates**: two hooks and one call to action.

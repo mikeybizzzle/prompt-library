@@ -51,4 +51,4 @@ Blog and resource pages, prompt submission through the site, user accounts, and 
 
 ## Deployment
 
-Static output, deployed to Vercel from `main`. Adding a prompt is a commit.
+Static output. Not deployed yet. Point Vercel at `main` and set `NEXT_PUBLIC_SITE_URL` to the final domain, which canonicals, the sitemap, and the RSS feed all read. After that, adding a prompt is a commit.

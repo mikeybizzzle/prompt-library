@@ -2,7 +2,7 @@
 
 An open library of AI prompts. Every prompt is a markdown file in this repo, and the site builds straight from those files.
 
-Live site: https://prompt-atlas.vercel.app
+Not deployed yet. To publish it, point Vercel at this repo and set `NEXT_PUBLIC_SITE_URL` to the final domain so canonical URLs, the sitemap, and the RSS feed resolve correctly.
 
 ## What this is
 

@@ -35,10 +35,10 @@ An editorial portrait of {{subject-description}}, head and upper shoulders, fram
 
 ## Variables
 
-- {{subject-description}} — age range, hair, build, and any defining features
-- {{background-tone}} — deep olive, warm grey, ink blue
-- {{expression}} — calm and open, quietly amused, focused
-- {{wardrobe}} — knit crewneck, open collar shirt, structured blazer
+- {{subject-description}}: age range, hair, build, and any defining features
+- {{background-tone}}: deep olive, warm grey, ink blue
+- {{expression}}: calm and open, quietly amused, focused
+- {{wardrobe}}: knit crewneck, open collar shirt, structured blazer
 
 ## Tips
 

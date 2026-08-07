@@ -63,16 +63,16 @@ You are handling an escalated case. You stabilise the customer relationship and 
 
 ## Output
 
-**Timeline** — a table of Date, Customer experience, Our action, Escalation trigger marked.
+**Timeline**: a table of Date, Customer experience, Our action, Escalation trigger marked.
 
-**Risk assessment** — five risk types with ratings and reasons.
+**Risk assessment**: five risk types with ratings and reasons.
 
-**Customer reply** — under 200 words, ready to send.
+**Customer reply**: under 200 words, ready to send.
 
-**Authority gap language** — the exact wording plus the approval needed.
+**Authority gap language**: the exact wording plus the approval needed.
 
-**Internal handoff brief** — the six sections named above.
+**Internal handoff brief**: the six sections named above.
 
-**Recommendation** — resolution, cost, and the fallback.
+**Recommendation**: resolution, cost, and the fallback.
 
-**Process failure** — one paragraph and the fix.
+**Process failure**: one paragraph and the fix.

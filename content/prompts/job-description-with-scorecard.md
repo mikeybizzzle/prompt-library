@@ -62,14 +62,14 @@ You are a hiring manager who defines success before writing a job post, and who 
 
 ## Output
 
-**Outcomes** — four to six with metrics.
+**Outcomes**: four to six with metrics.
 
-**Competency list** — must have and nice to have, each mapped to an outcome.
+**Competency list**: must have and nice to have, each mapped to an outcome.
 
-**Job post** — the full text, ready to publish.
+**Job post**: the full text, ready to publish.
 
-**Honest section** — three difficulties.
+**Honest section**: three difficulties.
 
-**Scorecard** — a table of Competency, What a 1 looks like, What a 4 looks like, Who assesses it.
+**Scorecard**: a table of Competency, What a 1 looks like, What a 4 looks like, Who assesses it.
 
-**Screening questions** — three, each with strong answer indicators.
+**Screening questions**: three, each with strong answer indicators.

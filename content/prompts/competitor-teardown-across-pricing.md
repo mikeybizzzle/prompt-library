@@ -63,14 +63,14 @@ Then compare across all three and answer: where do they all agree, and is that a
 
 ## Output
 
-**Comparison matrix** — competitors as columns, the six dimensions as rows.
+**Comparison matrix**: competitors as columns, the six dimensions as rows.
 
-**Pricing detail** — a table of Competitor, Structure, Entry price, Price drivers, Public.
+**Pricing detail**: a table of Competitor, Structure, Entry price, Price drivers, Public.
 
-**Consensus and convention** — where all three agree and whether that is a real constraint.
+**Consensus and convention**: where all three agree and whether that is a real constraint.
 
-**Our gap** — two openings we could credibly claim, each with what we would need to prove it.
+**Our gap**: two openings we could credibly claim, each with what we would need to prove it.
 
-**Loss reason mapping** — for each stated loss reason, which competitor wins on it and what would change that.
+**Loss reason mapping**: for each stated loss reason, which competitor wins on it and what would change that.
 
-**Evidence log** — every claim with its source and confidence.
+**Evidence log**: every claim with its source and confidence.
