@@ -12,7 +12,15 @@ import { cn } from "@/lib/utils";
 const iconButton =
   "inline-flex items-center rounded-full p-1 -m-1 transition-colors duration-150 text-white/45 hover:text-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow";
 
-export function PromptCard({ prompt, tall }: { prompt: PromptCardData; tall: boolean }) {
+export function PromptCard({
+  prompt,
+  tall,
+  animateIn = false,
+}: {
+  prompt: PromptCardData;
+  tall: boolean;
+  animateIn?: boolean;
+}) {
   const likes = useLocalSet("pl:likes");
   const saves = useLocalSet("pl:saves");
   const [copied, setCopied] = useState(false);
@@ -39,6 +47,7 @@ export function PromptCard({ prompt, tall }: { prompt: PromptCardData; tall: boo
       className={cn(
         "group relative flex flex-col gap-4 overflow-hidden rounded-[20px] border border-white/[0.08] bg-pl-card p-4 text-white transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-white/20 hover:shadow-[0_16px_34px_-14px_rgba(0,0,0,0.6)] focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-pl-accent-yellow",
         tall ? "sm:row-span-2 sm:h-full" : "sm:h-full",
+        animateIn && "motion-safe:animate-card-in",
       )}
     >
       <Link

@@ -398,7 +398,7 @@
 }
 
 .animate-card-in {
-  animation: pl-card-in var(--pl-motion-slow) var(--pl-ease-standard) both;
+  animation: pl-card-in 360ms cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
