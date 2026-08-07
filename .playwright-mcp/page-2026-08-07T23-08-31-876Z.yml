@@ -1,0 +1,949 @@
+- generic [ref=f15e1]:
+  - navigation "Primary" [ref=f15e2]:
+    - generic [ref=f15e3]:
+      - link "Prompt Atlas home" [ref=f15e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f15e10]:
+        - list [ref=f15e11]:
+          - listitem [ref=f15e12]:
+            - link "Prompts" [ref=f15e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f15e14]:
+            - link "Categories" [ref=f15e15] [cursor=pointer]:
+              - /url: /category/marketing
+          - listitem [ref=f15e18]:
+            - link "Models" [ref=f15e19] [cursor=pointer]:
+              - /url: /tool/chatgpt
+          - listitem [ref=f15e22]:
+            - link "Roles" [ref=f15e23] [cursor=pointer]:
+              - /url: /for/marketers
+          - listitem [ref=f15e26]:
+            - link "Types" [ref=f15e27] [cursor=pointer]:
+              - /url: /type/text
+        - link "Add a prompt" [ref=f15e30] [cursor=pointer]:
+          - /url: https://github.com/mikeybizzzle/prompt-library
+  - main [ref=f15e33]:
+    - generic [ref=f15e34]:
+      - generic [ref=f15e35]:
+        - generic [ref=f15e36]:
+          - heading [level=1] [ref=f15e37]:
+            - text: A hand-built,
+            - emphasis [ref=f15e38]: Open Prompt Library
+          - paragraph [ref=f15e39]: Free, curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and every major model. Browse by category, model, or role.
+        - button "Search prompts (Command K)" [ref=f15e41]:
+          - generic [ref=f15e42]: Search
+          - generic [ref=f15e47]: ⌘K
+      - navigation "Browse categories" [ref=f15e49]:
+        - link "Marketing" [ref=f15e50] [cursor=pointer]:
+          - /url: /category/marketing
+        - link "Design" [ref=f15e56] [cursor=pointer]:
+          - /url: /category/art-and-design
+        - link "Education" [ref=f15e65] [cursor=pointer]:
+          - /url: /category/education
+        - link "Finance" [ref=f15e71] [cursor=pointer]:
+          - /url: /category/finance
+        - link "Sales" [ref=f15e77] [cursor=pointer]:
+          - /url: /category/sales
+        - link "Coding" [ref=f15e83] [cursor=pointer]:
+          - /url: /category/coding
+        - link "Writing" [ref=f15e90] [cursor=pointer]:
+          - /url: /category/writing
+        - button "More (14)" [ref=f15e95] [cursor=pointer]
+      - generic [ref=f15e105]:
+        - generic [ref=f15e106]:
+          - generic [ref=f15e107]:
+            - generic [ref=f15e108]:
+              - button [expanded] [active] [ref=f15e109]
+              - button [ref=f15e115]
+              - button [ref=f15e122]
+            - navigation [ref=f15e1354]:
+              - list [ref=f15e1355]:
+                - listitem [ref=f15e1356]:
+                  - generic [ref=f15e1357]:
+                    - link "Marketing 3" [ref=f15e1358] [cursor=pointer]:
+                      - /url: /category/marketing
+                      - generic [ref=f15e1359]: Marketing
+                      - generic [ref=f15e1364]: "3"
+                    - button "Expand Marketing subcategories" [ref=f15e1365]
+                - listitem [ref=f15e1368]:
+                  - generic [ref=f15e1370]:
+                    - link "Design 3" [ref=f15e1371] [cursor=pointer]:
+                      - /url: /category/art-and-design
+                      - generic [ref=f15e1372]: Design
+                      - generic [ref=f15e1380]: "3"
+                    - button "Expand Design subcategories" [ref=f15e1381]
+                - listitem [ref=f15e1384]:
+                  - generic [ref=f15e1386]:
+                    - link "Education 3" [ref=f15e1387] [cursor=pointer]:
+                      - /url: /category/education
+                      - generic [ref=f15e1388]: Education
+                      - generic [ref=f15e1393]: "3"
+                    - button "Expand Education subcategories" [ref=f15e1394]
+                - listitem [ref=f15e1397]:
+                  - generic [ref=f15e1399]:
+                    - link "Finance 3" [ref=f15e1400] [cursor=pointer]:
+                      - /url: /category/finance
+                      - generic [ref=f15e1401]: Finance
+                      - generic [ref=f15e1406]: "3"
+                    - button "Expand Finance subcategories" [ref=f15e1407]
+                - listitem [ref=f15e1410]:
+                  - generic [ref=f15e1412]:
+                    - link "Sales 3" [ref=f15e1413] [cursor=pointer]:
+                      - /url: /category/sales
+                      - generic [ref=f15e1414]: Sales
+                      - generic [ref=f15e1419]: "3"
+                    - button "Expand Sales subcategories" [ref=f15e1420]
+                - listitem [ref=f15e1423]:
+                  - generic [ref=f15e1425]:
+                    - link "Coding 3" [ref=f15e1426] [cursor=pointer]:
+                      - /url: /category/coding
+                      - generic [ref=f15e1427]: Coding
+                      - generic [ref=f15e1433]: "3"
+                    - button "Expand Coding subcategories" [ref=f15e1434]
+                - listitem [ref=f15e1437]:
+                  - button "More" [ref=f15e1439]
+          - generic [ref=f15e129]:
+            - 'button "Sort by: Shuffled" [ref=f15e131]':
+              - text: "Sort by:"
+              - generic [ref=f15e132]: Shuffled
+            - group "Output format" [ref=f15e135]:
+              - link "All" [ref=f15e136] [cursor=pointer]:
+                - /url: /
+              - link "Text" [ref=f15e141] [cursor=pointer]:
+                - /url: /type/text
+              - link "Image" [ref=f15e145] [cursor=pointer]:
+                - /url: /type/image
+              - link "Code" [ref=f15e150] [cursor=pointer]:
+                - /url: /type/code
+        - generic [ref=f15e155]:
+          - article [ref=f15e156]:
+            - link "Job Description With a Hiring Scorecard and Screens" [ref=f15e157] [cursor=pointer]:
+              - /url: /p/job-description-with-scorecard
+            - generic [ref=f15e158]: "## Role You are a hiring manager who defines success before writing a job post, and who screens on evidence rather than on background. ## Context **Role title:** {{role-title}} **Team and who they report to:** {{team-context}} **Why this role exists now:** {{reason-for-role}} **What must be true in 12 months for this hire to be a success:** {{twelve-month-outcomes}} **Day to day work:** {{daily-work}} **Compensation range:** {{comp-range}} **Location and working pattern:** {{location-model}} **Company stage and culture in plain terms:** {{company-context}} ## Task 1. Convert the 12 month outcomes into four to six measurable outcomes with a metric or an observable deliverable each. These"
+            - generic [ref=f15e161]:
+              - heading "Job Description With a Hiring Scorecard and Screens" [level=3] [ref=f15e162]:
+                - generic [ref=f15e163]: 🧾
+              - generic [ref=f15e166]:
+                - link "Claude" [ref=f15e167] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Human Resources" [ref=f15e172] [cursor=pointer]:
+                  - /url: /category/human-resources
+                - link "Job Descriptions" [ref=f15e173] [cursor=pointer]:
+                  - /url: /category/job-descriptions
+              - paragraph [ref=f15e174]: Writes a job post built from outcomes rather than duties, plus a hiring scorecard, must have versus nice to have criteria, and three screening questions.
+              - generic [ref=f15e176]:
+                - generic [ref=f15e177]:
+                  - button "Like" [ref=f15e178]
+                  - button "Save" [ref=f15e181]
+                  - button "Copy prompt" [ref=f15e184]: 362 words
+                - button "Share prompt" [ref=f15e188]
+          - article [ref=f15e195]:
+            - link "Twelve Month Cash Flow Forecast for a Small Business" [ref=f15e196] [cursor=pointer]:
+              - /url: /p/twelve-month-cash-flow-forecast
+            - generic [ref=f15e197]: "## Role You are a fractional finance lead who builds forecasts that a non finance owner can maintain without help. ## Context **Business:** {{business-description}} **Opening cash balance:** {{opening-cash}} **Revenue lines and current monthly values:** {{revenue-lines}} **Fixed costs:** {{fixed-costs}} **Variable costs as a share of revenue:** {{variable-cost-percent}} **Payment terms in and out:** {{payment-terms}} **Known one off items:** {{one-offs}} **Forecast start month:** {{start-month}} ## Task 1. List the drivers that actually move cash in this business. For each, state the current value, the assumption you are applying, and why. 2. Build a 12 month forecast by month with thes"
+            - generic [ref=f15e200]:
+              - heading "Twelve Month Cash Flow Forecast for a Small Business" [level=3] [ref=f15e201]:
+                - generic [ref=f15e202]: 💵
+              - generic [ref=f15e205]:
+                - link "Claude" [ref=f15e206] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Finance" [ref=f15e211] [cursor=pointer]:
+                  - /url: /category/finance
+                - link "Budgeting & Forecasting" [ref=f15e212] [cursor=pointer]:
+                  - /url: /category/budgeting-and-forecasting
+              - paragraph [ref=f15e213]: Builds a monthly cash flow forecast with opening and closing balances, a driver list, three scenarios, and the month the business runs short of cash.
+              - generic [ref=f15e215]:
+                - generic [ref=f15e216]:
+                  - button "Like" [ref=f15e217]
+                  - button "Save" [ref=f15e220]
+                  - button "Copy prompt" [ref=f15e223]: 286 words
+                - button "Share prompt" [ref=f15e227]
+          - article [ref=f15e234]:
+            - link "Performance Review Draft From Evidence Notes" [ref=f15e235] [cursor=pointer]:
+              - /url: /p/performance-review-from-evidence
+            - generic [ref=f15e236]:
+              - heading "Performance Review Draft From Evidence Notes" [level=3] [ref=f15e237]:
+                - generic [ref=f15e238]: 📈
+              - generic [ref=f15e241]:
+                - link "Claude" [ref=f15e242] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Human Resources" [ref=f15e247] [cursor=pointer]:
+                  - /url: /category/human-resources
+                - link "Performance Reviews" [ref=f15e248] [cursor=pointer]:
+                  - /url: /category/performance-reviews
+              - paragraph [ref=f15e249]: Turns scattered notes into a review with evidence backed strengths, two development areas, specific examples, next quarter goals, and a manager talking track.
+              - generic [ref=f15e251]:
+                - generic [ref=f15e252]:
+                  - button "Like" [ref=f15e253]
+                  - button "Save" [ref=f15e256]
+                  - button "Copy prompt" [ref=f15e259]: 379 words
+                - button "Share prompt" [ref=f15e263]
+          - article [ref=f15e270]:
+            - link "Thirty Day Social Content Calendar From One Offer" [ref=f15e271] [cursor=pointer]:
+              - /url: /p/thirty-day-social-content-calendar
+            - generic [ref=f15e272]:
+              - heading "Thirty Day Social Content Calendar From One Offer" [level=3] [ref=f15e273]:
+                - generic [ref=f15e274]: 🗓️
+              - generic [ref=f15e277]:
+                - link "ChatGPT" [ref=f15e278] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Marketing" [ref=f15e283] [cursor=pointer]:
+                  - /url: /category/marketing
+                - link "Social Media Posts" [ref=f15e284] [cursor=pointer]:
+                  - /url: /category/social-media-posts
+              - paragraph [ref=f15e285]: Produces a dated 30 day posting calendar for two channels, with hooks, formats, captions, and a weekly theme for a single offer and audience.
+              - generic [ref=f15e287]:
+                - generic [ref=f15e288]:
+                  - button "Like" [ref=f15e289]
+                  - button "Save" [ref=f15e292]
+                  - button "Copy prompt" [ref=f15e295]: 270 words
+                - button "Share prompt" [ref=f15e299]
+          - article [ref=f15e306]:
+            - link "Help Center Article From a Recurring Ticket Theme" [ref=f15e307] [cursor=pointer]:
+              - /url: /p/help-center-article-from-ticket-theme
+            - generic [ref=f15e308]:
+              - heading "Help Center Article From a Recurring Ticket Theme" [level=3] [ref=f15e309]:
+                - generic [ref=f15e310]: 📖
+              - generic [ref=f15e313]:
+                - link "Claude" [ref=f15e314] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Customer Service" [ref=f15e319] [cursor=pointer]:
+                  - /url: /category/customer-service
+                - link "Help Center Articles" [ref=f15e320] [cursor=pointer]:
+                  - /url: /category/help-center-articles
+              - paragraph [ref=f15e321]: Turns a cluster of repeat tickets into a help article with a task focused title, numbered steps, screenshots marked, troubleshooting branches, and related links.
+              - generic [ref=f15e323]:
+                - generic [ref=f15e324]:
+                  - button "Like" [ref=f15e325]
+                  - button "Save" [ref=f15e328]
+                  - button "Copy prompt" [ref=f15e331]: 341 words
+                - button "Share prompt" [ref=f15e335]
+          - article [ref=f15e342]:
+            - link "Weekly Priority Plan From a Messy Task List" [ref=f15e343] [cursor=pointer]:
+              - /url: /p/weekly-priority-plan-from-task-list
+            - generic [ref=f15e344]: "## Role You are a planning partner who tells the truth about capacity. You would rather cut half the list than produce a plan that fails by Wednesday. ## Context **Raw task list:** {{task-list}} **Fixed commitments this week:** {{calendar-commitments}} **Working hours available:** {{available-hours}} **Energy pattern across the day:** {{energy-pattern}} **What must be true by Friday:** {{week-goal}} **Things I keep postponing:** {{recurring-avoidance}} **People I can delegate to:** {{delegates}} ## Task 1. Estimate each task in the list: duration, cognitive load as deep or shallow, and whether it is truly time bound this week. 2. Sort every task into keep, delegate, defer, or delete. Ev"
+            - generic [ref=f15e347]:
+              - heading "Weekly Priority Plan From a Messy Task List" [level=3] [ref=f15e348]:
+                - generic [ref=f15e349]: 📌
+              - generic [ref=f15e352]:
+                - link "ChatGPT" [ref=f15e353] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Productivity" [ref=f15e358] [cursor=pointer]:
+                  - /url: /category/productivity
+                - link "Planning & Prioritization" [ref=f15e359] [cursor=pointer]:
+                  - /url: /category/planning-and-prioritization
+              - paragraph [ref=f15e360]: Sorts a raw task dump into a realistic week, with three outcomes, time blocked days, tasks to delete or delegate, and an honest capacity check.
+              - generic [ref=f15e362]:
+                - generic [ref=f15e363]:
+                  - button "Like" [ref=f15e364]
+                  - button "Save" [ref=f15e367]
+                  - button "Copy prompt" [ref=f15e370]: 364 words
+                - button "Share prompt" [ref=f15e374]
+          - article [ref=f15e381]:
+            - link "Data Cleaning Plan for a Messy CSV Export" [ref=f15e382] [cursor=pointer]:
+              - /url: /p/data-cleaning-plan-messy-csv
+            - generic [ref=f15e383]: "## Role You are a data analyst preparing a file for analysis. You never silently drop rows and you record every transformation so a result can be traced back to the raw file. ## Context **Sample of the file, including headers and 20 rows:** {{data-sample}} **Total row count:** {{row-count}} **What this data is used for:** {{intended-analysis}} **Known upstream problems:** {{known-issues}} **Fields that must not be altered:** {{protected-fields}} **Tool being used:** {{tool}} ## Task 1. Profile every column: inferred type, fill rate, distinct count, and the three most frequent values. Flag columns where the inferred type conflicts with the values present. 2. Identify quality issues by ca"
+            - generic [ref=f15e386]:
+              - heading "Data Cleaning Plan for a Messy CSV Export" [level=3] [ref=f15e387]:
+                - generic [ref=f15e388]: 🧹
+              - generic [ref=f15e391]:
+                - link "Claude" [ref=f15e392] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Data Analysis" [ref=f15e397] [cursor=pointer]:
+                  - /url: /category/data-analysis
+                - link "Data Cleaning" [ref=f15e398] [cursor=pointer]:
+                  - /url: /category/data-cleaning
+              - paragraph [ref=f15e399]: Profiles a messy export column by column, lists every quality issue with its row count, and returns an ordered cleaning plan with the rules and checks for each step.
+              - generic [ref=f15e401]:
+                - generic [ref=f15e402]:
+                  - button "Like" [ref=f15e403]
+                  - button "Save" [ref=f15e406]
+                  - button "Copy prompt" [ref=f15e409]: 384 words
+                - button "Share prompt" [ref=f15e413]
+          - article [ref=f15e420]:
+            - link "User Interview Guide and Synthesis Template" [ref=f15e421] [cursor=pointer]:
+              - /url: /p/user-interview-guide-and-synthesis
+            - generic [ref=f15e422]:
+              - heading "User Interview Guide and Synthesis Template" [level=3] [ref=f15e423]:
+                - generic [ref=f15e424]: 🎙️
+              - generic [ref=f15e427]:
+                - link "Claude" [ref=f15e428] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Research" [ref=f15e433] [cursor=pointer]:
+                  - /url: /category/research
+                - link "User Research" [ref=f15e434] [cursor=pointer]:
+                  - /url: /category/user-research
+              - paragraph [ref=f15e435]: Builds a non leading interview guide around one research question, plus a note taking format and a synthesis structure that turns transcripts into findings.
+              - generic [ref=f15e437]:
+                - generic [ref=f15e438]:
+                  - button "Like" [ref=f15e439]
+                  - button "Save" [ref=f15e442]
+                  - button "Copy prompt" [ref=f15e445]: 370 words
+                - button "Share prompt" [ref=f15e449]
+          - article [ref=f15e456]:
+            - link "Survey Questionnaire With Bias Checks and Scales" [ref=f15e457] [cursor=pointer]:
+              - /url: /p/survey-questionnaire-with-bias-checks
+            - generic [ref=f15e458]:
+              - heading "Survey Questionnaire With Bias Checks and Scales" [level=3] [ref=f15e459]:
+                - generic [ref=f15e460]: 📋
+              - generic [ref=f15e463]:
+                - link "ChatGPT" [ref=f15e464] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Research" [ref=f15e469] [cursor=pointer]:
+                  - /url: /category/research
+                - link "Surveys" [ref=f15e470] [cursor=pointer]:
+                  - /url: /category/surveys
+              - paragraph [ref=f15e471]: Designs a survey with a screener, ordered question blocks, consistent scales, and a bias review that flags leading, double barrelled, and unanswerable items.
+              - generic [ref=f15e473]:
+                - generic [ref=f15e474]:
+                  - button "Like" [ref=f15e475]
+                  - button "Save" [ref=f15e478]
+                  - button "Copy prompt" [ref=f15e481]: 363 words
+                - button "Share prompt" [ref=f15e485]
+          - article [ref=f15e492]:
+            - link "Root Cause Analysis for a Failing Test or Stack Trace" [ref=f15e493] [cursor=pointer]:
+              - /url: /p/root-cause-analysis-failing-test
+            - generic [ref=f15e494]: "## Role You are a senior engineer debugging code you did not write. You find the cause before you propose a change, and you never silence an error to make a test pass. ## Context **Language and framework:** {{stack}} **Failing output:** {{stack-trace-or-test-output}} **Relevant source:** {{code}} **What changed recently:** {{recent-changes}} **How to reproduce:** {{repro-steps}} **What the code is supposed to do:** {{expected-behaviour}} ## Task 1. Restate the failure precisely: what was expected, what happened, and at which line the divergence first becomes observable. Do not restate the error message alone. 2. List three to five candidate causes. For each, give the evidence in the pro"
+            - generic [ref=f15e497]:
+              - heading "Root Cause Analysis for a Failing Test or Stack Trace" [level=3] [ref=f15e498]:
+                - generic [ref=f15e499]: 🐛
+              - generic [ref=f15e502]:
+                - link "Claude Code" [ref=f15e503] [cursor=pointer]:
+                  - /url: /tool/claude-code
+                - link "Coding" [ref=f15e508] [cursor=pointer]:
+                  - /url: /category/coding
+                - link "Debugging" [ref=f15e509] [cursor=pointer]:
+                  - /url: /category/debugging
+              - paragraph [ref=f15e510]: Walks a failing test or stack trace back to the root cause, ranks candidate explanations by evidence, and returns a minimal fix plus a regression test.
+              - generic [ref=f15e512]:
+                - generic [ref=f15e513]:
+                  - button "Like" [ref=f15e514]
+                  - button "Save" [ref=f15e517]
+                  - button "Copy prompt" [ref=f15e520]: 312 words
+                - button "Share prompt" [ref=f15e524]
+          - article [ref=f15e531]:
+            - link "Cold Email Sequence Builder for B2B Outreach" [ref=f15e532] [cursor=pointer]:
+              - /url: /p/cold-email-sequence-builder
+            - generic [ref=f15e533]: "## Role You are a B2B outbound strategist. You write short emails that earn a reply, not emails that describe a product. ## Context **Offer:** {{offer}} **Ideal customer profile:** {{icp}} **Job title targeted:** {{target-title}} **Trigger event that makes them relevant now:** {{trigger}} **Proof available:** {{proof}} **Sender and their credibility:** {{sender-background}} **Meeting you want booked:** {{desired-meeting}} ## Task 1. Write the one sentence problem statement in the language the target uses internally, not in vendor language. 2. Build a five email sequence sent over 18 days. Each email must do one job only: email one earns attention, two adds a proof point, three reframes"
+            - generic [ref=f15e536]:
+              - heading "Cold Email Sequence Builder for B2B Outreach" [level=3] [ref=f15e537]:
+                - generic [ref=f15e538]: 📧
+              - generic [ref=f15e541]:
+                - link "ChatGPT" [ref=f15e542] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Sales" [ref=f15e547] [cursor=pointer]:
+                  - /url: /category/sales
+                - link "Cold Outreach" [ref=f15e548] [cursor=pointer]:
+                  - /url: /category/cold-outreach
+              - paragraph [ref=f15e549]: Builds a five email cold outreach sequence with subject lines, personalization hooks, and a follow up cadence, tuned to one ideal customer profile and one offer.
+              - generic [ref=f15e551]:
+                - generic [ref=f15e552]:
+                  - button "Like" [ref=f15e553]
+                  - button "Save" [ref=f15e556]
+                  - button "Copy prompt" [ref=f15e559]: 310 words
+                - button "Share prompt" [ref=f15e563]
+          - article [ref=f15e570]:
+            - link "Podcast Episode Outline With Segment Timings" [ref=f15e571] [cursor=pointer]:
+              - /url: /p/podcast-episode-outline-with-timings
+            - generic [ref=f15e572]:
+              - heading "Podcast Episode Outline With Segment Timings" [level=3] [ref=f15e573]:
+                - generic [ref=f15e574]: 🎧
+              - generic [ref=f15e577]:
+                - link "Claude" [ref=f15e578] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Audio" [ref=f15e583] [cursor=pointer]:
+                  - /url: /category/audio
+                - link "Podcast Production" [ref=f15e584] [cursor=pointer]:
+                  - /url: /category/podcast-production
+              - paragraph [ref=f15e585]: Builds an episode outline with a cold open, timed segments, interview questions in escalating order, ad break placement, and the show notes with timestamps.
+              - generic [ref=f15e587]:
+                - generic [ref=f15e588]:
+                  - button "Like" [ref=f15e589]
+                  - button "Save" [ref=f15e592]
+                  - button "Copy prompt" [ref=f15e595]: 419 words
+                - button "Share prompt" [ref=f15e599]
+          - article [ref=f15e606]:
+            - link "Go-to-Market Plan for a New Product Launch" [ref=f15e607] [cursor=pointer]:
+              - /url: /p/go-to-market-plan-new-product
+            - generic [ref=f15e608]:
+              - heading "Go-to-Market Plan for a New Product Launch" [level=3] [ref=f15e609]:
+                - generic [ref=f15e610]: 🚀
+              - generic [ref=f15e613]:
+                - link "Claude" [ref=f15e614] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Strategy" [ref=f15e619] [cursor=pointer]:
+                  - /url: /category/strategy
+                - link "Go-to-Market" [ref=f15e620] [cursor=pointer]:
+                  - /url: /category/go-to-market
+              - paragraph [ref=f15e621]: Builds a launch plan covering segment choice, the channel test order, pricing entry point, launch sequence by week, and the metrics that decide whether to scale.
+              - generic [ref=f15e623]:
+                - generic [ref=f15e624]:
+                  - button "Like" [ref=f15e625]
+                  - button "Save" [ref=f15e628]
+                  - button "Copy prompt" [ref=f15e631]: 342 words
+                - button "Share prompt" [ref=f15e635]
+          - article [ref=f15e642]:
+            - link "Quarterly OKR Set With Measurable Key Results" [ref=f15e643] [cursor=pointer]:
+              - /url: /p/quarterly-okr-set-builder
+            - generic [ref=f15e644]:
+              - heading "Quarterly OKR Set With Measurable Key Results" [level=3] [ref=f15e645]:
+                - generic [ref=f15e646]: 🎯
+              - generic [ref=f15e649]:
+                - link "ChatGPT" [ref=f15e650] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Strategy" [ref=f15e655] [cursor=pointer]:
+                  - /url: /category/strategy
+                - link "OKRs & Goals" [ref=f15e656] [cursor=pointer]:
+                  - /url: /category/okrs-and-goals
+              - paragraph [ref=f15e657]: Turns a quarterly goal into three objectives with measurable key results, current baselines, owners, weekly leading indicators, and the work explicitly cut.
+              - generic [ref=f15e659]:
+                - generic [ref=f15e660]:
+                  - button "Like" [ref=f15e661]
+                  - button "Save" [ref=f15e664]
+                  - button "Copy prompt" [ref=f15e667]: 342 words
+                - button "Share prompt" [ref=f15e671]
+          - article [ref=f15e678]:
+            - link "Sixty Second Voiceover Script With Delivery Notes" [ref=f15e679] [cursor=pointer]:
+              - /url: /p/sixty-second-voiceover-script
+            - generic [ref=f15e680]: "## Role You are a voiceover writer. You write for the ear, you count words against the clock, and you mark delivery so the read matches the intent. ## Context **What the spot is for:** {{spot-purpose}} **Product or subject:** {{subject}} **Audience:** {{audience}} **One thing the listener must remember:** {{single-message}} **Tone:** {{tone}} **Call to action:** {{cta}} **Voice profile:** {{voice-profile}} **Words per minute target:** {{wpm}} **Music or sound bed:** {{audio-bed}} ## Task 1. Calculate the word budget from the words per minute target and state it. A conversational read is roughly 150 words per minute, an urgent read closer to 180. 2. Structure the script in four beats wit"
+            - generic [ref=f15e683]:
+              - heading "Sixty Second Voiceover Script With Delivery Notes" [level=3] [ref=f15e684]:
+                - generic [ref=f15e685]: 🎙️
+              - generic [ref=f15e688]:
+                - link "ElevenLabs" [ref=f15e689] [cursor=pointer]:
+                  - /url: /tool/elevenlabs
+                - link "Audio" [ref=f15e695] [cursor=pointer]:
+                  - /url: /category/audio
+                - link "Voiceover Scripts" [ref=f15e696] [cursor=pointer]:
+                  - /url: /category/voiceover-scripts
+              - paragraph [ref=f15e697]: Writes a timed voiceover script for a 60 second spot with pacing marks, emphasis, pause lengths, and pronunciation notes ready for a synthetic or human read.
+              - generic [ref=f15e699]:
+                - generic [ref=f15e700]:
+                  - button "Like" [ref=f15e701]
+                  - button "Save" [ref=f15e704]
+                  - button "Copy prompt" [ref=f15e707]: 353 words
+                - button "Share prompt" [ref=f15e711]
+          - article [ref=f15e718]:
+            - link "Instrumental Track Brief for a Music Generation Model" [ref=f15e719] [cursor=pointer]:
+              - /url: /p/instrumental-track-brief-prompt
+            - generic [ref=f15e720]: "## Role You are a music supervisor writing prompts for a generative music model. You describe sound in terms a model can act on: instrumentation, tempo, texture, and arrangement, not adjectives alone. ## Context **What the track is for:** {{use-case}} **Length needed:** {{duration}} **Mood in three words:** {{mood}} **Reference feel, described not named:** {{reference-feel}} **Instruments that must appear:** {{required-instruments}} **Instruments to avoid:** {{excluded-instruments}} **Where it sits under other audio:** {{mix-context}} **Loop or one shot:** {{loop-requirement}} ## Task 1. Translate the mood into concrete musical parameters: tempo in beats per minute, key and mode, time s"
+            - generic [ref=f15e723]:
+              - heading "Instrumental Track Brief for a Music Generation Model" [level=3] [ref=f15e724]:
+                - generic [ref=f15e725]: 🎼
+              - generic [ref=f15e728]:
+                - link "Suno" [ref=f15e729] [cursor=pointer]:
+                  - /url: /tool/suno
+                - link "Audio" [ref=f15e735] [cursor=pointer]:
+                  - /url: /category/audio
+                - link "Music Generation" [ref=f15e736] [cursor=pointer]:
+                  - /url: /category/music-generation
+              - paragraph [ref=f15e737]: Turns a creative brief into a structured music generation prompt with genre, instrumentation, tempo, arrangement by section, and three variations to try.
+              - generic [ref=f15e739]:
+                - generic [ref=f15e740]:
+                  - button "Like" [ref=f15e741]
+                  - button "Save" [ref=f15e744]
+                  - button "Copy prompt" [ref=f15e747]: 388 words
+                - button "Share prompt" [ref=f15e751]
+          - article [ref=f15e758]:
+            - link "SEO Content Brief With Outline and Entity Checklist" [ref=f15e759] [cursor=pointer]:
+              - /url: /p/seo-content-brief-with-entities
+            - generic [ref=f15e760]:
+              - heading "SEO Content Brief With Outline and Entity Checklist" [level=3] [ref=f15e761]:
+                - generic [ref=f15e762]: 📝
+              - generic [ref=f15e765]:
+                - link "ChatGPT" [ref=f15e766] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "SEO" [ref=f15e771] [cursor=pointer]:
+                  - /url: /category/seo
+                - link "Content Briefs" [ref=f15e772] [cursor=pointer]:
+                  - /url: /category/content-briefs
+              - paragraph [ref=f15e773]: Produces a writer ready content brief covering search intent, a heading outline, entities to cover, internal links, and the questions the page must answer.
+              - generic [ref=f15e775]:
+                - generic [ref=f15e776]:
+                  - button "Like" [ref=f15e777]
+                  - button "Save" [ref=f15e780]
+                  - button "Copy prompt" [ref=f15e783]: 326 words
+                - button "Share prompt" [ref=f15e787]
+          - article [ref=f15e794]:
+            - link "Tool Definitions and Call Policy for an Agent" [ref=f15e795] [cursor=pointer]:
+              - /url: /p/agent-tool-definitions-and-call-policy
+            - generic [ref=f15e796]:
+              - heading "Tool Definitions and Call Policy for an Agent" [level=3] [ref=f15e797]:
+                - generic [ref=f15e798]: 🧰
+              - generic [ref=f15e801]:
+                - link "Claude" [ref=f15e802] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "AI Agents" [ref=f15e807] [cursor=pointer]:
+                  - /url: /category/ai-agents
+                - link "Tool Use" [ref=f15e808] [cursor=pointer]:
+                  - /url: /category/tool-use
+              - paragraph [ref=f15e809]: Designs an agent tool set with JSON schemas, descriptions written for the model, argument validation, error contracts, and rules for when each tool may be called.
+              - generic [ref=f15e811]:
+                - generic [ref=f15e812]:
+                  - button "Like" [ref=f15e813]
+                  - button "Save" [ref=f15e816]
+                  - button "Copy prompt" [ref=f15e819]: 408 words
+                - button "Share prompt" [ref=f15e823]
+          - article [ref=f15e830]:
+            - link "Turn One Webinar Into Twelve Channel Ready Assets" [ref=f15e831] [cursor=pointer]:
+              - /url: /p/webinar-into-twelve-assets
+            - generic [ref=f15e832]: "## Role You are a content editor who turns one long recording into a month of distribution without diluting the original argument. ## Context **Transcript:** {{transcript}} **Original title:** {{recording-title}} **Audience:** {{audience}} **Primary call to action:** {{cta}} **Channels in use:** {{channels}} ## Task Read the transcript and work in this order. 1. Extract the spine: the single claim the recording argues, plus the three to five supporting points that carry it. 2. Mark the five highest value moments. A high value moment is a specific story, a number, a reframe, a mistake admitted, or a step by step method. Give each a timestamp and a one line label. 3. Build twelve assets"
+            - generic [ref=f15e835]:
+              - heading "Turn One Webinar Into Twelve Channel Ready Assets" [level=3] [ref=f15e836]:
+                - generic [ref=f15e837]: ♻️
+              - generic [ref=f15e840]:
+                - link "Claude" [ref=f15e841] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Marketing" [ref=f15e846] [cursor=pointer]:
+                  - /url: /category/marketing
+                - link "Content Repurposing" [ref=f15e847] [cursor=pointer]:
+                  - /url: /category/content-repurposing
+              - paragraph [ref=f15e848]: Takes a webinar or long video transcript and returns twelve finished assets across email, social, blog, and short video, each with its source timestamp.
+              - generic [ref=f15e850]:
+                - generic [ref=f15e851]:
+                  - button "Like" [ref=f15e852]
+                  - button "Save" [ref=f15e855]
+                  - button "Copy prompt" [ref=f15e858]: 264 words
+                - button "Share prompt" [ref=f15e862]
+          - article [ref=f15e869]:
+            - link "Exam Study Guide With a Spaced Repetition Schedule" [ref=f15e870] [cursor=pointer]:
+              - /url: /p/exam-study-guide-spaced-repetition
+            - generic [ref=f15e871]: "## Role You are a study coach who builds revision plans around retrieval practice and spacing rather than rereading. ## Context **Course or subject:** {{subject}} **Source material:** {{notes-or-syllabus}} **Exam date:** {{exam-date}} **Today:** {{today}} **Study hours available per week:** {{hours-per-week}} **Known weak areas:** {{weak-areas}} **Exam format:** {{exam-format}} ## Task 1. Break the source material into topics. For each topic assign a weight from 1 to 5 based on likely exam value, and a confidence score from 1 to 5 based on the stated weak areas. 2. Rank topics by weight divided by confidence so the highest leverage material rises to the top. 3. For each topic write a su"
+            - generic [ref=f15e874]:
+              - heading "Exam Study Guide With a Spaced Repetition Schedule" [level=3] [ref=f15e875]:
+                - generic [ref=f15e876]: 🧠
+              - generic [ref=f15e879]:
+                - link "Claude" [ref=f15e880] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Education" [ref=f15e885] [cursor=pointer]:
+                  - /url: /category/education
+                - link "Study Guides" [ref=f15e886] [cursor=pointer]:
+                  - /url: /category/study-guides
+              - paragraph [ref=f15e887]: Turns a syllabus or set of notes into a ranked topic list, condensed summaries, active recall questions, and a dated revision schedule up to exam day.
+              - generic [ref=f15e889]:
+                - generic [ref=f15e890]:
+                  - button "Like" [ref=f15e891]
+                  - button "Save" [ref=f15e894]
+                  - button "Copy prompt" [ref=f15e897]: 275 words
+                - button "Share prompt" [ref=f15e901]
+          - article [ref=f15e908]:
+            - link "QA Checklist and Defect Triage Rules for a Service" [ref=f15e909] [cursor=pointer]:
+              - /url: /p/qa-checklist-and-defect-triage
+            - generic [ref=f15e910]:
+              - heading "QA Checklist and Defect Triage Rules for a Service" [level=3] [ref=f15e911]:
+                - generic [ref=f15e912]: ✅
+              - generic [ref=f15e915]:
+                - link "ChatGPT" [ref=f15e916] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+                - link "Operations" [ref=f15e921] [cursor=pointer]:
+                  - /url: /category/operations
+                - link "Quality Assurance" [ref=f15e922] [cursor=pointer]:
+                  - /url: /category/quality-assurance
+              - paragraph [ref=f15e923]: Builds an inspection checklist with pass criteria for each step, a severity model for defects, triage routing rules, and a weekly quality report format.
+              - generic [ref=f15e925]:
+                - generic [ref=f15e926]:
+                  - button "Like" [ref=f15e927]
+                  - button "Save" [ref=f15e930]
+                  - button "Copy prompt" [ref=f15e933]: 350 words
+                - button "Share prompt" [ref=f15e937]
+          - article [ref=f15e944]:
+            - link "Postgres Schema Draft From Product Requirements" [ref=f15e945] [cursor=pointer]:
+              - /url: /p/postgres-schema-from-requirements
+            - generic [ref=f15e946]:
+              - heading "Postgres Schema Draft From Product Requirements" [level=3] [ref=f15e947]:
+                - generic [ref=f15e948]: 🗄️
+              - generic [ref=f15e951]:
+                - link "Claude" [ref=f15e952] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Coding" [ref=f15e957] [cursor=pointer]:
+                  - /url: /category/coding
+                - link "Database Design" [ref=f15e958] [cursor=pointer]:
+                  - /url: /category/database-design
+              - paragraph [ref=f15e959]: Turns a feature description into a normalised Postgres schema with DDL, indexes, constraints, a migration file, and the queries the design is optimised for.
+              - generic [ref=f15e961]:
+                - generic [ref=f15e962]:
+                  - button "Like" [ref=f15e963]
+                  - button "Save" [ref=f15e966]
+                  - button "Copy prompt" [ref=f15e969]: 314 words
+                - button "Share prompt" [ref=f15e973]
+          - article [ref=f15e980]:
+            - link "Cinematic Night Street Scene With Anamorphic Flare" [ref=f15e981] [cursor=pointer]:
+              - /url: /p/cinematic-night-street-anamorphic
+            - generic [ref=f15e982]:
+              - heading "Cinematic Night Street Scene With Anamorphic Flare" [level=3] [ref=f15e983]:
+                - generic [ref=f15e984]: 🎬
+              - generic [ref=f15e987]:
+                - link "Veo" [ref=f15e988] [cursor=pointer]:
+                  - /url: /tool/veo
+                - link "Video" [ref=f15e994] [cursor=pointer]:
+                  - /url: /category/video
+                - link "Cinematic Scenes" [ref=f15e995] [cursor=pointer]:
+                  - /url: /category/cinematic-scenes
+              - paragraph [ref=f15e996]: Generates a moody night exterior clip with a slow dolly move, wet asphalt reflections, practical neon sources, and anamorphic flare for a film look.
+              - generic [ref=f15e998]:
+                - generic [ref=f15e999]:
+                  - button "Like" [ref=f15e1000]
+                  - button "Save" [ref=f15e1003]
+                  - button "Copy prompt" [ref=f15e1006]: 275 words
+                - button "Share prompt" [ref=f15e1010]
+          - article [ref=f15e1017]:
+            - link "Discovery Call Question Map With a Scoring Rubric" [ref=f15e1018] [cursor=pointer]:
+              - /url: /p/discovery-call-question-map
+            - generic [ref=f15e1019]: "## Role You are a sales trainer who builds discovery guides that produce a decision, not a friendly conversation. ## Context **What we sell:** {{offer}} **Typical deal size and cycle:** {{deal-profile}} **Who we talk to first:** {{first-contact-role}} **Who signs:** {{decision-maker}} **Our disqualifiers:** {{disqualifiers}} **Call length:** {{call-length}} ## Task 1. Write an opening that sets the agenda and gives the prospect explicit permission to end the call early. Under 60 words. 2. Build four question blocks: current state, cost of the current state, decision process, and success definition. Each block gets three primary questions and, for each primary question, one follow up to"
+            - generic [ref=f15e1022]:
+              - heading "Discovery Call Question Map With a Scoring Rubric" [level=3] [ref=f15e1023]:
+                - generic [ref=f15e1024]: 🎧
+              - generic [ref=f15e1027]:
+                - link "Claude" [ref=f15e1028] [cursor=pointer]:
+                  - /url: /tool/claude
+                - link "Sales" [ref=f15e1033] [cursor=pointer]:
+                  - /url: /category/sales
+                - link "Discovery Calls" [ref=f15e1034] [cursor=pointer]:
+                  - /url: /category/discovery-calls
+              - paragraph [ref=f15e1035]: Produces a structured discovery call guide with question branches by answer, a qualification scoring rubric, and the exact language for a next step ask.
+              - generic [ref=f15e1037]:
+                - generic [ref=f15e1038]:
+                  - button "Like" [ref=f15e1039]
+                  - button "Save" [ref=f15e1042]
+                  - button "Copy prompt" [ref=f15e1045]: 313 words
+                - button "Share prompt" [ref=f15e1049]
+        - generic [ref=f15e1057]: Loading more prompts…
+      - generic [ref=f15e1060]:
+        - region "Featured prompts" [ref=f15e1061]:
+          - generic [ref=f15e1062]:
+            - heading [level=2] [ref=f15e1063]:
+              - text: "Start here:"
+              - strong [ref=f15e1064]: hand-picked prompts
+            - link "All prompts" [ref=f15e1065] [cursor=pointer]:
+              - /url: /
+          - generic [ref=f15e1068]:
+            - 'link "## Role You are an SEO strategist who builds site architecture from search intent rather than from keyword volume alone. ## Context **Site and what it sells:** {{site-description}} **Raw keyword list with volume and difficulty:** {{keyword-data}} **Existing pages and their target terms:** {{existing-pages}} **Domain authority band:** {{authority-band}} **Conversion path:** {{conversion-path}} **Geography targeted:** {{geography}} ## Task 1. Group every keyword into a topical cluster. A cluster is a set of terms that one page could rank for because the searcher wants the same thing. Name each cluster in plain language. 2. Label each cluster with one intent: informational, comparative, tr 🔑 Keyword Cluster Map With Intent and Priority Scores Open prompt" [ref=f15e1069] [cursor=pointer]':
+              - /url: /p/keyword-cluster-map-with-intent
+              - generic [ref=f15e1070]: "## Role You are an SEO strategist who builds site architecture from search intent rather than from keyword volume alone. ## Context **Site and what it sells:** {{site-description}} **Raw keyword list with volume and difficulty:** {{keyword-data}} **Existing pages and their target terms:** {{existing-pages}} **Domain authority band:** {{authority-band}} **Conversion path:** {{conversion-path}} **Geography targeted:** {{geography}} ## Task 1. Group every keyword into a topical cluster. A cluster is a set of terms that one page could rank for because the searcher wants the same thing. Name each cluster in plain language. 2. Label each cluster with one intent: informational, comparative, tr"
+              - generic [ref=f15e1072]:
+                - heading "🔑 Keyword Cluster Map With Intent and Priority Scores" [level=3] [ref=f15e1073]
+                - generic [ref=f15e1074]: Open prompt
+            - 'link "## Role You are a social content planner who builds calendars that a one person team can actually execute. You plan around a single offer and a single audience, not around trends. ## Context **Offer:** {{offer}} **Audience:** {{audience}} **Channels:** {{channel-one}} and {{channel-two}} **Brand voice:** {{voice-notes}} **Posting days per week:** {{posts-per-week}} **Proof assets available:** {{proof-assets}} **Start date:** {{start-date}} ## Task Build a 30 day calendar starting on the start date. 1. Assign each of the four weeks one theme. Themes must move in sequence: problem awareness, mechanism, proof, offer. 2. For each posting day, produce one post entry. 3. Rotate through five 🗓️ Thirty Day Social Content Calendar From One Offer Open prompt" [ref=f15e1077] [cursor=pointer]':
+              - /url: /p/thirty-day-social-content-calendar
+              - generic [ref=f15e1078]: "## Role You are a social content planner who builds calendars that a one person team can actually execute. You plan around a single offer and a single audience, not around trends. ## Context **Offer:** {{offer}} **Audience:** {{audience}} **Channels:** {{channel-one}} and {{channel-two}} **Brand voice:** {{voice-notes}} **Posting days per week:** {{posts-per-week}} **Proof assets available:** {{proof-assets}} **Start date:** {{start-date}} ## Task Build a 30 day calendar starting on the start date. 1. Assign each of the four weeks one theme. Themes must move in sequence: problem awareness, mechanism, proof, offer. 2. For each posting day, produce one post entry. 3. Rotate through five"
+              - generic [ref=f15e1080]:
+                - heading "🗓️ Thirty Day Social Content Calendar From One Offer" [level=3] [ref=f15e1081]
+                - generic [ref=f15e1082]: Open prompt
+            - 'link "## Role You are an agent designer. You write system prompts that define scope tightly, because an agent that can do anything will do the wrong thing. ## Context **What this agent is for:** {{agent-purpose}} **Who talks to it:** {{end-users}} **Data and tools it can access:** {{tools-and-data}} **What it must never do:** {{prohibitions}} **When a human must take over:** {{escalation-conditions}} **Brand voice:** {{voice-notes}} **Known failure modes from testing:** {{observed-failures}} **Model it runs on:** {{target-model}} ## Task Write the system prompt with these components, in this order. 1. **Identity and scope.** One paragraph stating what the agent is, who it serves, and the bou 🤖 System Prompt for a Narrow Scope Support Agent Open prompt" [ref=f15e1085] [cursor=pointer]':
+              - /url: /p/narrow-scope-support-agent-system-prompt
+              - generic [ref=f15e1086]: "## Role You are an agent designer. You write system prompts that define scope tightly, because an agent that can do anything will do the wrong thing. ## Context **What this agent is for:** {{agent-purpose}} **Who talks to it:** {{end-users}} **Data and tools it can access:** {{tools-and-data}} **What it must never do:** {{prohibitions}} **When a human must take over:** {{escalation-conditions}} **Brand voice:** {{voice-notes}} **Known failure modes from testing:** {{observed-failures}} **Model it runs on:** {{target-model}} ## Task Write the system prompt with these components, in this order. 1. **Identity and scope.** One paragraph stating what the agent is, who it serves, and the bou"
+              - generic [ref=f15e1088]:
+                - heading "🤖 System Prompt for a Narrow Scope Support Agent" [level=3] [ref=f15e1089]
+                - generic [ref=f15e1090]: Open prompt
+        - region "Frequently asked questions" [ref=f15e1093]:
+          - group [ref=f15e1094]:
+            - generic "What is Prompt Atlas?" [ref=f15e1095] [cursor=pointer]
+          - group [ref=f15e1098]:
+            - generic "How is the library organised?" [ref=f15e1099] [cursor=pointer]
+          - group [ref=f15e1102]:
+            - generic "How do I use a prompt?" [ref=f15e1103] [cursor=pointer]
+          - group [ref=f15e1106]:
+            - generic "Where do the prompts live?" [ref=f15e1107] [cursor=pointer]
+          - group [ref=f15e1110]:
+            - generic "Is it free?" [ref=f15e1111] [cursor=pointer]
+          - group [ref=f15e1114]:
+            - generic "Can I add my own prompts?" [ref=f15e1115] [cursor=pointer]
+        - generic [ref=f15e1118]:
+          - heading "What is inside" [level=3] [ref=f15e1119]
+          - paragraph [ref=f15e1120]: "63 prompts grouped four ways so you can find one in a few seconds rather than scrolling a spreadsheet:"
+          - list [ref=f15e1121]:
+            - listitem [ref=f15e1122]:
+              - strong [ref=f15e1123]: By category (21 roots, plus subcategories)
+              - text: ": marketing, design, coding, writing, SEO, strategy, sales, education, research, legal, finance, HR, operations, data, real estate, support, careers, audio, video, agents, productivity."
+            - listitem [ref=f15e1124]:
+              - strong [ref=f15e1125]: By model (31 tools)
+              - text: ": ChatGPT, Claude, Gemini, Grok, Midjourney, Nano Banana, Claude Code, Cursor and more. Each prompt names the model it was written against."
+            - listitem [ref=f15e1126]:
+              - strong [ref=f15e1127]: By role
+              - text: ": the job you actually do, from founder to freelancer to teacher."
+            - listitem [ref=f15e1128]:
+              - strong [ref=f15e1129]: By type
+              - text: ": text, image, or code output."
+          - heading "How to use any prompt here" [level=3] [ref=f15e1130]
+          - list [ref=f15e1131]:
+            - listitem [ref=f15e1132]: Open the prompt that matches your task.
+            - listitem [ref=f15e1133]: Copy it. Every prompt states a role, context, task, constraints, and output format.
+            - listitem [ref=f15e1134]:
+              - text: Replace the
+              - code [ref=f15e1135]: "{{placeholders}}"
+              - text: "with your own context: your audience, your brand, your inputs."
+            - listitem [ref=f15e1136]: Paste it into ChatGPT, Claude, Gemini, or whatever you run.
+            - listitem [ref=f15e1137]: Run it, read it, refine it. Then send the better version back as a pull request.
+          - heading "Why these prompts are structured this way" [level=3] [ref=f15e1138]
+          - paragraph [ref=f15e1139]: "A one-line request gets a generic answer. Every prompt in this library states four things up front: who the model is being, what context it has, what to produce, and the exact shape of the output. That structure is the difference between a paragraph you throw away and a draft you can ship. It is also the pattern OpenAI and Anthropic recommend in their own documentation."
+          - heading "Who it is for" [level=3] [ref=f15e1140]
+          - list [ref=f15e1141]:
+            - listitem [ref=f15e1142]:
+              - strong [ref=f15e1143]: Marketers and growth teams
+              - text: ": content, SEO, email, social, ads, brand"
+            - listitem [ref=f15e1144]:
+              - strong [ref=f15e1145]: Engineers
+              - text: ": debugging, refactoring, code review, agentic workflows"
+            - listitem [ref=f15e1146]:
+              - strong [ref=f15e1147]: Designers and creators
+              - text: ": image generation, design briefs, UI, video"
+            - listitem [ref=f15e1148]:
+              - strong [ref=f15e1149]: Writers and editors
+              - text: ": copywriting, long-form, technical writing"
+            - listitem [ref=f15e1150]:
+              - strong [ref=f15e1151]: Operators
+              - text: ": legal, finance, HR, real estate, support, and the constraints those fields carry"
+          - heading "Free, and open" [level=3] [ref=f15e1152]
+          - paragraph [ref=f15e1153]:
+            - text: Every prompt is free to read, copy, and reuse. The whole library is a folder of markdown files in a public repository, so nothing is locked behind an account and nothing disappears if this site does.
+            - link "Browse the source" [ref=f15e1154] [cursor=pointer]:
+              - /url: https://github.com/mikeybizzzle/prompt-library
+            - text: .
+        - generic [ref=f15e1155]:
+          - generic [ref=f15e1156]:
+            - heading "Browse by category" [level=2] [ref=f15e1157]
+            - list [ref=f15e1158]:
+              - listitem [ref=f15e1159]:
+                - link "Marketing" [ref=f15e1160] [cursor=pointer]:
+                  - /url: /category/marketing
+              - listitem [ref=f15e1161]:
+                - link "Design" [ref=f15e1162] [cursor=pointer]:
+                  - /url: /category/art-and-design
+              - listitem [ref=f15e1163]:
+                - link "Education" [ref=f15e1164] [cursor=pointer]:
+                  - /url: /category/education
+              - listitem [ref=f15e1165]:
+                - link "Finance" [ref=f15e1166] [cursor=pointer]:
+                  - /url: /category/finance
+              - listitem [ref=f15e1167]:
+                - link "Sales" [ref=f15e1168] [cursor=pointer]:
+                  - /url: /category/sales
+              - listitem [ref=f15e1169]:
+                - link "Coding" [ref=f15e1170] [cursor=pointer]:
+                  - /url: /category/coding
+              - listitem [ref=f15e1171]:
+                - link "Writing" [ref=f15e1172] [cursor=pointer]:
+                  - /url: /category/writing
+              - listitem [ref=f15e1173]:
+                - link "SEO" [ref=f15e1174] [cursor=pointer]:
+                  - /url: /category/seo
+              - listitem [ref=f15e1175]:
+                - link "Strategy" [ref=f15e1176] [cursor=pointer]:
+                  - /url: /category/strategy
+              - listitem [ref=f15e1177]:
+                - link "Productivity" [ref=f15e1178] [cursor=pointer]:
+                  - /url: /category/productivity
+              - listitem [ref=f15e1179]:
+                - link "Operations" [ref=f15e1180] [cursor=pointer]:
+                  - /url: /category/operations
+              - listitem [ref=f15e1181]:
+                - link "Human Resources" [ref=f15e1182] [cursor=pointer]:
+                  - /url: /category/human-resources
+              - listitem [ref=f15e1183]:
+                - link "Research" [ref=f15e1184] [cursor=pointer]:
+                  - /url: /category/research
+              - listitem [ref=f15e1185]:
+                - link "Legal" [ref=f15e1186] [cursor=pointer]:
+                  - /url: /category/legal
+              - listitem [ref=f15e1187]:
+                - link "Data Analysis" [ref=f15e1188] [cursor=pointer]:
+                  - /url: /category/data-analysis
+              - listitem [ref=f15e1189]:
+                - link "Real Estate" [ref=f15e1190] [cursor=pointer]:
+                  - /url: /category/real-estate
+              - listitem [ref=f15e1191]:
+                - link "Customer Service" [ref=f15e1192] [cursor=pointer]:
+                  - /url: /category/customer-service
+              - listitem [ref=f15e1193]:
+                - link "Careers" [ref=f15e1194] [cursor=pointer]:
+                  - /url: /category/careers
+              - listitem [ref=f15e1195]:
+                - link "Audio" [ref=f15e1196] [cursor=pointer]:
+                  - /url: /category/audio
+              - listitem [ref=f15e1197]:
+                - link "AI Agents" [ref=f15e1198] [cursor=pointer]:
+                  - /url: /category/ai-agents
+              - listitem [ref=f15e1199]:
+                - link "Video" [ref=f15e1200] [cursor=pointer]:
+                  - /url: /category/video
+          - generic [ref=f15e1201]:
+            - heading "Browse by AI model" [level=2] [ref=f15e1202]
+            - list [ref=f15e1203]:
+              - listitem [ref=f15e1204]:
+                - link "ChatGPT" [ref=f15e1205] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+              - listitem [ref=f15e1206]:
+                - link "Claude" [ref=f15e1207] [cursor=pointer]:
+                  - /url: /tool/claude
+              - listitem [ref=f15e1208]:
+                - link "Gemini" [ref=f15e1209] [cursor=pointer]:
+                  - /url: /tool/gemini
+              - listitem [ref=f15e1210]:
+                - link "Grok" [ref=f15e1211] [cursor=pointer]:
+                  - /url: /tool/grok
+              - listitem [ref=f15e1212]:
+                - link "DeepSeek" [ref=f15e1213] [cursor=pointer]:
+                  - /url: /tool/deepseek
+              - listitem [ref=f15e1214]:
+                - link "Mistral" [ref=f15e1215] [cursor=pointer]:
+                  - /url: /tool/mistral
+              - listitem [ref=f15e1216]:
+                - link "Llama" [ref=f15e1217] [cursor=pointer]:
+                  - /url: /tool/llama
+              - listitem [ref=f15e1218]:
+                - link "Midjourney" [ref=f15e1219] [cursor=pointer]:
+                  - /url: /tool/midjourney
+              - listitem [ref=f15e1220]:
+                - link "Nano Banana" [ref=f15e1221] [cursor=pointer]:
+                  - /url: /tool/nano-banana
+              - listitem [ref=f15e1222]:
+                - link "Flux" [ref=f15e1223] [cursor=pointer]:
+                  - /url: /tool/flux
+              - listitem [ref=f15e1224]:
+                - link "DALL-E" [ref=f15e1225] [cursor=pointer]:
+                  - /url: /tool/dall-e
+              - listitem [ref=f15e1226]:
+                - link "Ideogram" [ref=f15e1227] [cursor=pointer]:
+                  - /url: /tool/ideogram
+              - listitem [ref=f15e1228]:
+                - link "Sora" [ref=f15e1229] [cursor=pointer]:
+                  - /url: /tool/sora
+              - listitem [ref=f15e1230]:
+                - link "Veo" [ref=f15e1231] [cursor=pointer]:
+                  - /url: /tool/veo
+              - listitem [ref=f15e1232]:
+                - link "Runway" [ref=f15e1233] [cursor=pointer]:
+                  - /url: /tool/runway
+              - listitem [ref=f15e1234]:
+                - link "Kling" [ref=f15e1235] [cursor=pointer]:
+                  - /url: /tool/kling
+          - generic [ref=f15e1236]:
+            - heading "Browse by role" [level=2] [ref=f15e1237]
+            - list [ref=f15e1238]:
+              - listitem [ref=f15e1239]:
+                - link "Solopreneurs" [ref=f15e1240] [cursor=pointer]:
+                  - /url: /for/solopreneurs
+              - listitem [ref=f15e1241]:
+                - link "Entrepreneurs" [ref=f15e1242] [cursor=pointer]:
+                  - /url: /for/entrepreneurs
+              - listitem [ref=f15e1243]:
+                - link "Business Owners" [ref=f15e1244] [cursor=pointer]:
+                  - /url: /for/business-owners
+              - listitem [ref=f15e1245]:
+                - link "Freelancers" [ref=f15e1246] [cursor=pointer]:
+                  - /url: /for/freelancers
+              - listitem [ref=f15e1247]:
+                - link "Agencies" [ref=f15e1248] [cursor=pointer]:
+                  - /url: /for/agencies
+              - listitem [ref=f15e1249]:
+                - link "Ecommerce Sellers" [ref=f15e1250] [cursor=pointer]:
+                  - /url: /for/ecommerce-sellers
+              - listitem [ref=f15e1251]:
+                - link "Marketers" [ref=f15e1252] [cursor=pointer]:
+                  - /url: /for/marketers
+              - listitem [ref=f15e1253]:
+                - link "Sales Teams" [ref=f15e1254] [cursor=pointer]:
+                  - /url: /for/sales-teams
+              - listitem [ref=f15e1255]:
+                - link "Copywriters" [ref=f15e1256] [cursor=pointer]:
+                  - /url: /for/copywriters
+              - listitem [ref=f15e1257]:
+                - link "Content Creators" [ref=f15e1258] [cursor=pointer]:
+                  - /url: /for/content-creators
+              - listitem [ref=f15e1259]:
+                - link "Designers" [ref=f15e1260] [cursor=pointer]:
+                  - /url: /for/designers
+              - listitem [ref=f15e1261]:
+                - link "Photographers" [ref=f15e1262] [cursor=pointer]:
+                  - /url: /for/photographers
+              - listitem [ref=f15e1263]:
+                - link "Developers" [ref=f15e1264] [cursor=pointer]:
+                  - /url: /for/developers
+              - listitem [ref=f15e1265]:
+                - link "AI Engineers" [ref=f15e1266] [cursor=pointer]:
+                  - /url: /for/ai-engineers
+              - listitem [ref=f15e1267]:
+                - link "Lawyers" [ref=f15e1268] [cursor=pointer]:
+                  - /url: /for/lawyers
+              - listitem [ref=f15e1269]:
+                - link "Accountants" [ref=f15e1270] [cursor=pointer]:
+                  - /url: /for/accountants
+          - generic [ref=f15e1271]:
+            - heading "Browse by prompt type" [level=2] [ref=f15e1272]
+            - list [ref=f15e1273]:
+              - listitem [ref=f15e1274]:
+                - link "Text prompts" [ref=f15e1275] [cursor=pointer]:
+                  - /url: /type/text
+              - listitem [ref=f15e1276]:
+                - link "Image prompts" [ref=f15e1277] [cursor=pointer]:
+                  - /url: /type/image
+              - listitem [ref=f15e1278]:
+                - link "Code prompts" [ref=f15e1279] [cursor=pointer]:
+                  - /url: /type/code
+              - listitem [ref=f15e1280]:
+                - link "All 63 prompts" [ref=f15e1281] [cursor=pointer]:
+                  - /url: /
+  - contentinfo [ref=f15e1282]:
+    - generic:
+      - img:
+        - generic: Prompt Atlas
+    - generic [ref=f15e1284]:
+      - generic [ref=f15e1285]:
+        - generic [ref=f15e1286]:
+          - heading "About Prompt Atlas" [level=3] [ref=f15e1292]
+          - paragraph [ref=f15e1293]: A personal, open prompt library. Every prompt lives as a markdown file in a public GitHub repo, so anyone can read it, fork it, or send a better one.
+          - generic "Social media" [ref=f15e1294]:
+            - link "GitHub" [ref=f15e1295] [cursor=pointer]:
+              - /url: https://github.com/mikeybizzzle
+            - link "X" [ref=f15e1298] [cursor=pointer]:
+              - /url: https://x.com/
+            - link "LinkedIn" [ref=f15e1301] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+            - link "RSS" [ref=f15e1304] [cursor=pointer]:
+              - /url: /feed.xml
+        - navigation "Footer" [ref=f15e1309]:
+          - generic [ref=f15e1310]:
+            - heading "Browse" [level=3] [ref=f15e1311]
+            - list [ref=f15e1312]:
+              - listitem [ref=f15e1313]:
+                - link "All prompts" [ref=f15e1314] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f15e1315]:
+                - link "Text prompts" [ref=f15e1316] [cursor=pointer]:
+                  - /url: /type/text
+              - listitem [ref=f15e1317]:
+                - link "Image prompts" [ref=f15e1318] [cursor=pointer]:
+                  - /url: /type/image
+              - listitem [ref=f15e1319]:
+                - link "Code prompts" [ref=f15e1320] [cursor=pointer]:
+                  - /url: /type/code
+          - generic [ref=f15e1321]:
+            - heading "Popular" [level=3] [ref=f15e1322]
+            - list [ref=f15e1323]:
+              - listitem [ref=f15e1324]:
+                - link "Marketing" [ref=f15e1325] [cursor=pointer]:
+                  - /url: /category/marketing
+              - listitem [ref=f15e1326]:
+                - link "Coding" [ref=f15e1327] [cursor=pointer]:
+                  - /url: /category/coding
+              - listitem [ref=f15e1328]:
+                - link "ChatGPT" [ref=f15e1329] [cursor=pointer]:
+                  - /url: /tool/chatgpt
+              - listitem [ref=f15e1330]:
+                - link "Claude" [ref=f15e1331] [cursor=pointer]:
+                  - /url: /tool/claude
+      - generic [ref=f15e1332]:
+        - paragraph [ref=f15e1333]: © 2026 Prompt Atlas. Built by Mike Bernard.
+        - navigation "Secondary" [ref=f15e1334]:
+          - link "Source on GitHub" [ref=f15e1335] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library
+          - link "Add a prompt" [ref=f15e1336] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library/blob/main/CONTRIBUTING.md
+          - link "Report an issue" [ref=f15e1337] [cursor=pointer]:
+            - /url: https://github.com/mikeybizzzle/prompt-library/issues/new
+  - generic:
+    - button "Open a random prompt" [ref=f15e1338]:
+      - generic: Surprise me
+    - button "Search prompts (Command K)" [ref=f15e1346]:
+      - generic: Search prompts…
+  - alert [ref=f15e1351]

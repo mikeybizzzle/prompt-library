@@ -107,7 +107,7 @@ export function LibraryView({
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-3 transition-opacity duration-200 sm:auto-rows-[234px] sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:auto-rows-[234px] sm:grid-flow-dense sm:grid-cols-2 lg:grid-cols-3">
           {shown.map((p, i) => (
             <PromptCard
               key={p.slug}
