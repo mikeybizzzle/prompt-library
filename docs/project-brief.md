@@ -22,7 +22,7 @@ The repo is the database. One markdown file per prompt in `content/prompts/`, wi
 
 `src/data/taxonomy.ts` is the single source of truth for categories, subcategories, models, and roles. Every facet count, filter panel, and route is derived from it.
 
-Current seed: 63 prompts, three per top-level category, eight marked featured.
+Current library: 108 prompts. 63 seed prompts, three per top-level category, eight marked featured, plus 45 e-commerce email campaign prompts under marketing / email-campaigns converted from an existing template set.
 
 ## Routes
 
@@ -35,7 +35,7 @@ Current seed: 63 prompts, three per top-level category, eight marked featured.
 | `/type/[slug]` | `text`, `image`, or `code` |
 | `/p/[slug]` | One prompt, with the variable workbench |
 
-Every route prerenders. The build produces 263 static pages.
+Every route prerenders. The build produces 311 static pages.
 
 ## Interaction decisions
 

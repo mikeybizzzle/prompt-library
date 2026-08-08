@@ -20,7 +20,16 @@ export function FloatingDock({ slugs }: { slugs: string[] }) {
 
   useEffect(() => {
     const boundary = document.querySelector("[data-dock-boundary]");
-    if (!boundary) return;
+
+    // Library pages reveal the dock once the filter row scrolls away. Pages
+    // without a filter row fall back to a plain scroll threshold.
+    if (!boundary) {
+      const onScroll = () => setVisible(window.scrollY > 400);
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
+    }
+
     const io = new IntersectionObserver(
       ([entry]) => setVisible(entry.boundingClientRect.top < 0 && !entry.isIntersecting),
       { threshold: 0 },
