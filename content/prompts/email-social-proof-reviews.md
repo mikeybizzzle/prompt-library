@@ -7,7 +7,7 @@ subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
 roles: [ecommerce-sellers, marketers, copywriters]
 type: text
-featured: false
+featured: true
 publishedAt: 2026-01-18
 does:
   - Produces three full social proof email variations, each with a headline, the numbered body sections, and a call to action button.

@@ -145,3 +145,20 @@ export function getFacetCounts() {
 
   return { categories, subcategories, models, roles, types, total: prompts.length };
 }
+
+/**
+ * Facets that actually hold a prompt. A facet with nothing in it still has a
+ * working route, but it stays out of the sitemap and out of every nav surface
+ * so the site does not link to or submit empty pages.
+ */
+export function getPopulatedFacets() {
+  const { categories, subcategories, models, roles, types } = getFacetCounts();
+  const keys = (m: Record<string, number>) => new Set(Object.keys(m));
+  return {
+    categories: keys(categories),
+    subcategories: keys(subcategories),
+    models: keys(models),
+    roles: keys(roles),
+    types: keys(types),
+  };
+}

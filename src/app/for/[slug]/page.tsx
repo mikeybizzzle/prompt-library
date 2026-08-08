@@ -15,10 +15,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const role = ROLE_BY_SLUG.get(slug);
   if (!role) return {};
+  const count = getAllPrompts().filter((p) => p.roles.includes(slug)).length;
   return {
     title: `AI prompts for ${role.name.toLowerCase()}`,
     description: `Free AI prompts picked for ${role.name.toLowerCase()}.`,
     alternates: { canonical: `/for/${slug}` },
+    robots: count === 0 ? { index: false, follow: true } : undefined,
   };
 }
 

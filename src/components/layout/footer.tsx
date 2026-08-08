@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Rss } from "lucide-react";
 
 import { LogoMark } from "@/components/brand/logo";
-import { GithubIcon, LinkedinIcon, XIcon } from "@/components/brand/social-icons";
+import { GithubIcon } from "@/components/brand/social-icons";
 import { SITE } from "@/data/site";
 
 const footerLink =
@@ -92,8 +92,6 @@ export function Footer() {
               <div className="flex items-center gap-2" aria-label="Social media">
                 {[
                   { href: SITE.social.github, label: "GitHub", Icon: GithubIcon },
-                  { href: SITE.social.x, label: "X", Icon: XIcon },
-                  { href: SITE.social.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
                   { href: "/feed.xml", label: "RSS", Icon: Rss },
                 ].map(({ href, label, Icon }) => (
                   <a

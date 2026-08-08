@@ -32,8 +32,16 @@ export function LibraryPage({
 }) {
   const cards = prompts.map(toCardData);
   const facets = getFacetCounts();
+
+  // One per category, so the row never fills up with three from the same place.
+  const seenCategories = new Set<string>();
   const featured = getAllPrompts()
     .filter((p) => p.featured)
+    .filter((p) => {
+      if (seenCategories.has(p.category)) return false;
+      seenCategories.add(p.category);
+      return true;
+    })
     .slice(0, 3)
     .map(toCardData);
 
@@ -42,7 +50,7 @@ export function LibraryPage({
       <Hero title={title} emphasis={emphasis} subtitle={subtitle} />
       <CategoryRail activeSlug={activeCategory} />
       <LibraryView prompts={cards} facets={facets} activeType={activeType} scope={scope} />
-      <HubSections featured={featured} total={facets.total} faq={faq}>
+      <HubSections featured={featured} total={facets.total} facets={facets} faq={faq}>
         {children}
       </HubSections>
     </div>

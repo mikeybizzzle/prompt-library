@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
 import { CATEGORIES, MODELS, ROLES } from "@/data/taxonomy";
-import type { PromptCardData } from "@/lib/types";
+import type { Facets, PromptCardData } from "@/lib/types";
 import { SITE } from "@/data/site";
 
 const pillLink =
@@ -88,30 +88,38 @@ function Faq({ items }: { items: FaqItem[] }) {
   );
 }
 
-function BrowseColumns({ total }: { total: number }) {
+function BrowseColumns({ total, facets }: { total: number; facets: Facets }) {
+  // Only surface a facet that actually holds a prompt.
   const groups: { id: string; title: string; links: { href: string; label: string }[] }[] = [
     {
       id: "by-category",
       title: "Browse by category",
-      links: CATEGORIES.map((c) => ({ href: `/category/${c.slug}`, label: c.name })),
+      links: CATEGORIES.filter((c) => facets.categories[c.slug]).map((c) => ({
+        href: `/category/${c.slug}`,
+        label: c.name,
+      })),
     },
     {
       id: "by-model",
       title: "Browse by AI model",
-      links: MODELS.slice(0, 16).map((m) => ({ href: `/tool/${m.slug}`, label: m.name })),
+      links: MODELS.filter((m) => facets.models[m.slug])
+        .slice(0, 16)
+        .map((m) => ({ href: `/tool/${m.slug}`, label: m.name })),
     },
     {
       id: "by-role",
       title: "Browse by role",
-      links: ROLES.slice(0, 16).map((r) => ({ href: `/for/${r.slug}`, label: r.name })),
+      links: ROLES.filter((r) => facets.roles[r.slug])
+        .slice(0, 16)
+        .map((r) => ({ href: `/for/${r.slug}`, label: r.name })),
     },
     {
       id: "by-type",
       title: "Browse by prompt type",
       links: [
-        { href: "/type/text", label: "Text prompts" },
-        { href: "/type/image", label: "Image prompts" },
-        { href: "/type/code", label: "Code prompts" },
+        ...(["text", "image", "code"] as const)
+          .filter((t) => facets.types[t])
+          .map((t) => ({ href: `/type/${t}`, label: `${t[0].toUpperCase()}${t.slice(1)} prompts` })),
         { href: "/", label: `All ${total} prompts` },
       ],
     },
@@ -142,11 +150,13 @@ function BrowseColumns({ total }: { total: number }) {
 export function HubSections({
   featured,
   total,
+  facets,
   faq,
   children,
 }: {
   featured: PromptCardData[];
   total: number;
+  facets: Facets;
   faq: FaqItem[];
   children?: React.ReactNode;
 }) {
@@ -156,7 +166,7 @@ export function HubSections({
         <FeaturedRow prompts={featured} />
         <Faq items={faq} />
         <div className="prose-hub">{children}</div>
-        <BrowseColumns total={total} />
+        <BrowseColumns total={total} facets={facets} />
       </div>
     </div>
   );

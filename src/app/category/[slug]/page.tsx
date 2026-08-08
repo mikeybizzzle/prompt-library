@@ -41,6 +41,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: `${found.name} AI prompts`,
     description: `${found.prompts.length} free ${found.name.toLowerCase()} prompts for ChatGPT, Claude, Gemini and more.`,
     alternates: { canonical: `/category/${slug}` },
+    // An empty facet is a valid page but not worth indexing.
+    robots: found.prompts.length === 0 ? { index: false, follow: true } : undefined,
   };
 }
 

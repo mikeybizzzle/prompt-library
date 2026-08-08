@@ -15,10 +15,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const model = MODEL_BY_SLUG.get(slug);
   if (!model) return {};
+  const count = getAllPrompts().filter((p) => p.models.includes(slug)).length;
   return {
     title: `${model.name} prompts`,
     description: `Free prompts written for ${model.name}. Copy, fill in the placeholders, and run.`,
     alternates: { canonical: `/tool/${slug}` },
+    robots: count === 0 ? { index: false, follow: true } : undefined,
   };
 }
 

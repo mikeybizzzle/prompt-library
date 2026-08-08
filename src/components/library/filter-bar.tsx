@@ -172,7 +172,9 @@ export function FilterBar({
                     hidden={expandedCategory !== c.slug}
                     className="m-0 flex list-none flex-col gap-0.5 py-1 pl-2 pr-0"
                   >
-                    {c.children.map((s) => (
+                    {c.children
+                      .filter((s) => facets.subcategories[s.slug])
+                      .map((s) => (
                       <li key={s.slug}>
                         <Link
                           href={`/category/${s.slug}`}
@@ -184,7 +186,7 @@ export function FilterBar({
                           <Count n={facets.subcategories[s.slug]} />
                         </Link>
                       </li>
-                    ))}
+                      ))}
                   </ul>
                 </li>
               ))}

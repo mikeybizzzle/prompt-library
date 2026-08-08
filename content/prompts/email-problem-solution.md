@@ -7,7 +7,7 @@ subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
 roles: [ecommerce-sellers, marketers, copywriters]
 type: text
-featured: false
+featured: true
 publishedAt: 2025-12-17
 does:
   - Produces three full problem and solution email variations, each with a headline, the numbered body sections, and a call to action button.
