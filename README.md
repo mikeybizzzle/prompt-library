@@ -1,4 +1,4 @@
-# Prompt Atlas
+# Bizzzle Prompts
 
 An open library of AI prompts. Every prompt is a markdown file in this repo, and the site builds straight from those files.
 

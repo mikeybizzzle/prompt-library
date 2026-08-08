@@ -1,6 +1,6 @@
 export const SITE = {
-  name: "Prompt Atlas",
-  shortName: "Atlas",
+  name: "Bizzzle Prompts",
+  shortName: "Bizzzle",
   tagline: "The Open Prompt Library",
   description:
     "A free, curated library of AI prompts for ChatGPT, Claude, Gemini, Midjourney and every major model. Browse by category, model, or role.",

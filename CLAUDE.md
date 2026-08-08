@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# Prompt Atlas
+# Bizzzle Prompts
 
 A static prompt library. The repo is the database: one markdown file per prompt in `content/prompts/`, read at build time.
 

@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Prompt Atlas mark: three stacked plates seen in perspective, the "atlas"
- * of layered prompt collections. Gold on dark.
+ * Bizzzle Prompts mark: three stacked plates seen in perspective, standing in
+ * for layered prompt collections. Gold on dark.
  */
 export function LogoMark({ className }: { className?: string }) {
   return (

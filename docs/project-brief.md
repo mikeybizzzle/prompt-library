@@ -10,7 +10,7 @@ The interface is a deliberate 1:1 reconstruction of the layout, interaction mode
 
 Three things differ on purpose:
 
-1. **Name and logo.** The site is Prompt Atlas. The mark is a stack of three gold plates, drawn in `src/components/brand/logo.tsx`.
+1. **Name and logo.** The site is Bizzzle Prompts. The mark is a stack of three gold plates, drawn in `src/components/brand/logo.tsx`.
 2. **Footer.** Own copy, own links, own social accounts.
 3. **Anything that pointed off the library.** The source site's navbar leads to a blog, a shop, a prompt generator, and a sign-in dialog. None of those exist here. The navbar instead exposes the library's own axes: Categories, Models, Roles, Types. The gold button links to the GitHub repo. The floating left pill opens a random prompt instead of a paid generator.
 
