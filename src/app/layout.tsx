@@ -54,15 +54,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${roboto.variable} ${robotoMono.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-transparent">
+        {/*
+          Resolves the theme before the first paint, so a dark visitor never
+          sees a light flash. localStorage throws in some privacy modes, hence
+          the catch.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("pl-theme");document.documentElement.dataset.theme=t==="dark"||t==="light"?t:(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}})()`,
+          }}
+        />
         {/* Fixed dot-grid canvas sitting behind every page. */}
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed left-0 top-0 -z-10 h-screen w-screen bg-pl-page"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='2' height='2' fill='%23e6e6e6'/%3E%3C/svg%3E\")",
-            backgroundPosition: "15px 15px",
-          }}
+          className="pl-dot-canvas pointer-events-none fixed left-0 top-0 -z-10 h-screen w-screen"
         />
         <SearchProvider docs={docs}>
           <Navbar />

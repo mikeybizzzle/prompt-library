@@ -38,9 +38,9 @@ const TYPES = [
 ] as const;
 
 const trigger =
-  "inline-flex h-10 shrink-0 items-center gap-2 rounded-full bg-white pl-4 pr-2 text-[14px] leading-5 text-pl-ink transition-colors hover:text-pl-ink";
+  "inline-flex h-10 shrink-0 items-center gap-2 rounded-full bg-pl-surface pl-4 pr-2 text-[14px] leading-5 text-pl-ink transition-colors hover:text-pl-ink";
 const triggerChevron =
-  "inline-flex h-6 w-6 items-center justify-center rounded-[8px] border border-pl-ink-hairline bg-white shadow-[0_1px_1px_rgba(0,0,0,0.05)]";
+  "inline-flex h-6 w-6 items-center justify-center rounded-[8px] border border-pl-ink-hairline bg-pl-surface shadow-[0_1px_1px_rgba(0,0,0,0.05)]";
 const panel =
   "max-h-[70vh] overflow-y-auto rounded-3xl bg-[rgba(20,20,20,0.8)] p-2 backdrop-blur-[24px] shadow-[0_-12px_30px_rgba(0,0,0,0.12),0_4px_6px_rgba(0,0,0,0.06),0_12px_13px_rgba(0,0,0,0.17),0_-3px_5px_rgba(0,0,0,0.09),inset_0_1px_1px_rgba(255,255,255,0.04),inset_0_1px_2px_rgba(255,255,255,0.08)] [scrollbar-width:thin]";
 const row =
@@ -121,7 +121,7 @@ export function FilterBar({
               <span className={triggerChevron}>
                 <ChevronDown
                   className={cn(
-                    "size-3.5 text-[#4F4E4F] transition-transform duration-200",
+                    "size-3.5 text-pl-ink-quiet transition-transform duration-200",
                     openPanel === id && "rotate-180",
                   )}
                   strokeWidth={2}
@@ -271,7 +271,7 @@ export function FilterBar({
             aria-haspopup="listbox"
             aria-expanded={openSort}
             onClick={() => setOpenSort((v) => !v)}
-            className="inline-flex h-8 items-center gap-1 rounded-full bg-white px-3 text-[14px] leading-5 text-[#4F4E4F] shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink"
+            className="inline-flex h-8 items-center gap-1 rounded-full bg-pl-surface px-3 text-[14px] leading-5 text-pl-ink-quiet shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink"
           >
             Sort by: <span className="text-pl-ink">{sortLabel}</span>
             <ChevronDown
@@ -320,7 +320,7 @@ export function FilterBar({
                 className={cn(
                   "group/fmt inline-flex h-7 items-center rounded-full px-2.5 text-[14px] leading-5 no-underline transition-[background-color,color,box-shadow] duration-200",
                   active
-                    ? "bg-white text-pl-ink shadow-[0_1px_2px_rgba(0,0,0,0.1)]"
+                    ? "bg-pl-surface text-pl-ink shadow-[0_1px_2px_rgba(0,0,0,0.1)]"
                     : "text-pl-ink-muted hover:text-pl-ink",
                 )}
               >

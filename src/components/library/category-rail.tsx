@@ -12,14 +12,14 @@ const VISIBLE = 7;
 
 const tileWrap = "group flex w-24 shrink-0 flex-col items-center gap-3 no-underline max-[640px]:w-[76px]";
 const tile =
-  "relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-[12px] bg-white text-pl-ink-muted shadow-[0_8px_12px_-4px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.08)] transition-colors duration-200 group-hover:text-pl-ink";
-const label = "flex items-center gap-0.5 whitespace-nowrap text-[13px] leading-4 text-[#4F4E4F]";
+  "relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-[12px] bg-pl-surface text-pl-ink-muted shadow-[0_8px_12px_-4px_rgba(0,0,0,0.04),0_1px_4px_rgba(0,0,0,0.08)] transition-colors duration-200 group-hover:text-pl-ink";
+const label = "flex items-center gap-0.5 whitespace-nowrap text-[13px] leading-4 text-pl-ink-quiet";
 
 function Sheen() {
   return (
     <span
       aria-hidden="true"
-      className="pointer-events-none absolute -top-1.5 left-1/2 h-5 w-[85%] -translate-x-1/2 rounded-full bg-white opacity-60 blur-[5px]"
+      className="pointer-events-none absolute -top-1.5 left-1/2 h-5 w-[85%] -translate-x-1/2 rounded-full bg-pl-sheen opacity-60 blur-[5px]"
     />
   );
 }

@@ -144,13 +144,13 @@ export default async function PromptPage({ params }: Params) {
 
         {hasGuide && (
           <section className="flex flex-col gap-6">
-            <h2 className="m-0 text-[24px] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
+            <h2 className="m-0 text-[24px] font-normal leading-tight tracking-[-0.01em] text-pl-heading">
               Prompt Guide
             </h2>
 
             <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
               {prompt.does.length > 0 && (
-                <div className="flex flex-col gap-5 rounded-[20px] bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+                <div className="flex flex-col gap-5 rounded-[20px] bg-pl-surface p-6 shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
                   <div className="flex items-start gap-4">
                     <span className="grid size-10 shrink-0 place-items-center rounded-[12px] border border-pl-ink-hairline text-pl-ink">
                       <ClipboardCheck className="size-5" strokeWidth={1.6} aria-hidden="true" />
@@ -179,7 +179,7 @@ export default async function PromptPage({ params }: Params) {
               )}
 
               {prompt.tips.length > 0 && (
-                <div className="flex flex-col gap-5 rounded-[20px] bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+                <div className="flex flex-col gap-5 rounded-[20px] bg-pl-surface p-6 shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
                   <div className="flex items-center gap-4">
                     <span className="grid size-10 shrink-0 place-items-center rounded-[12px] border border-pl-ink-hairline text-pl-ink">
                       <Lightbulb className="size-5" strokeWidth={1.6} aria-hidden="true" />
@@ -206,7 +206,7 @@ export default async function PromptPage({ params }: Params) {
             </div>
 
             {prompt.steps.length > 0 && (
-              <div className="grid grid-cols-1 gap-6 rounded-[20px] bg-white p-6 lg:grid-cols-[minmax(0,280px)_1fr]">
+              <div className="grid grid-cols-1 gap-6 rounded-[20px] bg-pl-surface p-6 lg:grid-cols-[minmax(0,280px)_1fr]">
                 <div className="flex flex-col gap-3 lg:border-r lg:border-pl-ink-hairline lg:pr-6">
                   <span className="grid size-10 place-items-center rounded-[12px] border border-pl-ink-hairline text-pl-ink">
                     <HelpCircle className="size-5" strokeWidth={1.6} aria-hidden="true" />
@@ -234,7 +234,7 @@ export default async function PromptPage({ params }: Params) {
 
         {related.length > 0 && (
           <section className="flex flex-col gap-6">
-            <h2 className="m-0 text-[24px] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
+            <h2 className="m-0 text-[24px] font-normal leading-tight tracking-[-0.01em] text-pl-heading">
               Related Prompts
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">

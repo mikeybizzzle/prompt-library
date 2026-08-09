@@ -25,6 +25,7 @@ import {
 
 import { LogoMark } from "@/components/brand/logo";
 import { GithubIcon } from "@/components/brand/social-icons";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { SITE } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -163,18 +164,22 @@ export function Navbar() {
             })}
           </ul>
 
-          <a
-            href={SITE.repo}
-            target="_blank"
-            rel="noreferrer"
-            className={cn(goldButton, "h-8 gap-1.5 px-3")}
-          >
-            <GithubIcon className="size-[15px]" />
-            Add a prompt
-          </a>
+          <div className="flex items-center gap-2">
+            <ThemeToggle className="size-8" />
+            <a
+              href={SITE.repo}
+              target="_blank"
+              rel="noreferrer"
+              className={cn(goldButton, "h-8 gap-1.5 px-3")}
+            >
+              <GithubIcon className="size-[15px]" />
+              Add a prompt
+            </a>
+          </div>
         </div>
 
         <div className="ml-auto hidden items-center gap-1 max-[1080px]:flex">
+          <ThemeToggle className="size-11 border border-white/15" />
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
