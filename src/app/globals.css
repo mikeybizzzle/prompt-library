@@ -16,6 +16,8 @@
   --color-pl-ink-deeper: #100f0f;
   --color-pl-menu-bg: #141414;
   --color-pl-surface-3: #434142;
+  /* Prompt preview panels read as a terminal. Dark in both themes. */
+  --color-pl-preview: #161415;
 
   /* Ink */
   --color-pl-ink: #161415;

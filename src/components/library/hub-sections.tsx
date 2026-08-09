@@ -49,7 +49,7 @@ function FeaturedRow({ prompts }: { prompts: PromptCardData[] }) {
             href={`/p/${p.slug}`}
             className="group flex flex-col gap-3 overflow-hidden rounded-[16px] bg-pl-surface pb-4 no-underline shadow-[0_1px_2px_rgba(0,0,0,0.05)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_rgba(0,0,0,0.18)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow"
           >
-            <div className="relative h-[200px] w-full overflow-hidden bg-pl-ink p-5">
+            <div className="relative h-[200px] w-full overflow-hidden bg-pl-preview p-5">
               <pre className="m-0 whitespace-pre-wrap break-words font-mono text-[12px] leading-[22px] text-white/45">
                 {p.preview}
               </pre>
