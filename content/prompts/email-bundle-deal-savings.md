@@ -1,7 +1,7 @@
 ---
 title: Bundle Deal Email With Savings and Product Breakdown
 emoji: "📦"
-description: Produces three bundle promotion email variations that list what is inside the bundle, state the savings against buying separately, and push a single purchase button.
+description: Produces three bundle email variations that describe the products included, highlight the savings against buying separately, and push a single purchase button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,44 @@ type: text
 featured: false
 publishedAt: 2025-09-16
 does:
-  - Produces three full bundle deal email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Pairs every variation with a subject line and pre-header under 40 characters, one short, one longer, and one out of the box.
-  - Lists every product in the bundle with one benefit line each, then states the saving against buying them separately.
+  - Produces three variations with a headline introducing the bundle, an optional one liner, and a bundle details section listing the products included.
+  - Covers the images and key benefits of each product in the bundle, then a call to action button to purchase it.
+  - Closes with an optional persuasive section and a subject line and pre-header pair per variation, capped at 40 characters each.
 tips:
-  - title: List the bundle contents exactly
-    detail: "in {{bundle-contents}}, including sizes and quantities, so the breakdown matches your product page."
-  - title: Give it a past campaign
-    detail: as a voice sample, so the copy sounds like your brand instead of a generic ecommerce send.
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
+  - title: Send it during a promotional window
+    detail: since the template is built for promotional periods, holidays, and special events.
+  - title: Make the savings the hook
+    detail: because the value of buying the products together is what drives the bundle sale.
+  - title: Try a limited time framing
+    detail: which the source lists as a use case alongside holiday and seasonal bundles.
 steps:
-  - title: Price the bundle both ways
-    detail: so you can hand the model the bundle price and the separate total it beats.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{bundle-contents}}, {{savings}}, and {{end-date}} before you run it."
-  - title: Paste it into ChatGPT
-    detail: and ask for all three variations in one reply so you can compare them side by side.
+  - title: List what is in the bundle
+    detail: and work out the saving against buying each item on its own.
+  - title: Fill in the variables
+    detail: "Set {{bundle-url}} and {{tone}} before you run the prompt."
+  - title: Run it and pick a variation
+    detail: then check the product list in the email matches what the bundle page actually ships.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who sells bundles. You make the value obvious by comparing the bundle price to buying the pieces one at a time.
+Write an engaging 'Bundle Deals' email based on the following structure. The email should highlight a special bundle offer {{bundle-url}} , describe the products included in the bundle , emphasize the savings, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Introduce the bundle deal with a catchy headline.
+2. **(optional) One-liner:** Provide a brief introduction or summary for the campaign.
+3. **Bundle Details Section:** Describe the bundle and list the products included, with images and key benefits.
+4. **CTA Button:** Prompt immediate action to purchase the bundle.
+5. **(optional) Closing Section:** Close the campaign with a persuasive ending to encourage quick action.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Products in the bundle:** {{bundle-contents}}
-**Bundle price and savings:** {{savings}}
-**Offer end date:** {{end-date}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one bundle deal email for {{brand}}.
+- **Holiday Bundles:** Highlight special bundles created for specific holidays.
+- **Limited-Time Offers:** Promote exclusive bundles available for a limited time.
+- **Seasonal Promotions:** Offer bundles that align with seasonal themes or needs.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** name the bundle and the savings in one line.
-2. **(optional) One-liner:** a short setup for the offer.
-3. **Bundle Details Section:** list each product in the bundle with its key benefit.
-4. **CTA Button:** send the reader to buy the bundle.
-5. **(optional) Closing Section:** a final push tied to the end date.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a holiday bundle; a limited time exclusive bundle; a seasonal promotion. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- State the savings the same way in all three variations, using the figure in {{savings}} and nothing rounder.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Show the savings as both a figure and a percentage in at least one variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{bundle-url}}: paste a url of a bundle
+- {{tone}}: choose your tone, for example: enthusiastic and persuasive

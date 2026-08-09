@@ -28,7 +28,7 @@ export default function Home() {
         subtitle="Free, curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and every major model. Browse by category, model, or role."
         prompts={prompts}
       >
-        <h3>What is inside</h3>
+        <h2>What is inside</h2>
         <p>
           {prompts.length} prompts grouped four ways so you can find one in a few seconds rather
           than scrolling a spreadsheet:
@@ -53,10 +53,13 @@ export default function Home() {
           </li>
         </ul>
 
-        <h3>How to use any prompt here</h3>
+        <h2>How to use any prompt here</h2>
         <ol>
           <li>Open the prompt that matches your task.</li>
-          <li>Copy it. Every prompt states a role, context, task, constraints, and output format.</li>
+          <li>
+            Copy it. Most prompts state a role, context, task, constraints, and output format. The
+            imported email set keeps its original wording instead.
+          </li>
           <li>
             Replace the <code>{"{{placeholders}}"}</code> with your own context: your audience, your
             brand, your inputs.
@@ -65,7 +68,7 @@ export default function Home() {
           <li>Run it, read it, refine it. Then send the better version back as a pull request.</li>
         </ol>
 
-        <h3>Why these prompts are structured this way</h3>
+        <h2>Why these prompts are structured this way</h2>
         <p>
           A one-line request gets a generic answer. Every prompt in this library states four things
           up front: who the model is being, what context it has, what to produce, and the exact
@@ -74,7 +77,7 @@ export default function Home() {
           own documentation.
         </p>
 
-        <h3>Who it is for</h3>
+        <h2>Who it is for</h2>
         <ul>
           <li>
             <strong>Marketers and growth teams</strong>: content, SEO, email, social, ads, brand
@@ -94,7 +97,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <h3>Free, and open</h3>
+        <h2>Free, and open</h2>
         <p>
           Every prompt is free to read, copy, and reuse. The whole library is a folder of markdown
           files in a public repository, so nothing is locked behind an account and nothing

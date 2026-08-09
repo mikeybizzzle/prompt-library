@@ -1,7 +1,7 @@
 ---
 title: Mythbusters Email That Debunks Four Common Claims
 emoji: "🧨"
-description: Writes three mythbusting email variations that state a common myth, correct it with a fact, and connect the correction to the products that prove the point.
+description: Writes three mythbusting email variations that state common myths on a topic, correct them with factual information, and highlight the products that relate.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,43 @@ type: text
 featured: false
 publishedAt: 2025-12-01
 does:
-  - Produces three full mythbusters email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - States each myth in customer language before correcting it, so the reader recognises the belief being taken apart.
+  - Produces three variations with a headline, an optional one liner, and a mythbusters section pairing each myth with the facts that debunk it.
+  - Adds a relevant product section highlighting the products connected to the debunked myths.
+  - Ends each variation with a clear call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Use the customer's own wording
-    detail: "for each entry in {{myths}}, since a myth phrased in industry language does not feel familiar."
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
+  - title: Run it periodically
+    detail: which is what the source suggests for addressing and correcting misunderstandings.
+  - title: Pick myths about your own products
+    detail: the first listed use, before reaching for wider industry myths.
+  - title: Use it to build trust
+    detail: since the format educates the audience while showing what makes the product different.
 steps:
-  - title: Write down four real objections
-    detail: you hear from buyers, then note the fact that answers each one.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{topic}}, {{myths}}, and {{related-product}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Collect the myths you hear most
+    detail: from reviews, support tickets, or sales calls.
+  - title: Fill in the variables
+    detail: "Set {{topic}} and {{tone}} before you run the prompt."
+  - title: Run it and check each correction
+    detail: so the facts you publish hold up to a sceptical reader.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who corrects misconceptions without condescending. You state the myth fairly before you take it apart.
+Write an engaging 'Mythbusters' email based on the following structure. The email should debunk common myths related to a specific topic {{topic}} and have a clear call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Grab attention with a catchy headline.
+2. **(optional) One-liner:** Provide a brief introduction or summary for the campaign.
+3. **Mythbusters Section:** Highlight common myths and provide factual information to debunk them.
+4. **Relevant Product Section:** Highlight relevant products that relate to the debunked myths.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Topic or category:** {{topic}}
-**Myths to debunk:** {{myths}}
-**Product that proves the point:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one mythbusters email for {{brand}}.
+- **Product Misconceptions:** Address and debunk myths related to your products.
+- **Industry Myths:** Clear up common misconceptions within your industry.
+- **Educational Content:** Provide factual information to educate your audience.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** promise a correction in one line.
-2. **(optional) One-liner:** a short setup for the campaign.
-3. **Mythbusters Section:** each myth stated plainly, then the fact that corrects it.
-4. **Relevant Product Section:** the products tied to the corrected facts.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: debunking myths about your products; correcting a widespread industry misconception; educating readers with factual content. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- State each myth in the language a customer would use, then correct it in one sentence.
-- Only use corrections supported by {{myths}}. Do not invent evidence.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Cover three or four myths in each variation, no more.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{topic}}: explain the topic
+- {{tone}}: choose your tone, for example: informative and engaging

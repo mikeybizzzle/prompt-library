@@ -1,7 +1,7 @@
 ---
 title: Tips and Tricks Email With Advice and Product Pairings
 emoji: "💡"
-description: Writes three tips email variations that give readers practical advice on one topic, pair each tip with a relevant product, and close with a shop or learn more button.
+description: Writes three tips and tricks email variations that offer practical advice on a topic, highlight the products that help apply it, and close with a clear button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,73 +10,45 @@ type: text
 featured: false
 publishedAt: 2026-02-11
 does:
-  - Produces three full tips and tricks email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - Writes each tip as an action the reader can take today and attaches a product only where it genuinely helps.
+  - Produces three variations with a headline, an optional one liner, and a tips section offering practical tips or steps.
+  - Adds a relevant product section highlighting the products that help readers implement the tips.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Include one tip that costs nothing
-    detail: "in {{tips-list}}, because a list where every tip requires a purchase reads as an ad."
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
+  - title: Promote the product subtly
+    detail: since the format offers value first and sells second.
+  - title: Try seasonal tips
+    detail: which the source lists alongside product usage tips and lifestyle advice.
+  - title: Use it to stay in touch
+    detail: because the source recommends this campaign simply for engaging customers.
 steps:
-  - title: Write four tips you believe
-    detail: including at least one the reader can follow without buying anything.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{topic}}, {{tips-list}}, and {{related-product}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Pick the topic and the tips
+    detail: that your products genuinely help with.
+  - title: Fill in the variables
+    detail: "Set {{topic}}, {{product-url}}, and {{tone}} before you run the prompt."
+  - title: Run it and test a tip
+    detail: yourself so the advice is worth the reader's time.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who gives advice worth keeping. The product appears where it genuinely helps and nowhere else.
+Write an engaging 'Tips and Tricks' email based on the following structure. The email should offer practical advice related to {{topic}}, promoting {{product-url}} and have a clear call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Grab attention with a catchy headline.
+2. **(optional) One-liner:** Provide a brief introduction or summary for the campaign.
+3. **Tips Section:** Offer practical tips or steps.
+4. **Relevant Product Section:** Highlight relevant products that can help implement the tips.
+5. **CTA Button:** Prompt immediate action to shop or learn more.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Topic:** {{topic}}
-**Tips to share:** {{tips-list}}
-**Products that support the tips:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one tips and tricks email for {{brand}}.
+- **Product Usage Tips:** Provide tips on how to get the most out of your products.
+- **Lifestyle Advice:** Share advice related to your products.
+- **Seasonal Tips:** Offer tips relevant to the current season or upcoming holidays.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** promise the payoff of the advice.
-2. **(optional) One-liner:** a short setup for the tips.
-3. **Tips Section:** each tip written as an action.
-4. **Relevant Product Section:** the products that make the tips easier.
-5. **CTA Button:** send the reader to shop or read more.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: product usage tips; lifestyle advice related to your category; seasonal tips tied to the time of year. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Write each tip as an action the reader can take today, not as a general principle.
-- Attach a product only to the tips where it genuinely applies.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Cap the list at four tips in each variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{topic}}: a specific topic
+- {{product-url}}: product url
+- {{tone}}: choose your tone, for example: friendly and informative

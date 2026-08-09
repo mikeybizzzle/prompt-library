@@ -1,7 +1,7 @@
 ---
 title: Problem and Solution Email That Names the Pain First
 emoji: "🔧"
-description: Produces three email variations that describe a problem your audience recognises, present your product as the fix, and close with a shop or learn more button.
+description: Produces three email variations that identify the problems your audience faces, present your products as the solutions, and close with a shop or learn more button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,44 @@ type: text
 featured: true
 publishedAt: 2025-12-17
 does:
-  - Produces three full problem and solution email variations, each with a headline, the numbered body sections, and a call to action button.
-  - "Caps each subject line and pre-header at 40 characters and keeps the three pairs distinct: short, longer, and out of the box."
-  - Spends more copy on the problem than the product and explains the mechanism behind the fix instead of asserting it.
+  - Produces three variations with a problem solving headline and a section that clearly identifies the problems your audience faces.
+  - Adds a solution presentation section positioning your products as the answer to those problems.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Quote a customer complaint
-    detail: "in {{problem}}, word for word, because paraphrased pain points lose the language that makes them land."
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
-  - title: Give it a past campaign
-    detail: as a voice sample, so the copy sounds like your brand instead of a generic ecommerce send.
+  - title: Start from a real complaint
+    detail: because the format only works when the problem is one your audience recognises.
+  - title: Use it to educate
+    detail: which the source names as the reason to run this campaign, alongside engagement.
+  - title: Show the practical benefit
+    detail: since demonstrating how the product solves the issue is what moves the reader to buy.
 steps:
-  - title: Find the complaint in reviews
-    detail: or support threads, and copy the sentence customers use to describe the problem.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{problem}}, {{solution}}, and {{related-product}} before you run it."
-  - title: Run it and pick one
-    detail: variation, then ask for two more subject lines in that style before you schedule the send.
+  - title: Write down the problems
+    detail: in the words your customers actually use.
+  - title: Fill in the variables
+    detail: "Set {{audience-problems}}, {{product-urls}}, and {{tone}} before you run the prompt."
+  - title: Run it and check the fit
+    detail: so each product genuinely solves the problem it is paired with.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who sells by describing a problem accurately. If the first section is right, the second one barely has to sell.
+Write an engaging 'Problem-Solution' email based on the following structure. The email should identify {{audience-problems}} and present your {{product-urls}} as effective solutions. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a problem-solving headline.
+2. **Problem Identification Section:** Clearly identify the common problems your audience faces.
+3. **Solution Presentation Section:** Present your products as the solutions to these problems.
+4. **CTA Button:** Prompt immediate action to shop or learn more.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Problem the audience faces:** {{problem}}
-**How the product solves it:** {{solution}}
-**Product that fixes it:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one problem and solution email for {{brand}}.
+- **Common Issues:** Address widespread issues your customers face and present your products as solutions.
+- **Product Benefits:** Highlight the specific benefits of your products in solving particular problems.
+- **Customer Education:** Educate your audience on how to effectively use your products to overcome challenges.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** name the problem in the reader's own words.
-2. **Problem Identification Section:** describe the problem and what it costs the reader.
-3. **Solution Presentation Section:** present the product as the fix and explain the mechanism.
-4. **CTA Button:** send the reader to shop or read more.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a widespread issue your customers face; a specific benefit that solves one problem; educating customers on overcoming a challenge. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Spend more words on the problem than on the solution.
-- Explain how the product solves it, using {{solution}}, rather than asserting that it does.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep the solution section shorter than the problem section in every variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{audience-problems}}: common problems with your audience
+- {{product-urls}}: product urls
+- {{tone}}: choose your tone, for example: informative and empathetic

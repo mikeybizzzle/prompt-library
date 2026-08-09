@@ -1,7 +1,7 @@
 ---
 title: Inspiration Email With Curated Looks and Styling Tips
 emoji: "✨"
-description: Builds three inspiration email variations that show products in real settings, give styling or usage tips for each, and drive readers into the curated collection.
+description: Builds three inspiration email variations that present curated products with lifestyle images and usage tips, describe the key benefits, and drive readers to shop.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,71 +10,43 @@ type: text
 featured: false
 publishedAt: 2025-11-11
 does:
-  - Produces three full inspiration email variations, each with a headline, the numbered body sections, and a call to action button.
-  - "Caps each subject line and pre-header at 40 characters and keeps the three pairs distinct: short, longer, and out of the box."
-  - Places every product in a setting or pairing rather than listing specifications, so the reader can picture owning it.
+  - Produces three variations with a headline introducing the inspiration theme and an optional one liner.
+  - Adds an inspiration section describing the curated products or tips with images and key benefits.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Anchor it to a season
-    detail: "in {{theme}}, because inspiration copy without a time frame reads like a generic catalogue page."
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
-  - title: Name the tone precisely
-    detail: "in {{tone}}, since calm and factual produces very different copy from loud and urgent."
+  - title: Send it regularly
+    detail: which is what the source suggests for keeping an audience inspired and engaged.
+  - title: Show products in real settings
+    detail: because helping customers visualise the product in use is the point of the format.
+  - title: Try a seasonal angle
+    detail: since seasonal themes and must have items are one of the listed use cases.
 steps:
-  - title: Choose a theme and season
-    detail: then pull the four or five products from your catalogue that fit it best.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{collection}}, {{theme}}, and {{styling-tips}} before you run it."
-  - title: Run it and pick one
-    detail: variation, then ask for two more subject lines in that style before you schedule the send.
+  - title: Gather the lifestyle images
+    detail: and note the styling tip each one demonstrates.
+  - title: Fill in the variables
+    detail: "Set {{collection-url}} and {{tone}} before you run the prompt."
+  - title: Run it and pair image to copy
+    detail: so each tip sits next to the image that shows it.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who helps people picture the product in their own life. You describe use, setting, and pairing rather than features.
+Write an engaging 'Inspo' email based on the following structure. The email should inspire customers with curated products from the collection {{collection-url}}, lifestyle images, and tips to using the products, describe key products and their benefits, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Introduce the inspiration theme with a catchy headline.
+2. **(optional) One-liner:** Provide a brief introduction or summary for the campaign.
+3. **Inspiration Section:** Describe the curated products or tips with images and key benefits.
+4. **CTA Button:** Prompt immediate action to explore or shop the inspired items.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Collection or curated set:** {{collection}}
-**Theme or season:** {{theme}}
-**Styling or usage tips:** {{styling-tips}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one inspiration email for {{brand}}.
+- **Product Recommendations:** Inspire customers with curated product recommendations based on their preferences.
+- **Seasonal Inspirations:** Showcase seasonal themes and must-have items for the current season.
+- **Styling Tips:** Provide styling tips and ideas to help customers use and style your products.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** name the theme in a way the reader recognises.
-2. **(optional) One-liner:** a short setup for the theme.
-3. **Inspiration Section:** each product with its setting, pairing, and benefit.
-4. **CTA Button:** send the reader to explore or shop the collection.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: curated recommendations based on customer preferences; a seasonal inspiration send; styling tips for products people already own. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Describe a setting or pairing for every product. Do not list specifications.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Give every product one styling or usage tip of its own.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{collection-url}}: include url here
+- {{tone}}: choose your tone, for example: inspirational and friendly

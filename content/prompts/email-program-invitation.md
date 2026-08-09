@@ -1,7 +1,7 @@
 ---
 title: Invitation Email for a Program Event or Early Access
 emoji: "💌"
-description: Produces three invitation email variations for a loyalty program, referral scheme, event, or early access list, each with benefits, joining steps, and a join button.
+description: Produces three invitation email variations for a program, event, or offer, each with an introduction, the benefits, clear joining steps, and a join button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,46 @@ type: text
 featured: false
 publishedAt: 2025-11-15
 does:
-  - Produces three full invitation email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Pairs every variation with a subject line and pre-header under 40 characters, one short, one longer, and one out of the box.
-  - Leads with member benefits and keeps the joining mechanics in the back half, where they belong once interest exists.
+  - Produces three variations with a headline, an introduction explaining the purpose of the invitation, and a benefits section.
+  - Adds a how it works section with clear instructions on accepting the invitation and taking part.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Name the benefit in numbers
-    detail: "inside {{benefits}}, since points and percentages convert better than the phrase exclusive perks."
-  - title: Name the tone precisely
-    detail: "in {{tone}}, since calm and factual produces very different copy from loud and urgent."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
+  - title: Make the audience feel valued
+    detail: "which is what the template is for: fostering community and part of something special."
+  - title: Use it for a loyalty or referral program
+    detail: two of the four uses the source lists, alongside events and early access.
+  - title: Name the benefit early
+    detail: because participation is the metric this format is designed to move.
 steps:
-  - title: Define the program benefits precisely
-    detail: including what a member earns, how fast they earn it, and what it costs to join.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{program}}, {{benefits}}, and {{joining-steps}} before you run it."
-  - title: Paste it into ChatGPT
-    detail: and ask for all three variations in one reply so you can compare them side by side.
+  - title: Decide what they are joining
+    detail: and confirm the signup or event page is live.
+  - title: Fill in the variables
+    detail: "Set {{program-or-event}}, {{event-url}}, and {{tone}} before you run the prompt."
+  - title: Run it and walk the steps
+    detail: yourself, so the how it works section matches the real signup flow.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes invitations that feel selective rather than mass mailed. You explain the benefit before you explain the mechanics.
+Write an engaging 'Invitation' email based on the following structure. The email should invite recipients to join {{program-or-event}} {{event-url}}, highlight the benefits, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a catchy headline.
+2. **Introduction Section:** Explain the purpose of the invitation and its importance.
+3. **Benefits Section:** Highlight the benefits and value of accepting the invitation.
+4. **How It Works Section:** Provide clear instructions on how to accept the invitation and participate.
+5. **CTA Button:** Prompt immediate action to join or accept the invitation.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Program, event, or offer:** {{program}}
-**Member benefits:** {{benefits}}
-**How to join:** {{joining-steps}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one invitation email for {{brand}}.
+- **Exclusive Event Invitation:** Invite your audience to a special event or webinar.
+- **Loyalty Program Invitation:** Encourage subscribers to join your loyalty or rewards program.
+- **Referral Program Invitation:** Invite customers to participate in a referral program and earn rewards.
+- **Early Access Invitation:** Offer early access to new products or sales for VIP customers.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** make the invitation feel personal.
-2. **Introduction Section:** explain what the reader is being invited to and why.
-3. **Benefits Section:** the value of accepting.
-4. **How It Works Section:** the steps to join.
-5. **CTA Button:** send the reader to join or accept.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: an exclusive event invitation; a loyalty or referral program invitation; early access for VIP customers. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Lead with the benefit in {{benefits}} and keep the mechanics from {{joining-steps}} to the back half of the email.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep the how it works section to three steps.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{program-or-event}}: an exclusive program, event, or offer
+- {{event-url}}: paste URL of event that’s coming
+- {{tone}}: choose your tone, for example: friendly and inviting

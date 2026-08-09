@@ -1,7 +1,7 @@
 ---
 title: Plain Text Style Announcement Email From the Founder
 emoji: "📄"
-description: Writes three plain style announcement email variations that read like a personal note, cover the key details, and close with an optional call to action.
+description: Writes three plain announcement email variations that state the message clearly, cover the relevant details, and close with a personal note and an optional button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,73 +10,44 @@ type: text
 featured: false
 publishedAt: 2025-12-09
 does:
-  - Produces three full plain email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Pairs every variation with a subject line and pre-header under 40 characters, one short, one longer, and one out of the box.
-  - Writes in first person from the named sender, with no marketing formatting, so the email reads like a typed message.
+  - Produces three variations with a clear headline, a short introduction summarising the message, and a main content section with the key details.
+  - Adds an optional call to action button where there is a relevant offer or next step, plus a closing personal note.
+  - Writes a subject line and pre-header pair per variation, capped at 40 characters each and deliberately different.
 tips:
-  - title: Say why, not just what
-    detail: "in {{details}}, because a plain email that skips the reasoning reads colder than a designed one."
-  - title: Name the tone precisely
-    detail: "in {{tone}}, since calm and factual produces very different copy from loud and urgent."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
+  - title: Use it for announcements and updates
+    detail: which is what the source recommends this format for.
+  - title: Send it from a person
+    detail: since personal notes from the founder or CEO are one of the listed uses.
+  - title: Keep it transparent
+    detail: because the template is built to maintain trust with clear and concise messages.
 steps:
-  - title: Decide who is signing it
-    detail: and write the announcement out as you would explain it to one customer on the phone.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{announcement}}, {{details}}, and {{sender-name}} before you run it."
-  - title: Paste it into ChatGPT
-    detail: and ask for all three variations in one reply so you can compare them side by side.
+  - title: Write the announcement in one paragraph
+    detail: so the core message is settled before the model touches it.
+  - title: Fill in the variables
+    detail: "Set {{important-information}} and {{tone}} before you run the prompt."
+  - title: Run it and read it aloud
+    detail: to check it still sounds like a person rather than a campaign.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes founder notes. The email should read like one person typed it, not like a campaign was designed.
+Write an engaging 'Plain' email based on the following structure. The email should clearly communicate important information {{important-information}}, describe any relevant details, and include a call-to-action button if necessary. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Introduce the main message with a clear headline.
+2. **Introduction:** Provide a brief introduction or summary of the message.
+3. **Main Content Section:** Describe the key points or details of the message.
+4. **CTA Button (optional):** Prompt action if there is a relevant offer or next step.
+5. **Closing Section:** Close the message with a personal note or additional information.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**What is being announced:** {{announcement}}
-**Details or reasoning:** {{details}}
-**Who is signing it:** {{sender-name}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one plain email for {{brand}}.
+- **Announcements:** Share important updates or news with customers.
+- **Important Announcements:** Inform customers about changes happening within the brand.
+- **Personal Messages:** Send personal notes from the brand’s founder or CEO.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** a clear line stating the news.
-2. **Introduction:** a short summary of what changed.
-3. **Main Content Section:** the details and the reasoning behind them.
-4. **CTA Button (optional):** only if there is a genuine next step.
-5. **Closing Section:** a personal sign off from the sender.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: an important company update; a change customers need to know about; a personal note from the founder. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Write in first person from {{sender-name}}. No marketing formatting, no exclamation points, no headline stacking.
-- Include a call to action only if the announcement genuinely has a next step.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep every variation under 180 words and skip design formatting entirely.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{important-information}}: describe it here
+- {{tone}}: choose your tone, for example: straightforward and personal

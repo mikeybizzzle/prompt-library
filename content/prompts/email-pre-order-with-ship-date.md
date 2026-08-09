@@ -1,7 +1,7 @@
 ---
 title: Pre Order Email With Ship Date and Early Buyer Perks
 emoji: "📆"
-description: Builds three pre order email variations that describe the upcoming product, state the expected ship date, list the early buyer advantages, and drive reservations.
+description: Builds three pre order email variations that describe the upcoming product, list the advantages of ordering early, state the approximate ship date, and drive reservations.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,74 +10,45 @@ type: text
 featured: false
 publishedAt: 2025-12-13
 does:
-  - Produces three full pre order email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - States the expected ship date in every variation and frames it as expected rather than guaranteed, which keeps refunds down.
+  - Produces three variations with a headline and a product details section covering the key features and benefits of the upcoming product.
+  - Adds a pre order benefits section covering advantages such as securing the item in advance and exclusive access.
+  - Ends each variation with a pre order button, an optional closing confirming the shipment date, and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Pad the ship date
-    detail: "in {{launch-date}} by a week or two, since a missed pre order date generates cancellations."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
+  - title: Send it ahead of the launch
+    detail: which is when the source says the format drives sales before the product is out.
+  - title: Mention any early pricing
+    detail: since securing the item at a cheaper price is part of what the template is built on.
+  - title: Use it for limited editions
+    detail: which the source lists alongside launches and high demand items.
 steps:
-  - title: Confirm the production timeline
-    detail: with your supplier, then set a ship date you can defend if it slips.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{new-product}}, {{key-features}}, {{launch-date}}, and {{preorder-perks}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Confirm the shipment date
+    detail: with your supplier, because the email is going to promise it.
+  - title: Fill in the variables
+    detail: "Set {{pre-order-url}}, {{shipment-date}}, and {{tone}} before you run the prompt."
+  - title: Run it and check the date
+    detail: appears in every variation before you schedule the send.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who sells things that do not exist yet. You trade excitement for clarity about when it arrives.
+Write an engaging 'Pre-Order' email based on the following structure. The email should generate excitement for an upcoming product {{pre-order-url}} , describe its key features, and include a call-to-action button to pre-order. It should also state an approximate shipment date {{shipment-date}}. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Create excitement with a catchy headline.
+2. **Product Details Section:** Describe the upcoming product with key features and benefits.
+3. **Pre-Order Benefits:** Highlight the advantages of pre-ordering (e.g., securing the item in advance, exclusive access).
+4. **CTA Button:** Prompt immediate action to pre-order the product.
+5. **(optional) Closing Section:** Close the campaign with a persuasive ending to encourage quick action or confirming the shipment date.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Upcoming product:** {{new-product}}
-**Key features:** {{key-features}}
-**Expected ship date:** {{launch-date}}
-**Pre order advantages:** {{preorder-perks}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one pre order email for {{brand}}.
+- **New Product Launches:** Promote upcoming products available for pre-order.
+- **Limited-Edition Releases:** Highlight exclusive items that customers can secure in advance.
+- **Back-in-Stock Notifications:** Inform customers about popular items available for pre-order before they return to stock.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** create excitement for what is coming.
-2. **Product Details Section:** the product with its key features and benefits.
-3. **Pre Order Benefits:** what the reader gets by ordering early.
-4. **CTA Button:** send the reader to pre order.
-5. **(optional) Closing Section:** a closing line that confirms the ship date.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a new product launch open for pre order; a limited edition release; a high demand item returning to stock. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- State the ship date from {{launch-date}} in every variation and describe it as expected, not guaranteed.
-- Only claim the advantages listed in {{preorder-perks}}.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Put the ship date in the body of all three variations.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{pre-order-url}}: paste the product pre-order URL
+- {{shipment-date}}: insert shipment date
+- {{tone}}: choose your tone, for example: enthusiastic and persuasive

@@ -1,7 +1,7 @@
 ---
 title: Video Feature Email With Context and a Watch Prompt
 emoji: "🎬"
-description: Writes three video feature email variations that set up what the video shows, give readers a reason to press play, and drive clicks to the hosted video.
+description: Writes three video feature email variations that explain the purpose of the video, set it up with a thumbnail, and drive readers to press play.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,73 +10,45 @@ type: text
 featured: false
 publishedAt: 2026-02-19
 does:
-  - Produces three full video feature email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - States the runtime and describes one specific moment from the video, which is what earns the click to press play.
+  - Produces three variations with a headline and an introduction section explaining the purpose of the video and why it matters.
+  - Adds a video section that embeds or links the video with a captivating thumbnail.
+  - Ends each variation with a call to action button to watch, an optional closing, and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Name the best moment
-    detail: "from {{video-content}}, including its timestamp, so the email can point at something concrete."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
+  - title: Use it when video tells it better
+    detail: "which is what the source says: a story, a demonstration, or news that reads flat as text."
+  - title: Try a product demonstration
+    detail: the first of four uses listed, alongside testimonials, behind the scenes, and event recaps.
+  - title: Expect higher engagement
+    detail: since the source notes video emails are effective at increasing it.
 steps:
-  - title: Watch the video again
-    detail: and write down its runtime plus the single moment worth teasing in the email.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{video-link}}, {{video-content}}, and {{video-length}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Upload the video
+    detail: and grab a thumbnail frame that works at email size.
+  - title: Fill in the variables
+    detail: "Set {{video-url}} and {{tone}} before you run the prompt."
+  - title: Run it and test the link
+    detail: on mobile, where most email video clicks happen.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who gets videos watched. The email has to earn the click before the video gets a chance to work.
+Write a 'Video Feature' email based on the following structure. The email should introduce and highlight a video {{video-url}}, provide context and entice the reader to watch it. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a catchy headline.
+2. **Introduction Section:** Explain the purpose of the video and its importance.
+3. **Video Section:** Embed or link to the video with a captivating thumbnail.
+4. **CTA Button:** Prompt immediate action to watch the video.
+5. **(optional) Closing Section:** Close the email with a thank you note or additional information.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Video and where it lives:** {{video-link}}
-**What the video shows:** {{video-content}}
-**Video length:** {{video-length}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one video feature email for {{brand}}.
+- **Product Demonstration:** Highlight a new product and its features.
+- **Customer Testimonials:** Share testimonials or reviews from satisfied customers.
+- **Behind the Scenes:** Provide a behind-the-scenes look at your company or product creation process.
+- **Event Recap:** Recap a recent event or share highlights.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** give the reader a reason to press play.
-2. **Introduction Section:** what the video covers and why it matters.
-3. **Video Section:** the thumbnail and link with a caption.
-4. **CTA Button:** send the reader to watch.
-5. **(optional) Closing Section:** a thank you or a next step.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a product demonstration; a customer testimonial video; a behind the scenes or event recap. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- State the runtime from {{video-length}} so the reader knows what they are committing to.
-- Describe one specific moment from {{video-content}} rather than summarising the whole thing.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Include the runtime in the body of every variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{video-url}}: paste URL of the video
+- {{tone}}: choose your tone, for example: exciting and engaging

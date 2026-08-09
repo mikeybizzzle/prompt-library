@@ -1,7 +1,7 @@
 ---
 title: Shop By Category Email With Three Curated Entry Points
 emoji: "🗂️"
-description: Builds three shop by email variations that split your catalogue into categories, moods, or styles, describe each route, and give readers an easy way in.
+description: Builds three shop by email variations that present categories, moods, or styles with descriptions, highlight the key products in each, and drive readers to shop.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,71 +10,43 @@ type: text
 featured: false
 publishedAt: 2026-01-10
 does:
-  - Produces three full shop by email variations, each with a headline, the numbered body sections, and a call to action button.
-  - "Caps each subject line and pre-header at 40 characters and keeps the three pairs distinct: short, longer, and out of the box."
-  - Splits the catalogue into three or four routes and says who each one is for, rather than listing every category you sell.
+  - Produces three variations with a headline introducing the theme and a short one liner intro.
+  - Adds a shop by section presenting the different categories, moods, or styles with descriptions and key products.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Group by need, not taxonomy
-    detail: "when you fill {{categories}}, since shoppers browse by problem far more often than by product type."
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
-  - title: Give it a past campaign
-    detail: as a voice sample, so the copy sounds like your brand instead of a generic ecommerce send.
+  - title: Send it periodically
+    detail: which is what the source suggests for helping customers discover new products.
+  - title: Pick one sorting logic
+    detail: category, mood, or style, since mixing all three undoes the simplification the format is for.
+  - title: Use it to ease decisions
+    detail: because the template exists to simplify shopping with curated selections.
 steps:
-  - title: Pick three ways in
-    detail: that match how customers actually describe what they are looking for.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{categories}}, {{category-products}}, and {{collection}} before you run it."
-  - title: Run it and pick one
-    detail: variation, then ask for two more subject lines in that style before you schedule the send.
+  - title: Decide the routes in
+    detail: and get a live collection URL for each one.
+  - title: Fill in the variables
+    detail: "Set {{category-urls}} and {{tone}} before you run the prompt."
+  - title: Run it and check each link
+    detail: so every category in the email lands on the right collection page.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who makes a large catalogue navigable. You give the reader three or four doors instead of one long list.
+Write an engaging 'Shop by' email based on the following structure. The email should guide customers in exploring products based on specific categories, moods, or styles from this collection: {{category-urls}}, highlight key products in each section, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Introduce the theme of the email with a catchy headline.
+2. **One liner:** Short intro to the email.
+3. **Shop by Section:** Present different categories, moods, or styles with descriptions and key products.
+4. **CTA Button:** Prompt immediate action to start shopping.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Categories, moods, or styles:** {{categories}}
-**Key products in each:** {{category-products}}
-**Collection page:** {{collection}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one shop by email for {{brand}}.
+- **Shop by Category:** Highlight different product categories for easy navigation.
+- **Shop by Mood:** Suggest products based on the customer's current mood or needs.
+- **Shop by Style:** Offer curated selections based on specific styles or trends.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** introduce the way of shopping in one line.
-2. **One liner:** a short intro to the email.
-3. **Shop by Section:** each category with a description and its key products.
-4. **CTA Button:** send the reader to start shopping.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: shopping by product category; shopping by mood or need; shopping by style or trend. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Cover three or four categories at most and give each one a one line description that says who it is for.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Name two or three products under each category.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{category-urls}}: paste a url of each category
+- {{tone}}: choose your tone, for example: friendly and helpful

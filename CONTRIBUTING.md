@@ -83,6 +83,10 @@ Image and video prompts use these:
 ## Tips
 ```
 
+### Exception: imported prompts
+
+The 45 email campaign prompts in `content/prompts/email-*.md` use `## Prompt`, `## Use cases`, and `## Variables` instead. They are transcriptions of an external email template set, not prompts we wrote. The body reproduces the original prompt word for word so the wording is preserved, with the source's bracketed blanks converted to `{{variables}}`. `## Use cases` carries the source's own use case list. Do not restructure these into Role, Context, Task, Constraints, and Output, and do not reword them. If you import another prompt set, follow the same pattern and note it here.
+
 Rules:
 
 1. Write 200 to 600 words for text and code prompts, 120 to 300 for image prompts.

@@ -1,7 +1,7 @@
 ---
 title: Dos and Donts Email With Product Usage Guidelines
 emoji: "✅"
-description: Builds three dos and donts email variations that pair correct and incorrect product usage, explain the reason behind each rule, and point to the products that help.
+description: Builds three dos and donts email variations that show the correct and incorrect ways to use a product, highlight the products that help, and close with a button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,45 @@ type: text
 featured: false
 publishedAt: 2025-09-28
 does:
-  - Produces three full dos and donts email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Pairs every variation with a subject line and pre-header under 40 characters, one short, one longer, and one out of the box.
-  - Pairs three dos with three matching donts, each carrying a one line reason the reader can act on immediately.
+  - Produces three variations with a headline, an optional one liner, and a dos and donts section covering correct and incorrect product use.
+  - Adds a relevant product section highlighting the products that help readers follow the guidelines.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Feed it real support tickets
-    detail: "in {{common-mistakes}}, since the donts only bite when they name errors customers actually make."
-  - title: Name the tone precisely
-    detail: "in {{tone}}, since calm and factual produces very different copy from loud and urgent."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
+  - title: Promote the product indirectly
+    detail: "which is the point of the format: guidance first, product second."
+  - title: Build it around common mistakes
+    detail: since highlighting frequent errors and their fixes is one of the listed use cases.
+  - title: Use it to lift satisfaction
+    detail: because the template exists to teach proper usage rather than to run a promotion.
 steps:
-  - title: Ask support what breaks most
-    detail: and write down the three mistakes they explain over and over each week.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{topic}}, {{common-mistakes}}, and {{related-product}} before you run it."
-  - title: Paste it into ChatGPT
-    detail: and ask for all three variations in one reply so you can compare them side by side.
+  - title: Pick the topic and the mistakes
+    detail: your support inbox sees most often on that topic.
+  - title: Fill in the variables
+    detail: "Set {{topic}}, {{product-url}}, and {{tone}} before you run the prompt."
+  - title: Run it and sanity check the donts
+    detail: so nothing in the list contradicts your own product instructions.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes usage guidance. You make the rules specific enough to be useful and short enough to read on a phone.
+Write an engaging 'Do's & Don'ts' email based on the following structure. The email should provide helpful guidelines related to {{topic}}, indirectly promoting {{product-url}} and have a clear call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Grab attention with a catchy headline.
+2. **(optional) One-liner:** Provide a brief introduction or summary for the campaign.
+3. **Do's & Don'ts Section:** Highlight the correct and incorrect ways to use the product.
+4. **Relevant Product Section:** Highlight relevant products that can help follow the guidelines.
+5. **CTA Button:** Prompt immediate action to shop or learn more.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Topic or usage area:** {{topic}}
-**Common mistakes customers make:** {{common-mistakes}}
-**Product that helps:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one dos and donts email for {{brand}}.
+- **Product Usage Guidelines:** Offer clear instructions on how to use your products effectively.
+- **Common Mistakes to Avoid:** Highlight common errors and provide solutions.
+- **Best Practices:** Share expert tips and best practices for getting the most out of your products.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** a line that promises the reader will stop doing something wrong.
-2. **(optional) One-liner:** a short setup for the guidance.
-3. **Dos and Donts Section:** three dos and three donts, each with a one line reason.
-4. **Relevant Product Section:** the product that makes the dos easier.
-5. **CTA Button:** send the reader to shop or read more.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: product usage guidelines; common mistakes to avoid; expert best practices. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Pair every do with a matching dont so the list reads as three contrasts, not six unrelated rules.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Format the dos and donts as two short lists rather than a paragraph.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{topic}}: a specific topic
+- {{product-url}}: insert product url
+- {{tone}}: choose your tone, for example: informative and friendly

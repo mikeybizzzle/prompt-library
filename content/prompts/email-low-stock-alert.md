@@ -1,7 +1,7 @@
 ---
 title: Low Stock Alert Email With Urgency and Product Detail
 emoji: "📉"
-description: Writes three low stock email variations that name the products running out, say what buyers miss if they wait, and drive an immediate purchase decision.
+description: Writes three low stock email variations that announce limited availability, describe what buyers miss if they wait, and drive an immediate purchase decision.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,42 @@ type: text
 featured: false
 publishedAt: 2025-11-19
 does:
-  - Produces three full low stock alert email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - Names the products, the stock position, and whether a restock is coming, so the urgency holds up after the send.
+  - Produces three variations with an urgent headline and a product section describing the low stock items and the benefits customers might miss out on.
+  - Adds a call to action button to shop the low stock items and an optional persuasive closing.
+  - Writes a subject line and pre-header pair per variation, capped at 40 characters each and deliberately different.
 tips:
-  - title: Check stock before sending
-    detail: "and put the real number in {{stock-detail}}, because a sold out link is worse than no email."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
+  - title: Send it when stock is genuinely low
+    detail: or when the source's second use, a conversion boost, is what you are really after.
+  - title: Name the products
+    detail: since the alert only works if readers know which items are at risk.
+  - title: Keep the claim defensible
+    detail: because a scarcity message that never plays out trains readers to ignore the next one.
 steps:
-  - title: Pull your live inventory counts
-    detail: and pick the two or three products genuinely close to selling out.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{low-stock-products}}, {{stock-detail}}, and {{demand-reason}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Check the stock levels
+    detail: and pick the products that will actually run out.
+  - title: Fill in the variables
+    detail: "Set {{products-url}} and {{tone}} before you run the prompt."
+  - title: Run it and send quickly
+    detail: so the alert reaches the list while the stock claim is still true.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes scarcity honestly. You say what is running low and let the fact do the work.
+Write a 'Low-Stock Alert' email based on the following structure. The email should announce the limited availability of popular products {{products-url}}. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Create urgency with a catchy headline.
+2. **Product Section:** Describe the low-stock products and benefits customers might miss out on.
+3. **CTA Button:** Prompt immediate action to shop the low-stock items.
+4. **(optional) Closing Section:** Close the campaign with a persuasive ending to encourage quick action.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Products running low:** {{low-stock-products}}
-**Units left or restock date:** {{stock-detail}}
-**Why the product sells out:** {{demand-reason}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one low stock alert email for {{brand}}.
+- **Product Low-Stock Alert:** Notify customers about the limited availability of products.
+- **Fake Low-Stock Alert:** Notify customers that your stock is low and you might sell out some of the best-sellers
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** state the scarcity in one line.
-2. **Product Section:** the low stock products and what the reader misses by waiting.
-3. **CTA Button:** send the reader to shop the low stock items.
-4. **(optional) Closing Section:** a final push to act now.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a genuine low stock notification; a best seller running down before a restock; a final call on a discontinued line. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Use only the stock figures in {{stock-detail}}. Do not invent unit counts or countdowns.
-- Say whether the item is restocking, using {{stock-detail}}, so the claim stays truthful.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep each variation under 110 words of body copy.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{products-url}}: paste URL of products
+- {{tone}}: choose your tone, for example: urgent and compelling

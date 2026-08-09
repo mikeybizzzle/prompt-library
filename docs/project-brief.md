@@ -22,7 +22,7 @@ The repo is the database. One markdown file per prompt in `content/prompts/`, wi
 
 `src/data/taxonomy.ts` is the single source of truth for categories, subcategories, models, and roles. Every facet count, filter panel, and route is derived from it.
 
-Current library: 108 prompts. 63 seed prompts, three per top-level category, eight marked featured, plus 45 e-commerce email campaign prompts under marketing / email-campaigns converted from an existing template set.
+Current library: 108 prompts. 63 seed prompts, three per top-level category, plus 45 e-commerce email campaign prompts under marketing / email-campaigns converted from an existing template set. 13 carry `featured: true`: eight seeds and five email prompts.
 
 ## Routes
 
@@ -35,7 +35,7 @@ Current library: 108 prompts. 63 seed prompts, three per top-level category, eig
 | `/type/[slug]` | `text`, `image`, or `code` |
 | `/p/[slug]` | One prompt, with the variable workbench |
 
-Every route prerenders. The build produces 311 static pages.
+Every route prerenders. The build produces 313 static pages.
 
 ## Interaction decisions
 
@@ -43,6 +43,7 @@ Every route prerenders. The build produces 311 static pages.
 - **Sort order.** "Shuffled" uses a seeded shuffle so the server and the client agree. The order looks arbitrary to a reader and stays stable across hydration.
 - **Search.** A ⌘K palette over the prompt titles, descriptions, and taxonomy. It runs on a small in-memory index shipped with the page, so there is no search backend.
 - **Counts.** The card footer keeps the source layout but reports real numbers. Likes and saves persist to `localStorage`. The pill shows the prompt's word count and copies the prompt on click. Nothing displays an invented view count.
+- **Long-form copy.** The prose below the grid and the FAQ answers use two different treatments on purpose. `docs/reference/design-spec.md` §9.7 records both.
 - **Workbench.** The prompt page detects `{{placeholders}}`, renders one input per variable, substitutes as you type, and copies the filled result. "Open in ChatGPT" copies the prompt and opens that model in a new tab.
 
 ## Not in scope now

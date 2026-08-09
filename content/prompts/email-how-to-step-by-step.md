@@ -1,7 +1,7 @@
 ---
 title: How To Email With Practical Steps and Product Picks
 emoji: "🧭"
-description: Produces three how to email variations that walk readers through a short practical method, highlight the products used at each step, and end with a shop button.
+description: Produces three how to email variations that offer practical tips or steps on a topic, highlight the relevant products used along the way, and close with a button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,73 +10,45 @@ type: text
 featured: false
 publishedAt: 2025-11-03
 does:
-  - Produces three full how to email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Pairs every variation with a subject line and pre-header under 40 characters, one short, one longer, and one out of the box.
-  - Breaks the method into five steps or fewer, each written as an instruction the reader can follow the same day.
+  - Produces three variations with a headline, an optional one liner, and a tips section offering practical tips or steps.
+  - Adds an optional product highlight section covering the products used to deliver those tips.
+  - Ends each variation with a call to action button, an optional closing, and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Describe the outcome you want
-    detail: "in {{topic}}, because the steps only sequence well when the end state is defined first."
-  - title: Give it a past campaign
-    detail: as a voice sample, so the copy sounds like your brand instead of a generic ecommerce send.
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
+  - title: Send it about once a month
+    detail: which is the cadence the source recommends for offering value to subscribers.
+  - title: Promote the product subtly
+    detail: because the template educates first and sells second.
+  - title: Reach for a step by step guide
+    detail: when the goal is a specific outcome rather than a loose set of tips.
 steps:
-  - title: Write the method out roughly
-    detail: in whatever order it comes to you, then let the prompt tighten and sequence it.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{topic}}, {{method-steps}}, and {{related-product}} before you run it."
-  - title: Paste it into ChatGPT
-    detail: and ask for all three variations in one reply so you can compare them side by side.
+  - title: Write the steps out yourself
+    detail: so the model has a real method to work from rather than inventing one.
+  - title: Fill in the variables
+    detail: "Set {{product-or-collection-url}} and {{tone}} before you run the prompt."
+  - title: Run it and test the instructions
+    detail: by following them once before the email goes out.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who teaches a method in a few steps. The product shows up because it is used in the method, not because the email needs a plug.
+Write an engaging 'How-To?' email based on the following structure. The email should provide practical tips related to a specific topic, highlight relevant products from this collection {{product-or-collection-url}}, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Set the stage with a catchy headline.
+2. **(optional) One-liner:** Provide an introduction or summary for the campaign.
+3. **Tips Section:** Offer practical tips or steps for specific products/product.
+4. **(optional) Relevant Product Highlight:** Highlight relevant product/products that are being used to suggest tips.
+5. **CTA Button:** Prompt immediate action.
+6. **(optional) Closing Section:** Close the campaign with a persuasive ending.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Topic or outcome:** {{topic}}
-**Steps or method:** {{method-steps}}
-**Products used:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one how to email for {{brand}}.
+- **Best Practices:** Share expert advice and best practices related to your products or industry.
+- **Step-by-Step Guides:** Offer detailed instructions on how to use a product or achieve a specific outcome.
+- **Tips and Tricks:** Provide useful tips and tricks that can help your audience make the most out of your products or services.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** promise the outcome, not the tutorial.
-2. **(optional) One-liner:** a short setup for the guide.
-3. **Tips Section:** the practical steps in order.
-4. **(optional) Relevant Product Highlight:** the products used in the steps.
-5. **CTA Button:** send the reader to shop or read the full guide.
-6. **(optional) Closing Section:** a persuasive line to close.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: expert best practices; a step by step product guide; tips that help readers get more from what they own. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Keep the method to five steps or fewer and write each step as an instruction, not a description.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Number the steps and keep each one under 30 words.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{product-or-collection-url}}: include a URL of a product or collection you want to focus on
+- {{tone}}: choose your tone, for example: informative and friendly

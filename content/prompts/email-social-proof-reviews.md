@@ -1,7 +1,7 @@
 ---
 title: Social Proof Email Built From Reviews and Customer Photos
 emoji: "⭐"
-description: Turns customer reviews and user generated content into three email variations that showcase real quotes, name what each one proves, and drive hesitant buyers to shop.
+description: Turns reviews, testimonials, and user generated content into three email variations that show the ratings and comments, feature customer photos, and drive the click.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,44 @@ type: text
 featured: true
 publishedAt: 2026-01-18
 does:
-  - Produces three full social proof email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - Reproduces every review quote word for word with its rating and reviewer name, so nothing in the email reads as invented.
+  - Produces three variations with a catchy headline and a reviews or testimonials section showing customer ratings and comments.
+  - Adds a user generated content section highlighting customer photos or videos.
+  - Ends each variation with a call to action button to explore products or read more reviews, plus a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Paste the reviews unedited
-    detail: "into {{review-quotes}}, typos included, because polished quotes are the ones readers stop believing."
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
+  - title: Aim it at hesitant buyers
+    detail: which is who the source says social proof is meant to convert.
+  - title: Include the ratings
+    detail: because the prompt asks for reviews with both ratings and comments.
+  - title: Celebrate a milestone
+    detail: which the source lists as a use case, such as passing a review or sales count.
 steps:
-  - title: Export your recent reviews
-    detail: and pick four that name a specific result rather than saying they love it.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{review-quotes}}, {{review-stats}}, and {{related-product}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Collect the reviews and photos
+    detail: you have permission to use.
+  - title: Fill in the variables
+    detail: "Set {{reviews-url}} and {{tone}} before you run the prompt."
+  - title: Run it and restore the exact quotes
+    detail: so nothing in the finished email is a paraphrase of a real customer.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who lets customers do the selling. Your job is to select and frame the quotes, never to improve them.
+Write an engaging 'Social Proof' email based on the following structure. The email should feature reviews, testimonials, or user-generated content to build trust and encourage purchases {{reviews-url}}. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a catchy headline.
+2. **Reviews/Testimonials Section:** Showcase customer reviews or testimonials with ratings and comments.
+3. **User-Generated Content Section:** Highlight any user-generated content, such as photos or videos.
+4. **CTA Button:** Prompt immediate action to explore products or read more reviews.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Review quotes to use:** {{review-quotes}}
-**Rating or review count:** {{review-stats}}
-**Product being reviewed:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one social proof email for {{brand}}.
+- **Product Reviews:** Showcase reviews and ratings from satisfied customers.
+- **Testimonials:** Share detailed testimonials or stories from happy customers.
+- **User-Generated Content:** Highlight content created by users, such as photos or videos of them using your product.
+- **Milestones:** Celebrate milestones like a certain number of reviews or sales.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** open with the strongest proof you have.
-2. **Reviews Section:** each quote with the rating and the reviewer's first name.
-3. **User Generated Content Section:** the customer photos or videos and what they show.
-4. **CTA Button:** send the reader to shop or read more reviews.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: showcasing product reviews and ratings; sharing a longer customer testimonial; celebrating a review count or sales milestone. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Reproduce every quote in {{review-quotes}} word for word, including any typos. Do not tidy them.
-- Only use the figures in {{review-stats}} and do not round them upward.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Use four quotes at most in each variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{reviews-url}}: insert a url with reviews or product
+- {{tone}}: choose your tone, for example: friendly and trustworthy

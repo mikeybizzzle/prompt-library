@@ -1,7 +1,7 @@
 ---
 title: Special Day Email Celebrating a Holiday or Awareness Date
 emoji: "🎉"
-description: Writes three email variations that mark a holiday, awareness day, or brand anniversary with a relevant message and a light connection to your products.
+description: Writes three email variations that celebrate a significant event, holiday, or awareness day and connect with customers through relevant stories, tips, or information.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,70 +10,42 @@ type: text
 featured: false
 publishedAt: 2026-01-22
 does:
-  - Produces three full special day email variations, each with a headline, the numbered body sections, and a call to action button.
-  - "Caps each subject line and pre-header at 40 characters and keeps the three pairs distinct: short, longer, and out of the box."
-  - Leads with the message rather than the offer and keeps any product mention brief and at the end of the email.
+  - Produces three variations with a celebratory headline that captures attention.
+  - Adds a main content section sharing stories, tips, or information related to the special day.
+  - Writes a subject line and pre-header pair per variation, capped at 40 characters each and deliberately different.
 tips:
-  - title: Skip days you cannot own
-    detail: "and only fill {{occasion}} with dates your brand has a genuine reason to mark."
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
-  - title: Name the tone precisely
-    detail: "in {{tone}}, since calm and factual produces very different copy from loud and urgent."
+  - title: Acknowledge the occasion first
+    detail: because the format is about engaging around the day, not selling on it.
+  - title: Pick a day that fits the brand
+    detail: such as an awareness day tied to a cause you already support.
+  - title: Use it for your own anniversary
+    detail: which the source lists alongside holidays and international days.
 steps:
-  - title: Choose a date you can justify
-    detail: then write down what your brand actually has to say about it.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{occasion}}, {{message}}, and {{related-product}} before you run it."
-  - title: Run it and pick one
-    detail: variation, then ask for two more subject lines in that style before you schedule the send.
+  - title: Choose the day and the angle
+    detail: you can speak to honestly.
+  - title: Fill in the variables
+    detail: "Set {{special-day}} and {{tone}} before you run the prompt."
+  - title: Run it and read for tone
+    detail: since a celebratory send that misses the mood does more harm than skipping it.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who marks occasions without turning every one into a sale. You earn the send by saying something worth reading.
+Write an engaging 'Special Day' email based on the following structure. The email should celebrate a {{special-day}}, and connect with customers on an emotional level. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a celebratory headline.
+2. **Main Content Section:** Share relevant stories, tips, or information related to the special day.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Occasion or date:** {{occasion}}
-**What the brand wants to say:** {{message}}
-**Related product or action:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one special day email for {{brand}}.
+- **Holidays:** Celebrate national or international holidays with themed promotions.
+- **Awareness Days:** Highlight important causes or awareness days related to your brand.
+- **Anniversaries:** Celebrate your brand's milestones or anniversaries.
+- **Special Events:** Acknowledge and celebrate events like International Women's Day, Mental Health Awareness Month, or National Coffee Day.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** mark the occasion in a line that is not a greeting card.
-2. **Main Content Section:** the story, tip, or message tied to the day.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a national or international holiday; an awareness day tied to your brand; a brand anniversary or milestone. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Lead with the message in {{message}}. Any product mention comes last and stays brief.
-- Do not attach a discount to a cause based occasion.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep the email under 120 words in each variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{special-day}}: significant event, holiday, or awareness day
+- {{tone}}: choose your tone, for example: celebratory and heartfelt

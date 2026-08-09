@@ -1,7 +1,7 @@
 ---
 title: Best Seller Recommendation Email Featuring Three Products
 emoji: "👍"
-description: Builds three recommendation email variations that feature up to three best selling products, give each a short description and its own button, and close with one main call to action.
+description: Builds three recommendation email variations featuring up to three best selling products, each with a short description and its own call to action, plus a main button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,73 +10,53 @@ type: text
 featured: false
 publishedAt: 2025-12-25
 does:
-  - Produces three full recommendations email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - Features up to three products, each with its own description and button text, plus one prominent button to the collection.
+  - Produces three variations with a headline, an optional one liner teaser, and a product introduction section covering up to three products.
+  - Gives each product a name, a short enticing description, and its own call to action text.
+  - Ends each variation with a prominent button, an optional persuasive closing, and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: Rank by revenue, not gut
-    detail: "when you fill {{featured-products}}, and check which three actually sold last month."
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
+  - title: Send it every month or two
+    detail: which is the cadence the source recommends for this campaign.
+  - title: Treat it as a filler send
+    detail: because the source is clear that it is low effort and will not necessarily drive a lot of revenue.
+  - title: Use it to feature a collection
+    detail: or to showcase how to use the products step by step, both listed uses.
 steps:
-  - title: Pull last month's top sellers
-    detail: from your store reports and note one reason each of them moved.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{collection}}, {{featured-products}}, and {{selling-points}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Pull your current top sellers
+    detail: and cut the list down to three.
+  - title: Fill in the variables
+    detail: "Set {{collection-url}} and {{tone}} before you run the prompt."
+  - title: Run it and fill the product slots
+    detail: with the real names, descriptions, and button text for each item.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes the reliable monthly send. It does not need a big idea, it needs three products described well.
+Write an engaging email based on the following structure. The email should highlight our best-selling products from {{collection-url}}, introduce the products (up to 3) individually, write a short sentence about each product, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+- **Headline:** Set the stage with a catchy headline that grabs attention.
+- **(optional) One-liner:** Provide a brief teaser or summary for the campaign to engage readers.
+- **Product Introduction Section:**
+    - **Product 1: [Insert Product Name]**
+        - **Description:** [Write a brief, enticing description of the product]
+        - **CTA:** [Insert call-to-action text, e.g., “SHOP NOW”]
+    - **Product 2: [Insert Product Name]**
+        - **Description:** [Write a brief, enticing description of the product]
+        - **CTA:** [Insert call-to-action text, e.g., “BUY NOW”]
+    - **Product 3: [Insert Product Name]**
+        - **Description:** [Write a brief, enticing description of the product]
+        - **CTA:** [Insert call-to-action text, e.g., “LEARN MORE”]
+- **CTA Button:** Include a prominent button with action-oriented text to encourage clicks.
+- **(optional) Closing Section:** Conclude with a persuasive ending to reinforce the message and prompt further action.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Collection or best sellers:** {{collection}}
-**Three products to feature:** {{featured-products}}
-**Why each one sells:** {{selling-points}}
+Create a subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, other longer, third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one recommendations email for {{brand}}.
+- **Monthly Best-sellers:** Feature products that are trending or were trending recently.
+- **Product Showcase:** Feature a products and showcase how to use them step by step.
+- **Recommendations:** Feature a certain collection and highlight products
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** a line that frames the picks.
-2. **(optional) One-liner:** a short teaser for the campaign.
-3. **Product Introduction Section:** three products, each with a name, a short description, and its own CTA text.
-4. **CTA Button:** one prominent button to the collection.
-5. **(optional) Closing Section:** a persuasive line to close.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a monthly best sellers roundup; a product showcase with usage notes; a curated pick from one collection. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Feature three products at most and give each one its own button text.
-- Vary the button text across the three products rather than repeating shop now.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep each product description to one or two sentences.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{collection-url}}: insert collection URL
+- {{tone}}: choose your tone, for example: conversational and enthusiastic

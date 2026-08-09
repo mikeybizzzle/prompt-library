@@ -1,7 +1,7 @@
 ---
 title: Statistics Email Ranking Top Products With Real Numbers
 emoji: "📊"
-description: Writes three data led email variations that rank your top products or present key statistics, explain what each number means, and drive readers to shop the leaders.
+description: Writes three data led email variations that present key statistics or top products with short descriptions, add the supporting details, and close with a shop button.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,43 @@ type: text
 featured: false
 publishedAt: 2026-01-30
 does:
-  - Produces three full statistics email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - Ranks the products or statistics with the period stated beside them and explains what each number means for the reader.
+  - Produces three variations with a data driven headline and a section presenting the key statistics or top products with brief descriptions and images.
+  - Adds a details section highlighting further benefits related to those statistics or products.
+  - Ends each variation with a call to action button and a subject line and pre-header pair capped at 40 characters.
 tips:
-  - title: State the period beside numbers
-    detail: "in {{time-period}}, because a ranking with no date attached invites people to question it."
-  - title: Check the character counts
-    detail: it reports, because subject lines and pre-headers over 40 characters get cut off in most inboxes.
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
+  - title: Let the data do the work
+    detail: since the format builds trust by backing claims with numbers or rankings.
+  - title: Rank your top sellers
+    detail: which the source lists first among its use cases.
+  - title: Try customer favourites
+    detail: for products that are highly rated or frequently repurchased.
 steps:
-  - title: Pull the ranking from analytics
-    detail: for a fixed window, then note one reason each product ranked where it did.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{key-stats}}, {{featured-products}}, and {{time-period}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Pull the numbers
+    detail: from your store analytics or review platform.
+  - title: Fill in the variables
+    detail: "Set {{products-and-statistics}} and {{tone}} before you run the prompt."
+  - title: Run it and check every figure
+    detail: because a wrong statistic costs more credibility than the email gains.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes with numbers. A ranking is interesting only when the reader learns why the order came out that way.
+Write an engaging 'Statistics / Top' email based on the following structure. The email should highlight key statistics or data about {{products-and-statistics}}, include a call-to-action button, and use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a data-driven headline.
+2. **Statistics / Top Products Section:** Present key statistics or top products with brief descriptions and images.
+3. **Details Section:** Highlight additional details or benefits related to the statistics or products.
+4. **CTA Button:** Prompt immediate action to shop or learn more.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Statistics or rankings:** {{key-stats}}
-**Products being ranked:** {{featured-products}}
-**Period the data covers:** {{time-period}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one statistics email for {{brand}}.
+- **Top Sellers:** Highlight the top-selling products in your collection.
+- **Key Statistics:** Present important statistics related to your products or industry.
+- **Customer Favorites:** Showcase products that are highly rated or frequently purchased by customers.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** lead with the strongest number.
-2. **Statistics or Top Products Section:** the ranked list or statistics with a short description of each.
-3. **Details Section:** what the numbers mean for the reader.
-4. **CTA Button:** send the reader to shop or read more.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a top sellers ranking; key statistics about your products; a customer favourites list. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Use only the figures in {{key-stats}} and state the period from {{time-period}} beside them.
-- Explain each number rather than listing it and moving on.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Rank five items at most in each variation.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{products-and-statistics}}: insert your products, statistics
+- {{tone}}: choose your tone, for example: informative or transparent

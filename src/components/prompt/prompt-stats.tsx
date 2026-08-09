@@ -34,10 +34,10 @@ export function PromptStats({ slug, words }: { slug: string; words: number }) {
           chip,
           liked
             ? "border-pl-accent-yellow bg-pl-accent-yellow/20 text-pl-ink"
-            : "border-[rgba(175,175,175,0.24)] bg-white text-pl-dark",
+            : "border-[rgba(175,175,175,0.24)] bg-white text-pl-ink-muted",
         )}
       >
-        <span className="inline-flex" aria-hidden="true">
+        <span className={cn("inline-flex", liked ? "text-pl-ink" : "text-pl-dark")} aria-hidden="true">
           <Heart className={cn("size-4", liked && "fill-current")} strokeWidth={1.8} />
         </span>
         <span className="font-sans text-[14px] leading-5 tabular-nums">{liked ? 1 : 0}</span>
@@ -53,10 +53,10 @@ export function PromptStats({ slug, words }: { slug: string; words: number }) {
           chip,
           saved
             ? "border-pl-accent-yellow bg-pl-accent-yellow/20 text-pl-ink"
-            : "border-[rgba(175,175,175,0.24)] bg-white text-pl-dark",
+            : "border-[rgba(175,175,175,0.24)] bg-white text-pl-ink-muted",
         )}
       >
-        <span className="inline-flex" aria-hidden="true">
+        <span className={cn("inline-flex", saved ? "text-pl-ink" : "text-pl-dark")} aria-hidden="true">
           <Bookmark className={cn("size-4", saved && "fill-current")} strokeWidth={1.8} />
         </span>
         <span className="font-sans text-[14px] leading-5 tabular-nums">{saved ? 1 : 0}</span>

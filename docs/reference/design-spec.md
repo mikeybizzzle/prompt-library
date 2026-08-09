@@ -1245,6 +1245,43 @@ Exact recipe:
   by the un-captured canvas JS. **INFERRED**.
 - `z-[1]` here; the footer content block sits at `z-[2]` above it.
 
+### 9.7 Two prose treatments, not one
+
+The bottom of the page carries two long-form text treatments. They read as one style at a
+glance and they are not the same rules. Reusing `.prose-hub` for the SEO copy block is the
+mistake this section exists to prevent.
+
+**`.prose-hub` styles FAQ answers only.** It is applied to the `<div>` inside each `<details>`
+(§9.2), never to the SEO block:
+
+```
+class="prose-hub px-5 py-4 [&_li]:text-[14px] [&_p]:text-[14px] [&_p]:leading-[1.6]"
+```
+
+Base is 16 px body at line-height 1.65 in ink-muted, `h2` at 700 weight (declared 40 px, then
+cut to 32 px by the later override recorded in §9.3), `h3` at 20 px / 600, and bullets drawn as
+a 4 px `::before` dot. The rebuild's copy of the class matches the reference exactly.
+
+**The SEO copy block is not `.prose-hub`.** The reference styles it with utility classes on a
+wrapper `<div>` (§9.4). Measured at 1440 px:
+
+| Element | Value |
+| --- | --- |
+| Wrapper | `max-w-[880px]`, body 13 px at line-height 1.75 in ink-soft (`rgba(22,20,21,0.45)`) |
+| `h2` | 15 px / 600 in ink-muted, `mt-7 mb-2`, `mt-0` on the first one |
+| `h3` | 13.5 px / 600 in ink-muted, `mt-5 mb-1.5` |
+| `ul` / `ol` | native `list-disc` / `list-decimal` at `pl-5`, `gap-1`, `mb-3` |
+| `strong` | 600 weight in ink-muted |
+| `a` | ink-muted, underlined at `underline-offset-2`, full ink on hover |
+
+Reference class string, verbatim:
+
+```
+max-w-[880px] text-[13px] leading-[1.75] text-gop-ink-soft [&_p]:m-0 [&_p]:mb-3 [&_h2]:mb-2 [&_h2]:mt-7 [&_h2]:text-[15px] [&_h2]:font-semibold [&_h2]:leading-snug [&_h2]:text-gop-ink-muted [&_h2:first-child]:mt-0 [&_h3]:mb-1.5 [&_h3]:mt-5 [&_h3]:text-[13.5px] [&_h3]:font-semibold [&_h3]:text-gop-ink-muted [&_ul]:mb-3 [&_ul]:flex [&_ul]:list-disc [&_ul]:flex-col [&_ul]:gap-1 [&_ul]:pl-5 [&_ol]:mb-3 [&_ol]:flex [&_ol]:list-decimal [&_ol]:flex-col [&_ol]:gap-1 [&_ol]:pl-5 [&_strong]:font-semibold [&_strong]:text-gop-ink-muted [&_a]:text-gop-ink-muted [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gop-ink
+```
+
+The rebuild uses the same string with the `gop-` token prefix replaced by `pl-`.
+
 ---
 
 ## 10. Footer
@@ -1568,6 +1605,25 @@ belonging to the search palette and the prompt-generator page:
 
 Elements that opt in explicitly with `motion-reduce:*`: navbar chevron, Tools dropdown, mobile
 drawer, hamburger icons, card like/bookmark glyphs, both floating pills, floating pill labels.
+
+---
+
+## 14. Closed investigations
+
+Differences that were measured, explained, and closed. Do not re-open them.
+
+### 14.1 Workbench sits 16 px higher on a prompt detail page
+
+On a prompt detail page the rebuild's dark workbench starts at y = 340 against the reference's
+y = 356 at 1440 px. This is not a defect.
+
+- Every element between the `<h1>` and the workbench is class-for-class identical, and the
+  arithmetic closes on both sides.
+- The whole 16 px is one extra wrapped line in the description paragraph. The reference
+  description is 214 characters and wraps to three lines at `text-[13px]` inside
+  `max-w-[560px]`. The rebuild's prompt descriptions run 141 to 182 characters and wrap to two.
+- Do not pin the offset with a `min-height`. That hardcodes the layout to another site's copy
+  length.
 
 ---
 

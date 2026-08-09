@@ -11,6 +11,21 @@ const pillLink =
 const columnLink =
   "text-[13px] leading-5 text-pl-ink-muted no-underline transition-colors hover:text-pl-ink hover:underline hover:underline-offset-2";
 
+/**
+ * The long-form copy below the FAQ. This is a different, much smaller treatment
+ * than `.prose-hub`, which styles FAQ answers. Do not merge the two.
+ */
+const proseSeo = [
+  "max-w-[880px] text-[13px] leading-[1.75] text-pl-ink-soft",
+  "[&_p]:m-0 [&_p]:mb-3",
+  "[&_h2]:mb-2 [&_h2]:mt-7 [&_h2]:text-[15px] [&_h2]:font-semibold [&_h2]:leading-snug [&_h2]:text-pl-ink-muted [&_h2:first-child]:mt-0",
+  "[&_h3]:mb-1.5 [&_h3]:mt-5 [&_h3]:text-[13.5px] [&_h3]:font-semibold [&_h3]:text-pl-ink-muted",
+  "[&_ul]:mb-3 [&_ul]:flex [&_ul]:list-disc [&_ul]:flex-col [&_ul]:gap-1 [&_ul]:pl-5",
+  "[&_ol]:mb-3 [&_ol]:flex [&_ol]:list-decimal [&_ol]:flex-col [&_ol]:gap-1 [&_ol]:pl-5",
+  "[&_strong]:font-semibold [&_strong]:text-pl-ink-muted",
+  "[&_a]:text-pl-ink-muted [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-pl-ink",
+].join(" ");
+
 export type FaqItem = { q: string; a: React.ReactNode };
 
 function FeaturedRow({ prompts }: { prompts: PromptCardData[] }) {
@@ -48,8 +63,11 @@ function FeaturedRow({ prompts }: { prompts: PromptCardData[] }) {
               />
             </div>
             <div className="flex flex-1 flex-col gap-3 px-4">
-              <h3 className="m-0 line-clamp-2 text-[19px] font-medium leading-6 tracking-[-0.01em] text-pl-ink">
-                {p.emoji} {p.title}
+              <h3 className="m-0 flex items-start gap-2 text-[19px] font-medium leading-6 tracking-[-0.01em] text-pl-ink">
+                <span aria-hidden="true" className="shrink-0 leading-6">
+                  {p.emoji}
+                </span>
+                <span className="line-clamp-2">{p.title}</span>
               </h3>
               <span className="mt-auto inline-flex items-center gap-1 text-[15px] text-pl-ink-muted transition-colors group-hover:text-pl-ink">
                 Open prompt
@@ -101,7 +119,7 @@ function BrowseColumns({ total, facets }: { total: number; facets: Facets }) {
     },
     {
       id: "by-model",
-      title: "Browse by AI model",
+      title: "Browse by AI tool",
       links: MODELS.filter((m) => facets.models[m.slug])
         .slice(0, 16)
         .map((m) => ({ href: `/tool/${m.slug}`, label: m.name })),
@@ -165,7 +183,7 @@ export function HubSections({
       <div className="flex flex-col gap-14">
         <FeaturedRow prompts={featured} />
         <Faq items={faq} />
-        <div className="prose-hub">{children}</div>
+        <div className={proseSeo}>{children}</div>
         <BrowseColumns total={total} facets={facets} />
       </div>
     </div>
@@ -177,9 +195,9 @@ export const DEFAULT_FAQ: FaqItem[] = [
     q: `What is ${SITE.name}?`,
     a: (
       <p>
-        A free, open library of AI prompts. Every prompt is written as a structured brief with a
-        role, context, task, and an explicit output format, so the model returns something you can
-        use rather than a wall of text. Browse by category, by model, by role, or by prompt type.
+        A free, open library of AI prompts. Most are written as a structured brief with a role,
+        context, task, and an explicit output format, so the model returns something you can use
+        rather than a wall of text. Browse by category, by model, by role, or by prompt type.
       </p>
     ),
   },

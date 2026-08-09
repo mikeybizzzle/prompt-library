@@ -115,8 +115,8 @@ export default async function PromptPage({ params }: Params) {
         <div className="flex flex-col gap-6">
           <header className="flex flex-col gap-4">
             <div className="flex items-start justify-between gap-x-6 gap-y-4 max-[760px]:flex-col max-[760px]:items-stretch">
-              <h1 className="m-0 min-w-0 font-sans text-pl-subtitle text-[#3f3000] sm:text-[28px] sm:leading-8">
-                {prompt.emoji} {prompt.title}
+              <h1 className="m-0 min-w-0 font-sans text-pl-subtitle font-semibold text-[#3f3000] sm:text-[28px] sm:leading-8">
+                {prompt.title}
               </h1>
               <PromptStats slug={prompt.slug} words={prompt.words} />
             </div>
@@ -144,7 +144,7 @@ export default async function PromptPage({ params }: Params) {
 
         {hasGuide && (
           <section className="flex flex-col gap-6">
-            <h2 className="m-0 text-[clamp(22px,2.6vw,32px)] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
+            <h2 className="m-0 text-[24px] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
               Prompt Guide
             </h2>
 
@@ -234,8 +234,8 @@ export default async function PromptPage({ params }: Params) {
 
         {related.length > 0 && (
           <section className="flex flex-col gap-6">
-            <h2 className="m-0 text-[clamp(22px,2.6vw,32px)] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
-              Related prompts
+            <h2 className="m-0 text-[24px] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
+              Related Prompts
             </h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((p) => (

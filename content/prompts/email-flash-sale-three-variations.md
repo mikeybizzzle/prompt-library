@@ -1,7 +1,7 @@
 ---
 title: Flash Sale Email With Three Subject Line Variants
 emoji: "⚡"
-description: Produces three flash sale email variations with a headline, offer details, and a shop button, plus three subject line and pre-header pairs capped at 40 characters.
+description: Produces three flash sale email variations with a headline, a sale details section, and a shop button, plus subject line and pre-header pairs capped at 40 characters.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,72 +10,43 @@ type: text
 featured: true
 publishedAt: 2025-10-14
 does:
-  - Produces three full flash sale email variations, each with a headline, the numbered body sections, and a call to action button.
-  - Writes three subject line and pre-header pairs, each capped at 40 characters, ranging from short to longer to out of the box.
-  - Repeats the discount, the end time, and the exclusions in every variation so no version of the email creates a support ticket.
+  - Produces three variations with an urgent headline and a sale details section describing the offer.
+  - Adds a call to action button to shop the sale and an optional persuasive closing section.
+  - Writes a subject line and pre-header pair per variation, capped at 40 characters each and deliberately different.
 tips:
-  - title: Set a real end time
-    detail: "in {{end-time}} with a time zone, since urgency copy collapses when the sale quietly runs on."
-  - title: Send the winner to a segment
-    detail: first, then roll the better performing subject line out to the rest of the list.
-  - title: Paste your real product copy
-    detail: "into {{product}} instead of a bare product name, because the model writes sharper sections when it can see the detail."
+  - title: Keep the window genuinely short
+    detail: because the template drives quick sales by emphasising that the offer is temporary.
+  - title: Try a 24 hour version
+    detail: which the source lists first among its use cases.
+  - title: Run one monthly
+    detail: since the source suggests peak periods, special promotions, or simply a monthly cadence.
 steps:
-  - title: Lock the offer before writing
-    detail: including the discount, the exclusions, and the hour the sale actually closes.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{discount}}, {{end-time}}, and {{offer-terms}} before you run it."
-  - title: Run it in Claude
-    detail: then drop the winning variation straight into your email builder section by section.
+  - title: Set the offer and the end time
+    detail: before writing, since urgency copy needs a real deadline behind it.
+  - title: Fill in the variables
+    detail: "Set {{key-offer}} and {{tone}} before you run the prompt."
+  - title: Run it and schedule the send
+    detail: so the email lands with enough of the sale window left to act on.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who writes short promotional sends. Every line has to earn the next one, because a flash sale email is read in six seconds or not at all.
+Write a 'Flash Sale' email based on the following structure. The email should highlight a special flash sale event, {{key-offer}}, and include a call-to-action button. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Create urgency with a catchy headline.
+2. **Sale Details Section:** Describe the sale offer.
+3. **CTA Button:** Prompt immediate action to shop the sale.
+4. **(optional) Closing Section:** Close the campaign with a persuasive ending to encourage quick action.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Discount or offer:** {{discount}}
-**Sale end time:** {{end-time}}
-**What is included or excluded:** {{offer-terms}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one flash sale email for {{brand}}.
+- **24-Hour Flash Sales:** Promote limited-time offers that last for 24 hours.
+- **Seasonal Flash Sales:** Highlight temporary discounts during seasonal events.
+- **Surprise Flash Sales:** Drive engagement with unexpected sales events.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** create urgency in one line.
-2. **Sale Details Section:** state the offer, what it covers, and when it ends.
-3. **CTA Button:** send the reader to shop the sale.
-4. **(optional) Closing Section:** a final line that pushes the reader to act now.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: a 24 hour flash sale; a seasonal flash discount; a surprise sale with no warning. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- State the end time from {{end-time}} in every variation, including the time zone.
-- Name any exclusions from {{offer-terms}} rather than hiding them under fine print.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Keep every variation under 120 words of body copy.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{key-offer}}: describe the key offer
+- {{tone}}: choose your tone, for example: urgent and exciting

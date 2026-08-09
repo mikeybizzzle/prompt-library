@@ -1,7 +1,7 @@
 ---
 title: Blog Feature Email That Drives Readers to One Post
 emoji: "📰"
-description: Writes three email variations that tease one blog post, give readers a reason to click through, and end with a read now button pointed at your article.
+description: Writes three blog email variations that feature the post you want read, expand on it in a details section, and close with a button driving traffic to the blog.
 category: marketing
 subcategory: email-campaigns
 models: [chatgpt, claude, gemini]
@@ -10,71 +10,43 @@ type: text
 featured: false
 publishedAt: 2025-09-12
 does:
-  - Produces three full blog feature email variations, each with a headline, the numbered body sections, and a call to action button.
-  - "Caps each subject line and pre-header at 40 characters and keeps the three pairs distinct: short, longer, and out of the box."
-  - Pulls two or three specific beats out of the article so the email teaches something before it asks for the click.
+  - Produces three variations with a catchy headline and a blog post highlight section presenting the post you want featured.
+  - Adds a blog post details section with a fuller description of the highlighted post, then a call to action button to read it.
+  - Writes a subject line and pre-header pair per variation, capped at 40 characters each and deliberately different.
 tips:
-  - title: Paste the full article text
-    detail: "into {{blog-post}} rather than a link, because the model cannot open URLs and will guess otherwise."
-  - title: Ask for a fourth variation
-    detail: once you see which of the three lands, so you can test two versions of the same angle.
-  - title: Give it a past campaign
-    detail: as a voice sample, so the copy sounds like your brand instead of a generic ecommerce send.
+  - title: Use it to promote a new post
+    detail: which is what the template is built for, alongside a roundup of popular articles.
+  - title: Lean on educational posts
+    detail: since insights, tips, and tutorials establish the brand as an authority in its niche.
+  - title: Keep the detail section substantial
+    detail: because the email has to carry enough value to earn the click through to the blog.
 steps:
-  - title: Copy the article body first
-    detail: along with its title and the one line you would use to describe it to a friend.
-  - title: "Fill {{brand}} and {{product}}"
-    detail: "then fill {{audience}}, {{tone}}, {{blog-post}}, {{key-takeaway}}, and {{related-product}} before you run it."
-  - title: Run it and pick one
-    detail: variation, then ask for two more subject lines in that style before you schedule the send.
+  - title: Pick the post you want traffic on
+    detail: and have its URL ready rather than the blog index.
+  - title: Fill in the variables
+    detail: "Set {{blog-url}} and {{tone}} before you run the prompt."
+  - title: Run it and check the details section
+    detail: against the actual article so nothing in the email overstates what the post says.
 ---
 
-## Role
+## Prompt
 
-You are an ecommerce email copywriter who turns editorial content into clicks. You give away enough of the article to build interest and hold back enough to earn the click.
+Write an engaging 'Blog' email based on the following structure. The email should highlight key blog posts {{blog-url}}, drive traffic to your blog, and engage the audience with valuable information. Use a {{tone}} tone. Here's the structure to follow, make sure to create 3 different variations:
 
-## Context
+1. **Headline:** Capture attention with a catchy headline.
+2. **Blog Post Highlight Section:** Present the key blog you want to feature.
+3. **Blog Post Details Section:** Provide more detailed descriptions of the highlighted blog post.
+4. **CTA Button:** Prompt immediate action to read the blog.
 
-**Brand:** {{brand}}
-**Product or collection:** {{product}}
-**Audience:** {{audience}}
-**Tone:** {{tone}}
-**Blog post or article:** {{blog-post}}
-**Main takeaway of the post:** {{key-takeaway}}
-**Related product or collection:** {{related-product}}
+Create subject line & pre-header pairs for each of the variations, make sure to differ them and not go beyond 40 characters (40 for subject and 40 for pre-header). Each subject line and pre-header variation have to be very different - one short, another longer, and a third out of the box.
 
-## Task
+## Use cases
 
-Write three different variations of one blog feature email for {{brand}}.
+- **New Blog Post Announcement:** Introduce and link to your latest blog post.
+- **Blog Post Roundup:** Share a collection of your most-read or most relevant blog posts.
+- **Educational Content:** Highlight blog posts that provide valuable insights, tips, or tutorials.
 
-Every variation follows this section order:
+## Variables
 
-1. **Headline:** a line that promises the value the post delivers.
-2. **Blog Post Highlight Section:** introduce the featured post and why it exists.
-3. **Blog Post Details Section:** expand on what the reader learns, in two or three short beats.
-4. **CTA Button:** send the reader to the post.
-
-Then write one subject line and pre-header pair for each variation.
-
-## Constraints
-
-- The send is for one of these situations: announcing a new blog post; rounding up your most read articles; highlighting an educational guide. Pick the one that fits the context above and write all three variations to it.
-- Subject lines must be 40 characters or fewer. Pre-headers must be 40 characters or fewer. Count them and report each count.
-- Make the three subject line and pre-header pairs clearly different from each other: one short, one longer, and one out of the box.
-- Do not summarise the post so completely that there is no reason to click.
-- Write in the voice set by {{tone}} and for the reader described in {{audience}}. Do not add claims the context above does not support.
-
-## Output
-
-Return three variations, labelled Variation 1, Variation 2, and Variation 3.
-
-Each variation opens with two lines:
-
-- **Subject line:** the line, then its character count in parentheses
-- **Pre-header:** the line, then its character count in parentheses
-
-Under those, write the numbered sections in the order listed in the Task, using the same section names as headings, with the finished copy under each one. Button sections give the exact button label in five words or fewer.
-
-Each variation should quote at least one line from the post verbatim.
-
-Write it as plain text a person can paste into an email builder. Do not add notes explaining your choices.
+- {{blog-url}}: paste URL to your blog
+- {{tone}}: choose your tone, for example: informative
