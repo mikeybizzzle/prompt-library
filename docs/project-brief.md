@@ -8,11 +8,12 @@ A clean, fast, public library for storing and sharing AI prompts. The library pa
 
 The interface is a deliberate 1:1 reconstruction of the layout, interaction model, and visual system of `godofprompt.ai/prompt-library`, rebuilt from measured values rather than copied assets. `docs/reference/design-spec.md` records the measurements: tokens, class strings, spacing, motion, and breakpoints.
 
-Three things differ on purpose:
+Four things differ on purpose:
 
 1. **Name and logo.** The site is Bizzzle Prompts. The mark is a stack of three gold plates, drawn in `src/components/brand/logo.tsx`.
 2. **Footer.** Own copy, own links, own social accounts.
 3. **Anything that pointed off the library.** The source site's navbar leads to a blog, a shop, a prompt generator, and a sign-in dialog. None of those exist here. The navbar instead exposes the library's own axes: Categories, Models, Roles, Types. The gold button links to the GitHub repo. The floating left pill opens a random prompt instead of a paid generator.
+4. **A dark theme.** The reference is light only, so the dark palette is an addition and not a parity target. It lives in one `:root[data-theme="dark"]` block in `src/app/globals.css` that re-points the surface and ink tokens; the light values there are unchanged and the spec still governs them. Surfaces the reference already draws dark, the navbar pill, prompt cards and the terminal, keep their exact values in both themes. Do not read a difference between the dark theme and `design-spec.md` as a bug.
 
 Prompt text is original. Nothing was copied from the source site.
 
@@ -45,6 +46,7 @@ Every route prerenders. The build produces 313 static pages.
 - **Counts.** The card footer keeps the source layout but reports real numbers. Likes and saves persist to `localStorage`. The pill shows the prompt's word count and copies the prompt on click. Nothing displays an invented view count.
 - **Long-form copy.** The prose below the grid and the FAQ answers use two different treatments on purpose. `docs/reference/design-spec.md` §9.7 records both.
 - **Workbench.** The prompt page detects `{{placeholders}}`, renders one input per variable, substitutes as you type, and copies the filled result. "Open in ChatGPT" copies the prompt and opens that model in a new tab.
+- **Theme.** A first visit follows `prefers-color-scheme` and keeps following it as the OS changes. The navbar toggle writes an explicit choice to `localStorage` under `pl-theme`, which then wins over the OS. An inline script in `src/app/layout.tsx` sets `data-theme` on `<html>` before the first paint so a dark visitor never sees a light flash.
 
 ## Not in scope now
 

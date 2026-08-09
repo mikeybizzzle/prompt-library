@@ -34,10 +34,10 @@ export function PromptStats({ slug, words }: { slug: string; words: number }) {
           chip,
           liked
             ? "border-pl-accent-yellow bg-pl-accent-yellow/20 text-pl-ink"
-            : "border-[rgba(175,175,175,0.24)] bg-white text-pl-ink-muted",
+            : "border-pl-border-soft bg-pl-surface text-pl-ink-muted",
         )}
       >
-        <span className={cn("inline-flex", liked ? "text-pl-ink" : "text-pl-dark")} aria-hidden="true">
+        <span className={cn("inline-flex", liked ? "text-pl-ink" : "text-pl-icon")} aria-hidden="true">
           <Heart className={cn("size-4", liked && "fill-current")} strokeWidth={1.8} />
         </span>
         <span className="font-sans text-[14px] leading-5 tabular-nums">{liked ? 1 : 0}</span>
@@ -53,10 +53,10 @@ export function PromptStats({ slug, words }: { slug: string; words: number }) {
           chip,
           saved
             ? "border-pl-accent-yellow bg-pl-accent-yellow/20 text-pl-ink"
-            : "border-[rgba(175,175,175,0.24)] bg-white text-pl-ink-muted",
+            : "border-pl-border-soft bg-pl-surface text-pl-ink-muted",
         )}
       >
-        <span className={cn("inline-flex", saved ? "text-pl-ink" : "text-pl-dark")} aria-hidden="true">
+        <span className={cn("inline-flex", saved ? "text-pl-ink" : "text-pl-icon")} aria-hidden="true">
           <Bookmark className={cn("size-4", saved && "fill-current")} strokeWidth={1.8} />
         </span>
         <span className="font-sans text-[14px] leading-5 tabular-nums">{saved ? 1 : 0}</span>
@@ -65,9 +65,9 @@ export function PromptStats({ slug, words }: { slug: string; words: number }) {
 
       <span
         title={`${words} words`}
-        className="inline-flex h-8 items-center gap-1 rounded-full border border-[rgba(175,175,175,0.24)] bg-white pl-2 pr-3 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+        className="inline-flex h-8 items-center gap-1 rounded-full border border-pl-border-soft bg-pl-surface pl-2 pr-3 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
       >
-        <span className="inline-flex text-pl-dark" aria-hidden="true">
+        <span className="inline-flex text-pl-icon" aria-hidden="true">
           <Timer className="size-4" strokeWidth={1.8} />
         </span>
         <span className="font-sans text-[14px] leading-5 tabular-nums text-pl-ink-muted">{words}</span>
@@ -79,7 +79,7 @@ export function PromptStats({ slug, words }: { slug: string; words: number }) {
         title="Copy link"
         aria-label="Copy link to this prompt"
         onClick={share}
-        className="relative inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[rgba(175,175,175,0.24)] bg-white text-pl-dark shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-colors duration-150 hover:bg-pl-surface-alt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow"
+        className="relative inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-pl-border-soft bg-pl-surface text-pl-icon shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-colors duration-150 hover:bg-pl-surface-alt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow"
       >
         {shared ? <Check className="size-4" strokeWidth={2} /> : <Share2 className="size-4" strokeWidth={1.8} />}
       </button>

@@ -46,7 +46,7 @@ function Wordmark() {
         textLength="1390"
         lengthAdjust="spacingAndGlyphs"
         fill="none"
-        stroke="#161415"
+        stroke="currentColor"
         strokeOpacity="0.16"
         strokeWidth="2.4"
         fontFamily="var(--font-roboto), sans-serif"
@@ -70,10 +70,7 @@ export function Footer() {
         <span
           aria-hidden="true"
           className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(245,245,245,0) 30%, rgba(245,245,245,0.7) 80%, rgba(245,245,245,1) 100%)",
-          }}
+          style={{ background: "var(--pl-fade-page)" }}
         />
       </div>
 

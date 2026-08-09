@@ -101,7 +101,7 @@ export function LibraryView({
         {scope && (
           <Link
             href="/"
-            className="inline-flex h-8 items-center gap-2 rounded-full bg-white pl-3 pr-2 text-[14px] leading-5 text-pl-ink shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink"
+            className="inline-flex h-8 items-center gap-2 rounded-full bg-pl-surface pl-3 pr-2 text-[14px] leading-5 text-pl-ink shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink"
           >
             {scope}
             <span className="inline-flex size-5 items-center justify-center rounded-full bg-pl-capsule text-pl-ink-muted">

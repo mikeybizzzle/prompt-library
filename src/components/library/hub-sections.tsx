@@ -6,7 +6,7 @@ import type { Facets, PromptCardData } from "@/lib/types";
 import { SITE } from "@/data/site";
 
 const pillLink =
-  "inline-flex h-8 items-center gap-1 rounded-full bg-white px-3 text-[14px] leading-5 text-[#4F4E4F] no-underline shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink";
+  "inline-flex h-8 items-center gap-1 rounded-full bg-pl-surface px-3 text-[14px] leading-5 text-pl-ink-quiet no-underline shadow-[0_1px_2px_rgba(0,0,0,0.06)] transition-colors hover:text-pl-ink";
 
 const columnLink =
   "text-[13px] leading-5 text-pl-ink-muted no-underline transition-colors hover:text-pl-ink hover:underline hover:underline-offset-2";
@@ -34,7 +34,7 @@ function FeaturedRow({ prompts }: { prompts: PromptCardData[] }) {
   return (
     <section aria-label="Featured prompts" className="flex flex-col gap-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="m-0 text-[clamp(22px,2.6vw,32px)] font-normal leading-tight tracking-[-0.01em] text-[#1B1A1A]">
+        <h2 className="m-0 text-[clamp(22px,2.6vw,32px)] font-normal leading-tight tracking-[-0.01em] text-pl-heading">
           Start here: <strong className="font-bold">hand-picked prompts</strong>
         </h2>
         <Link className={pillLink} href="/">
@@ -47,7 +47,7 @@ function FeaturedRow({ prompts }: { prompts: PromptCardData[] }) {
           <Link
             key={p.slug}
             href={`/p/${p.slug}`}
-            className="group flex flex-col gap-3 overflow-hidden rounded-[16px] bg-white pb-4 no-underline shadow-[0_1px_2px_rgba(0,0,0,0.05)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_rgba(0,0,0,0.18)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow"
+            className="group flex flex-col gap-3 overflow-hidden rounded-[16px] bg-pl-surface pb-4 no-underline shadow-[0_1px_2px_rgba(0,0,0,0.05)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_rgba(0,0,0,0.18)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow"
           >
             <div className="relative h-[200px] w-full overflow-hidden bg-pl-ink p-5">
               <pre className="m-0 whitespace-pre-wrap break-words font-mono text-[12px] leading-[22px] text-white/45">
@@ -87,12 +87,12 @@ function Faq({ items }: { items: FaqItem[] }) {
       {items.map((item) => (
         <details
           key={item.q}
-          className="group rounded-[14px] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.04)] open:bg-[#EAEAEA] open:pb-1.5 open:shadow-none"
+          className="group rounded-[14px] bg-pl-surface shadow-[0_1px_2px_rgba(0,0,0,0.04)] open:bg-pl-capsule open:pb-1.5 open:shadow-none"
         >
-          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 rounded-[14px] bg-white px-5 py-3 text-[17px] font-medium leading-6 text-[#1B1A1A] group-open:shadow-[0_1px_2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow [&::-webkit-details-marker]:hidden">
+          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 rounded-[14px] bg-pl-surface px-5 py-3 text-[17px] font-medium leading-6 text-pl-heading group-open:shadow-[0_1px_2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pl-accent-yellow [&::-webkit-details-marker]:hidden">
             {item.q}
             <ChevronDown
-              className="size-5 shrink-0 text-[#4F4E4F] transition-transform duration-200 group-open:rotate-180"
+              className="size-5 shrink-0 text-pl-ink-quiet transition-transform duration-200 group-open:rotate-180"
               strokeWidth={2}
               aria-hidden="true"
             />
