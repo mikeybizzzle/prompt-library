@@ -87,6 +87,8 @@ Image and video prompts use these:
 
 The 45 email campaign prompts in `content/prompts/email-*.md` use `## Prompt`, `## Use cases`, and `## Variables` instead. They are transcriptions of an external email template set, not prompts we wrote. The body reproduces the original prompt word for word so the wording is preserved, with the source's bracketed blanks converted to `{{variables}}`. `## Use cases` carries the source's own use case list. Do not restructure these into Role, Context, Task, Constraints, and Output, and do not reword them. If you import another prompt set, follow the same pattern and note it here.
 
+The 60 browser agent prompts in `content/prompts/polar-*.md` are the second imported set. They are transcriptions of the Polar workflow template library, so the body reproduces each prompt word for word with the source's bracketed blanks converted to `{{variables}}`, and they run shorter than the 200 word floor because the originals are short. They use `## Prompt`, `## Works with`, `## Suggested cadence`, and `## Variables`. `## Works with` lists the hostnames the source says the task touches. `## Suggested cadence` appears only where the source carried a schedule and states it in plain English. Do not reword the prompt body.
+
 Rules:
 
 1. Write 200 to 600 words for text and code prompts, 120 to 300 for image prompts.

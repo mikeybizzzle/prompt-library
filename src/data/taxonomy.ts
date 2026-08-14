@@ -282,6 +282,23 @@ export const CATEGORIES: Category[] = [
       { slug: "youtube-scripts", name: "YouTube Scripts" },
     ],
   },
+  {
+    slug: "polar",
+    name: "Polar",
+    icon: "Compass",
+    children: [
+      { slug: "polar-research", name: "Research" },
+      { slug: "polar-sales", name: "Sales" },
+      { slug: "polar-recruiting", name: "Recruiting" },
+      { slug: "polar-ops", name: "Operations" },
+      { slug: "polar-marketing", name: "Marketing" },
+      { slug: "polar-data", name: "Data" },
+      { slug: "polar-monitoring", name: "Monitoring" },
+      { slug: "polar-engineering", name: "Engineering" },
+      { slug: "polar-docs", name: "Documentation" },
+      { slug: "polar-personal", name: "Personal" },
+    ],
+  },
 ];
 
 export const MODELS: Model[] = [
